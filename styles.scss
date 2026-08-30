@@ -1,0 +1,778 @@
+/*-- scss:defaults --*/
+
+// Coastal-chic, green + preppy. Pulled from the green shell print,
+// the cabana stripe, and the deep-green inspo layouts.
+$green-deep:   #2f4739;
+$green:        #46614a;
+$sage:         #7f9c68;
+$shell:        #8fae79;
+$sage-light:   #c9d9b8;
+$cream:        #faf6ec;
+$cream-deep:   #f2ecdc;
+$sand:         #d8cda6;
+$ink:          #2b3a2e;
+
+$body-bg: $cream;
+$body-color: $ink;
+$link-color: $green;
+
+$font-family-sans-serif: "Jost", "Avenir Next", "Helvetica Neue", sans-serif;
+$headings-font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+$headings-color: $green-deep;
+$headings-font-weight: 600;
+
+$navbar-fg: $ink;
+$navbar-hl: $green;
+
+$footer-bg: $cream-deep;
+$footer-fg: $green-deep;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Style+Script&display=swap');
+
+html { overflow-x: hidden; }
+
+body {
+  letter-spacing: 0.01em;
+  background-color: $cream;
+}
+
+// ---------------------------------------------------------------- type scale
+
+h1, h2, h3 { letter-spacing: 0.02em; }
+
+.script {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  color: $sage;
+  letter-spacing: 0.01em;
+}
+
+// small letterspaced label — used above section headings
+.eyebrow {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: $sage;
+  margin-bottom: 0.9rem;
+}
+
+.section-title {
+  font-family: $headings-font-family;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  color: $green-deep;
+  margin: 0 0 1.4rem;
+  border-bottom: none; // Quarto underlines h2 by default
+  padding-bottom: 0;
+}
+
+// the theme's h2 rule would otherwise cut across our centered titles
+main.content h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+// ------------------------------------------------------------------ shell rule
+
+// thin preppy stripe, drawn in CSS so it stays crisp at any size
+@mixin cabana-stripe($w: 6px) {
+  background-image: repeating-linear-gradient(
+    90deg,
+    $sage-light 0, $sage-light $w,
+    $cream $w, $cream ($w * 2)
+  );
+}
+
+.stripe-rule {
+  height: 15px;
+  border: none;
+  margin: 0;
+  @include cabana-stripe(6px);
+  opacity: 0.85;
+}
+
+// ---------------------------------------------------------------------- navbar
+
+.navbar {
+  background-color: $cream !important;
+  border-bottom: none;
+  box-shadow: none;
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 15px;
+  @include cabana-stripe(6px);
+  opacity: 0.9;
+}
+
+.navbar-brand-container { display: none; }
+.navbar-toggler { display: none !important; }
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar .nav-link {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  color: $green-deep;
+  padding: 0.5rem 1.15rem !important;
+  margin: 0.3rem 0.15rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: $sage;
+}
+
+@media (max-width: 575.98px) {
+  .navbar .nav-link {
+    padding: 0.35rem 0.45rem !important;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+// keep all four links on one row on a narrow phone
+@media (max-width: 430px) {
+  .navbar-nav { flex-wrap: nowrap; }
+
+  .navbar .nav-link {
+    padding: 0.3rem 0.3rem !important;
+    font-size: 0.55rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+}
+
+a { text-decoration: none; }
+a:hover { color: $sage; text-decoration: underline; }
+
+// ------------------------------------------------------------------------ hero
+
+.hero {
+  position: relative;
+  min-height: 86vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+// the venue photo, washed out and pushed green so type reads over it
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('images/hero-venue.jpg');
+  background-size: cover;
+  background-position: center 42%;
+  filter: saturate(0.72) brightness(0.98) contrast(0.94);
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    // pool of shade behind the type so the names read over the bright water
+    radial-gradient(
+      ellipse 70% 55% at 50% 48%,
+      rgba(35, 55, 43, 0.45) 0%,
+      rgba(35, 55, 43, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(47, 71, 57, 0.62) 0%,
+      rgba(47, 71, 57, 0.46) 45%,
+      rgba(47, 71, 57, 0.70) 100%
+    );
+  z-index: -1;
+}
+
+.hero-inner {
+  padding: 4.5rem 1.5rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+// hairline frame, like the bordered plates in the inspo
+.hero-frame {
+  border: 1px solid rgba(250, 246, 236, 0.45);
+  padding: clamp(2rem, 6vw, 3.6rem) clamp(1.2rem, 5vw, 3rem);
+}
+
+.hero-names {
+  font-family: $headings-font-family;
+  font-weight: 300;
+  color: $cream;
+  font-size: clamp(2.6rem, 9vw, 5.6rem);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 24px rgba(30, 45, 35, 0.35);
+}
+
+.hero-amp {
+  display: block;
+  font-family: "Style Script", cursive;
+  text-transform: none;
+  font-size: 0.62em;
+  color: $sage-light;
+  letter-spacing: 0;
+  margin: 0.1em 0;
+  text-shadow: 0 2px 20px rgba(30, 45, 35, 0.4);
+}
+
+.hero-sub {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: clamp(0.7rem, 1.8vw, 0.92rem);
+  color: $cream;
+  margin: 1.6rem 0 0;
+  font-weight: 400;
+  text-shadow: 0 1px 14px rgba(30, 45, 35, 0.55);
+}
+
+.hero-meta {
+  font-family: $font-family-sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: clamp(0.66rem, 1.5vw, 0.78rem);
+  color: rgba(250, 246, 236, 0.95);
+  margin-top: 2.4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(250, 246, 236, 0.4);
+  display: inline-block;
+  text-shadow: 0 1px 12px rgba(30, 45, 35, 0.5);
+}
+
+// ------------------------------------------------------------------- sections
+
+.band {
+  padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
+}
+
+.band-green {
+  background-color: $green-deep;
+  color: $cream-deep;
+  text-align: center;
+}
+
+.band-green .section-title,
+.band-green h2,
+.band-green h3 { color: $cream; }
+
+.band-green .eyebrow { color: $sage-light; }
+
+.band-cream { background-color: $cream; }
+
+.band-shells {
+  position: relative;
+  background-image: url('images/greenshells.jpg');
+  background-size: 460px auto;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.band-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.band-narrow {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+// ------------------------------------------------------------------ date block
+
+.date-line {
+  font-family: $headings-font-family;
+  font-size: clamp(1.9rem, 5.5vw, 3.2rem);
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  color: $cream;
+  margin: 0;
+}
+
+.date-rule {
+  width: 64px;
+  height: 1px;
+  background: rgba(250, 246, 236, 0.5);
+  margin: 1.8rem auto;
+  border: none;
+}
+
+.date-place {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.8rem;
+  color: rgba(250, 246, 236, 0.85);
+  line-height: 2;
+}
+
+// --------------------------------------------------------------- detail cards
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.detail-card {
+  background: #fff;
+  border: 1px solid rgba(47, 71, 57, 0.12);
+  border-radius: 4px;
+  padding: 2.2rem 1.9rem;
+  text-align: center;
+  box-shadow: 0 8px 26px rgba(47, 71, 57, 0.06);
+}
+
+.detail-card .day {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: $sage;
+  font-weight: 500;
+}
+
+.detail-card h3 {
+  font-family: $headings-font-family;
+  font-weight: 400;
+  font-size: 1.85rem;
+  color: $green-deep;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.detail-card .when {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: $green;
+  margin-bottom: 1rem;
+}
+
+.detail-card p {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: $ink;
+  margin-bottom: 0;
+}
+
+.detail-card .where {
+  margin-top: 1rem;
+  font-size: 0.86rem;
+  color: rgba(43, 58, 46, 0.75);
+}
+
+// ------------------------------------------------------------------ countdown
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.6rem, 3vw, 2.4rem);
+  flex-wrap: wrap;
+  margin-top: 2.2rem;
+}
+
+.count-unit {
+  min-width: clamp(68px, 18vw, 108px);
+}
+
+.count-num {
+  font-family: $headings-font-family;
+  font-size: clamp(2.4rem, 7vw, 3.8rem);
+  font-weight: 300;
+  color: $cream;
+  line-height: 1;
+}
+
+.count-label {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.66rem;
+  color: $sage-light;
+  margin-top: 0.6rem;
+}
+
+// -------------------------------------------------------------- photo on print
+
+.photo-frame {
+  max-width: 720px;
+  margin: 0 auto;
+  background: $cream;
+  padding: 14px;
+  box-shadow: 0 14px 40px rgba(47, 71, 57, 0.18);
+}
+
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(47, 71, 57, 0.15);
+}
+
+.photo-caption {
+  text-align: center;
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: $green-deep;
+  margin-top: 1.1rem;
+}
+
+// ---------------------------------------------------------------------- tables
+
+.tbl-wrap {
+  overflow-x: auto;
+  margin: 2rem 0 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.94rem;
+}
+
+thead th {
+  background: $green-deep;
+  color: $cream;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.95rem 1rem;
+  text-align: left;
+  border: none;
+}
+
+tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(47, 71, 57, 0.1);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+tbody tr:nth-child(even) { background: rgba(201, 217, 184, 0.16); }
+
+tbody td strong { color: $green-deep; font-weight: 600; }
+
+// last column holds the booking link — keep it on one line and let it
+// shrink to fit rather than wrapping mid-word
+table th:last-child,
+table td:last-child {
+  white-space: nowrap;
+  width: 1%;
+  text-align: right;
+}
+
+table td:last-child a {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: $green-deep;
+  border: 1px solid rgba(47, 71, 57, 0.3);
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  display: inline-block;
+}
+
+table td:last-child a:hover {
+  background: $green-deep;
+  border-color: $green-deep;
+  color: $cream;
+  text-decoration: none;
+}
+
+// On a phone a four-column table is unreadable and a sideways scroll is easy to
+// miss, so collapse each row into its own card instead.
+@media (max-width: 640px) {
+  .tbl-wrap table,
+  .tbl-wrap tbody,
+  .tbl-wrap tr,
+  .tbl-wrap td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .tbl-wrap thead { display: none; }
+
+  .tbl-wrap tbody tr {
+    background: #fff !important;
+    border: 1px solid rgba(47, 71, 57, 0.14);
+    border-left: 3px solid $sage;
+    margin-bottom: 1.1rem;
+    padding: 1.3rem 1.4rem;
+  }
+
+  .tbl-wrap tbody td {
+    border: none;
+    padding: 0.2rem 0;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  // first cell is the hotel name — promote it to a card heading
+  .tbl-wrap tbody td:first-child {
+    font-family: $headings-font-family;
+    font-size: 1.3rem;
+    color: $green-deep;
+    margin-bottom: 0.5rem;
+  }
+
+  .tbl-wrap tbody td:first-child strong { font-weight: 500; }
+
+  .tbl-wrap tbody td:nth-child(3) {
+    font-size: 0.85rem;
+    color: rgba(43, 58, 46, 0.7);
+    margin-top: 0.5rem;
+  }
+
+  .tbl-wrap tbody td:last-child { margin-top: 0.9rem; }
+}
+
+// ------------------------------------------------------------------- listings
+
+.listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+  margin: 2rem 0 1rem;
+}
+
+.spot {
+  background: #fff;
+  border: 1px solid rgba(47, 71, 57, 0.12);
+  border-left: 3px solid $sage;
+  padding: 1.4rem 1.5rem;
+  border-radius: 3px;
+}
+
+.spot h4 {
+  font-family: $headings-font-family;
+  font-size: 1.32rem;
+  font-weight: 500;
+  color: $green-deep;
+  margin: 0 0 0.15rem;
+}
+
+.spot .place {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.64rem;
+  color: $sage;
+  margin-bottom: 0.7rem;
+}
+
+.spot p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+  color: rgba(43, 58, 46, 0.88);
+}
+
+// ------------------------------------------------- cream panels over the print
+
+// used where a text block sits on top of the green shell pattern
+.panel-card,
+.registry-card {
+  background: rgba(250, 246, 236, 0.96);
+  border: 1px solid rgba(47, 71, 57, 0.14);
+  padding: clamp(2rem, 5vw, 3.2rem);
+}
+
+.registry-card {
+  text-align: center;
+  padding: clamp(2.4rem, 6vw, 4rem);
+}
+
+// Zola injects its widget in here. Give it a frame so it reads as part of the
+// page rather than a bare white rectangle.
+.zola-embed-frame {
+  margin: 2.6rem auto 0;
+  max-width: 620px;
+  background: #fff;
+  border: 1px solid rgba(47, 71, 57, 0.14);
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.zola-embed-frame iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+}
+
+.registry-wordmark {
+  font-family: $headings-font-family;
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $green-deep;
+  margin: 0 0 1.6rem;
+}
+
+// ------------------------------------------------------------------- kid list
+
+.kid-list {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kid-list p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: rgba(250, 246, 236, 0.88);
+}
+
+.kid-list strong { color: $cream; font-weight: 500; }
+
+// ---------------------------------------------------------------------- buttons
+
+.btn, .btn-primary {
+  background-color: $green-deep;
+  border-color: $green-deep;
+  border-radius: 999px;
+  padding: 0.75rem 2.2rem;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  color: $cream;
+  font-weight: 500;
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: $sage;
+  border-color: $sage;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-light-outline {
+  background: transparent;
+  border: 1px solid rgba(250, 246, 236, 0.6);
+  color: $cream;
+}
+
+.btn-light-outline:hover {
+  background: $cream;
+  border-color: $cream;
+  color: $green-deep;
+}
+
+// ------------------------------------------------------------------- callout
+
+.note-strip {
+  background: rgba(201, 217, 184, 0.3);
+  border-left: 3px solid $sage;
+  padding: 1.15rem 1.4rem;
+  margin: 1.8rem 0;
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+
+.note-strip strong { color: $green-deep; }
+
+// -------------------------------------------------------------------- footer
+
+footer.footer {
+  background-color: $cream-deep;
+  border-top: none;
+  position: relative;
+  padding-top: 2.4rem;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.68rem;
+  color: $green-deep;
+}
+
+footer.footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 15px;
+  @include cabana-stripe(6px);
+  opacity: 0.9;
+}
+
+// ------------------------------------------------------- quarto layout resets
+
+// page-layout: full still keeps padding on .content; our bands are full-bleed,
+// so strip it and let each band manage its own gutters.
+#title-block-header { display: none; }
+
+// Quarto lays the page out on a grid whose body track is `minmax(500px, ...)`.
+// Our bands are full-bleed and manage their own gutters, so that reserved track
+// only forces horizontal overflow on phones. Drop the grid entirely.
+// The id selector is needed to outrank Quarto's own `.page-columns` rules,
+// which are declared several times including inside media queries.
+#quarto-content.page-columns,
+.page-columns {
+  display: block !important;
+}
+
+#quarto-content > main.content,
+main.content,
+main.content.column-page {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 0;
+}
+
+body { overflow-x: hidden; }
+
+@media (max-width: 767.98px) {
+  .content, .quarto-title-block {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .hero { min-height: 78vh; }
+  .band-shells { background-size: 300px auto; }
+}

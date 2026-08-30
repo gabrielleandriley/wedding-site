@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - images/
+    - CNAME   # tells GitHub Pages to serve the site at gabrielleandriley.com
+
+website:
+  title: "Gabrielle & Riley"
+  site-url: "https://gabrielleandriley.com"
+  favicon: images/favicon.svg
+  search: false
+  navbar:
+    background: light
+    pinned: true
+    logo: ""
+    left:
+      - href: index.qmd
+        text: Home
+      - href: travel.qmd
+        text: Travel & Stay
+      - href: things-to-do.qmd
+        text: Things to Do
+      - href: registry.qmd
+        text: Registry
+  page-footer:
+    background: light
+    center: |
+      June 19, 2027 &nbsp;·&nbsp; Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    smooth-scroll: true
+    anchor-sections: false
+    page-layout: full
