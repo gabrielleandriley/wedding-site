@@ -11,7 +11,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <h2 class="section-title">Things to Do</h2>
 
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1.05rem">
+    <p class="subtitle">
       Below are some of our favorite places to hike, eat, drink wine, and get a cute memento.
     </p>
 

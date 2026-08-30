@@ -9,7 +9,7 @@ pagetitle: "Registry — Gabrielle & Riley"
 
     <p class="eyebrow-lg">Registry</p>
 
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem; margin-top:1.4rem">
+    <p class="subtitle">
       Your presence is your present, and truly no gift is required. However, if you would like to
       purchase something to help us celebrate, below are some of the items we would love to
       receive.

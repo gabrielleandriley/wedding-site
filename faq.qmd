@@ -12,7 +12,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
+<section class="band band-cream" style="padding-top:1.6rem">
   <div class="band-inner">
 
     <div class="faq-list">
@@ -54,40 +54,15 @@ pagetitle: "FAQs — Gabrielle & Riley"
       </details>
 
       <details class="faq-item">
-        <summary>I have a dietary restriction.</summary>
-        <p>Tell us when you RSVP &mdash; there is a place for it. Our caterer handles vegetarian,
-        vegan, gluten-free, and allergies routinely, and every dish at dinner is labelled.</p>
+        <summary>I have a dietary restriction, can you accommodate?</summary>
+        <p>Yes. Tell us when you RSVP &mdash; there is a place for it. Our caterer handles
+        vegetarian, vegan, gluten-free, and allergies routinely, and every dish at dinner is
+        labelled.</p>
       </details>
 
       <details class="faq-item">
         <summary>Is there parking at the venue?</summary>
-        <p>Yes, there is plenty of parking at the Inn. If you would rather not drive at the end of
-        the night, take the shuttle from downtown Ithaca.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>When does the night end?</summary>
-        <p>The reception wraps up around eleven. For anyone staying on the estate or nearby, there
-        is a bonfire afterward.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>What is the weather like in June?</summary>
-        <p>Usually beautiful &mdash; warm days in the seventies and evenings that cool off more
-        than people expect near the water. Bring a layer for after sunset.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Where should we fly into?</summary>
-        <p>Ithaca Tompkins (ITH) is closest, about forty minutes out. Syracuse (SYR) and Elmira
-        (ELM) are each roughly an hour and a half and usually cheaper with more flights. You will
-        want a car from any of them.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Is there a registry?</summary>
-        <p>There is, on <a href="registry.html">Zola</a> &mdash; though your being there is
-        genuinely the part we care about.</p>
+        <p>Yes, there is plenty of parking at the Inn if you choose to drive!</p>
       </details>
 
     </div>
@@ -97,7 +72,20 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
 <section class="band script-banner">
   <div class="plaque">
-    <p>We cannot wait to see all of you in June.</p>
+
+    <p>Please do not hesitate to reach out to us with any other questions.</p>
+
+    <div class="contact-row">
+      <div class="contact">
+        <span class="contact-name">Gabrielle</span>
+        <a href="tel:+17033149502">(703) 314-9502</a>
+      </div>
+      <div class="contact">
+        <span class="contact-name">Riley</span>
+        <a href="tel:+16073424142">(607) 342-4142</a>
+      </div>
+    </div>
+
   </div>
 </section>
 ```

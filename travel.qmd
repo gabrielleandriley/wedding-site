@@ -13,7 +13,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 
     <p class="eyebrow-lg">Travel &amp; Stay</p>
 
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem; margin-top:1.4rem">
+    <p class="subtitle">
       Our wedding is taking place at the Fontainebleau Inn in Alpine, New York. The Inn sits on
       Cayuta Lake, just south of and in between Cayuga and Seneca lakes.
     </p>

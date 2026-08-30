@@ -475,6 +475,46 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .lede p:last-child { margin-bottom: 0; }
 
+// the line under a page title
+.subtitle {
+  font-family: $headings-font-family;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  line-height: 1.65;
+  max-width: 640px;
+  margin: 1.4rem auto 0;
+}
+
+.band-green .subtitle { color: $cream-deep; }
+
+// --------------------------------------------------------------- contact row
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  margin-top: 1.8rem;
+}
+
+.contact-name {
+  display: block;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: $sage;
+  margin-bottom: 0.3rem;
+}
+
+.contact a {
+  font-family: $headings-font-family;
+  font-size: 1.3rem;
+  color: $green-deep;
+}
+
+.contact a:hover { color: $sage; }
+
 // ------------------------------------------------------------------ date block
 
 .date-line {
@@ -891,7 +931,7 @@ table td:last-child a:hover {
 
 .faq-list {
   max-width: 780px;
-  margin: 2.5rem auto 0;
+  margin: 0.75rem auto 0;
   text-align: left;
   border-bottom: 1px solid rgba(47, 71, 57, 0.16);
 }
