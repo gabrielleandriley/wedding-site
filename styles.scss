@@ -29,7 +29,7 @@ $footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Yellowtail&display=swap');
 
 html { overflow-x: hidden; }
 
@@ -88,7 +88,7 @@ main.content h2 {
   margin: 0;
 }
 
-.band-green .eyebrow-lg { color: $cream; }
+.band-green .eyebrow-lg { color: $sage-light; }
 
 // ------------------------------------------------------------------ shell rule
 
@@ -314,6 +314,145 @@ a:hover { color: $sage; text-decoration: underline; }
 .band-narrow {
   max-width: 760px;
   margin: 0 auto;
+}
+
+// blue-flower stripe, an alternative to the shell print
+.band-flowers {
+  position: relative;
+  background-image: url('images/blueflowers.jpg');
+  background-size: 330px auto;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+// ------------------------------------------------- editorial feature block
+
+// one highlighted entry: pattern on one side, copy on the other
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  margin: 2.5rem 0 0;
+  border: 1px solid rgba(47, 71, 57, 0.14);
+  overflow: hidden;
+}
+
+.feature-pattern {
+  background-image: url('images/greenshells.jpg');
+  background-size: 300px auto;
+  min-height: 250px;
+}
+
+.feature-pattern.is-flowers { background-image: url('images/blueflowers.jpg'); }
+
+.feature-body {
+  background: #fff;
+  padding: clamp(1.8rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// pattern on the left instead
+.feature-rev .feature-pattern { order: -1; }
+
+.feature-body h3 {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: $green-deep;
+  margin: 0.3rem 0 0.2rem;
+}
+
+.feature-body .place {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.66rem;
+  color: $sage;
+}
+
+.feature-body p {
+  font-family: $headings-font-family;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  margin: 0.9rem 0 0;
+  color: $ink;
+}
+
+.feature-note {
+  font-family: $headings-font-family;
+  font-style: italic;
+  color: $sage;
+  font-size: 1.05rem;
+  margin-top: 1rem !important;
+}
+
+@media (max-width: 760px) {
+  .feature { grid-template-columns: 1fr; }
+  .feature-pattern { min-height: 150px; order: -1; }
+}
+
+// ------------------------------------------- script plaque over the stripe
+
+.script-banner {
+  @include cabana-stripe(10px);
+  padding: clamp(2.6rem, 6vw, 4.5rem) 1.5rem;
+  text-align: center;
+}
+
+.script-banner > .plaque {
+  background: $cream;
+  border: 1px solid rgba(47, 71, 57, 0.14);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: clamp(1.6rem, 4vw, 2.6rem) clamp(1.4rem, 4vw, 3rem);
+}
+
+.script-banner p {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 1.45;
+  color: $green-deep;
+  margin: 0;
+}
+
+// plain striped band, for a plaque or wordmark to sit on
+.band-stripe { @include cabana-stripe(10px); }
+
+// ------------------------------------------------------------- wordmark
+
+// The "club" lockup from the font inspo: a retro script over the cabana
+// stripe with a boxed, letterspaced label beneath — in our greens.
+.wordmark {
+  background: $cream;
+  border: 1px solid rgba(47, 71, 57, 0.16);
+  max-width: 620px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.2rem) clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.wordmark-script {
+  font-family: "Yellowtail", "Brush Script MT", cursive;
+  font-size: clamp(2.6rem, 7vw, 4.4rem);
+  line-height: 1.1;
+  color: $green-deep;
+  margin: 0;
+}
+
+.wordmark-label {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid $sage;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: $sage;
 }
 
 // ------------------------------------------------------------------ date block
@@ -630,6 +769,7 @@ table td:last-child a:hover {
 // ------------------------------------------------------------------- listings
 
 .listing {
+  counter-reset: spot;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.4rem;
@@ -637,6 +777,8 @@ table td:last-child a:hover {
 }
 
 .spot {
+  counter-increment: spot;
+  position: relative;
   background: #fff;
   border: 1px solid rgba(47, 71, 57, 0.12);
   border-left: 3px solid $sage;
@@ -644,7 +786,20 @@ table td:last-child a:hover {
   border-radius: 3px;
 }
 
+// small corner numeral, in the vein of the "No. 01" plates in the inspo
+.spot::before {
+  content: counter(spot, decimal-leading-zero);
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-family: $headings-font-family;
+  font-size: 1.5rem;
+  color: $sage-light;
+  line-height: 1;
+}
+
 .spot h4 {
+  padding-right: 2rem;
   font-family: $headings-font-family;
   font-size: 1.32rem;
   font-weight: 500;
@@ -686,8 +841,8 @@ table td:last-child a:hover {
 // Zola injects its widget in here. Give it a frame so it reads as part of the
 // page rather than a bare white rectangle.
 .zola-embed-frame {
-  margin: 2.6rem auto 0;
-  max-width: 620px;
+  margin: 0 auto;
+  max-width: 760px;
   background: #fff;
   border: 1px solid rgba(47, 71, 57, 0.14);
   padding: 0.5rem;
@@ -726,6 +881,42 @@ table td:last-child a:hover {
 }
 
 .kid-list strong { color: $cream; font-weight: 500; }
+
+// ---------------------------------------------------------------------- faq
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1.6rem 2.6rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.faq-item {
+  border-top: 1px solid rgba(47, 71, 57, 0.16);
+  padding-top: 1.3rem;
+}
+
+.faq-item h4 {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: $green-deep;
+  margin: 0 0 0.5rem;
+}
+
+.faq-item p {
+  font-family: $headings-font-family;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: $ink;
+  margin: 0;
+}
+
+.faq-item .pending {
+  font-style: italic;
+  color: $sage;
+}
 
 // ---------------------------------------------------------------------- buttons
 

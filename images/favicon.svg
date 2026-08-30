@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="31" fill="#c9d9b8"/>
+  <circle cx="32" cy="32" r="31" fill="#2f4739"/>
   <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
         font-family="Georgia, 'Times New Roman', serif" font-size="26"
-        font-weight="600" fill="#2f4739" letter-spacing="0.5">GR</text>
+        font-weight="600" fill="#c9d9b8" letter-spacing="0.5">GR</text>
 </svg>

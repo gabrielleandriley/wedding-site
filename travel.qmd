@@ -54,7 +54,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-shells">
+<section class="band band-flowers">
   <div class="band-narrow">
 
     <div class="panel-card">
@@ -145,6 +145,12 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
       and both usually have more flights and cheaper fares. You will want a car from any of them.
     </div>
 
+  </div>
+</section>
+
+<section class="band script-banner">
+  <div class="plaque">
+    <p>Come early, stay late, and make a weekend of the Finger Lakes.</p>
   </div>
 </section>
 ```

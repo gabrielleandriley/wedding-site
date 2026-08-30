@@ -21,6 +21,8 @@ website:
         text: Travel & Stay
       - href: things-to-do.qmd
         text: Things to Do
+      - href: faq.qmd
+        text: FAQs
       - href: registry.qmd
         text: Registry
   page-footer:

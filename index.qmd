@@ -85,6 +85,15 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
   </div>
 </section>
 
+<section class="band band-stripe">
+
+  <div class="wordmark">
+    <p class="wordmark-script">Gabrielle &amp; Riley</p>
+    <div class="wordmark-label">June 19, 2027</div>
+  </div>
+
+</section>
+
 <script>
 (function () {
   // Ceremony day. Counts down to the morning of the wedding.

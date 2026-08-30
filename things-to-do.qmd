@@ -26,13 +26,18 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <h2 class="section-title" style="text-align:center">Wineries &amp; Cider</h2>
 
-    <div class="listing">
-
-      <div class="spot">
-        <h4>Hosmer Winery</h4>
+    <div class="feature">
+      <div class="feature-body">
         <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
-        <p>Start here. Riley worked at Hosmer, so we are hopelessly biased &mdash; but the Riesling and Cabernet Franc genuinely set the bar on this lake, and the vineyards are some of the oldest on Cayuga.</p>
+        <h3>Hosmer Winery</h3>
+        <p>Start here. The Riesling and Cabernet Franc genuinely set the bar on this lake, and the
+        vineyards are some of the oldest on Cayuga &mdash; planted more than fifty years ago.</p>
+        <p class="feature-note">Riley worked here, so we are hopelessly biased.</p>
       </div>
+      <div class="feature-pattern is-flowers"></div>
+    </div>
+
+    <div class="listing">
 
       <div class="spot">
         <h4>Six Eighty Cellars</h4>
@@ -197,6 +202,12 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       <p><strong>Ithaca Farmers Market</strong> &mdash; Saturday and Sunday mornings on the water at Steamboat Landing. Food stalls, music, and room to run around. Our favorite thing to do in this town.</p>
     </div>
 
+  </div>
+</section>
+
+<section class="band script-banner">
+  <div class="plaque">
+    <p>Ithaca is gorges, and we will not apologise for saying so.</p>
   </div>
 </section>
 ```

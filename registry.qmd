@@ -36,11 +36,9 @@ pagetitle: "Registry — Gabrielle & Riley"
         to us, so nothing needs to travel to the wedding.
       </p>
 
-      <a class="btn" href="https://www.zola.com/registry/gabrielleandrileyjune19/"
-         target="_blank" rel="noopener">View our registry</a>
-
-      <!-- Zola's live embed. Renders the registry inline once it is set to
-           public; until then it reads "This registry is private." -->
+      <!-- Zola's own widget, per their custom-website instructions. This is
+           the most of the registry that can live on our page: Zola sends
+           X-Frame-Options SAMEORIGIN, so the full registry cannot be framed. -->
       <div class="zola-embed-frame">
         <a class="zola-registry-embed"
            href="https://www.zola.com/registry/gabrielleandrileyjune19/"
