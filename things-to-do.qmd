@@ -134,6 +134,12 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       </div>
 
       <div class="spot">
+        <h4>Tabora Farm</h4>
+        <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
+        <p>Our favorite lunch stop when we are heading to the Seneca Lake wineries. A bakery and deli café, with soups, sandwiches, and South African dishes.</p>
+      </div>
+
+      <div class="spot">
         <h4>Main Street Market</h4>
         <div class="place">Trumansburg</div>
         <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
