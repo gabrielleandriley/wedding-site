@@ -16,7 +16,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
   </div>
 </section>
 
-<section class="band band-green">
+<section class="band band-slim band-green">
   <div class="band-narrow">
 
     <p class="eyebrow">Save the date</p>
@@ -36,9 +36,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 <section class="band band-cream">
   <div class="band-inner">
 
-    <p class="eyebrow" style="text-align:center">The weekend</p>
-
-    <h2 class="section-title" style="text-align:center">Two days on Cayuta Lake</h2>
+    <p class="eyebrow-lg" style="text-align:center">The Weekend</p>
 
     <div class="weekend-grid">
 
@@ -48,15 +46,15 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
           <div class="day">Friday, June 18</div>
           <h3>Welcome Party</h3>
           <div class="when">Dinner</div>
-          <p>Join us the night before for dinner under the pavilion at Taughannock Falls. Everyone is invited &mdash; it is the easy, no-agenda start to the weekend. Time to come.</p>
-          <div class="where">North Point Pavilion &nbsp;·&nbsp; Taughannock Falls State Park, Trumansburg</div>
+          <p>Join us the night before for a casual BBQ dinner at North Point Pavilion at Taughannock Falls State Park.</p>
+          <div class="where">Trumansburg, New York</div>
         </div>
 
         <div class="detail-card">
           <div class="day">Saturday, June 19</div>
           <h3>The Wedding</h3>
           <div class="when">Ceremony &amp; Reception</div>
-          <p>We will be married on the lawn overlooking the lake, with cocktails on the covered patio and dinner and dancing to follow.</p>
+          <p>We will have a ceremony at the venue, followed by cocktails, dinner, and dancing.</p>
           <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, NY</div>
         </div>
 
@@ -75,9 +73,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 <section class="band band-green">
   <div class="band-narrow">
 
-    <p class="eyebrow">Counting down</p>
-
-    <h2 class="section-title">Until we say I do</h2>
+    <p class="eyebrow-lg">Counting Down</p>
 
     <div class="countdown" id="countdown">
       <div class="count-unit"><div class="count-num" id="cd-days">&mdash;</div><div class="count-label">Days</div></div>
