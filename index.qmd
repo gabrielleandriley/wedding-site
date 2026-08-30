@@ -47,9 +47,9 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
       <div class="detail-card">
         <div class="day">Friday, June 18</div>
         <h3>Welcome Party</h3>
-        <div class="when">Evening</div>
-        <p>Come find us the night before for drinks, food, and a proper hello. Everyone is invited &mdash; it is the easy, no-agenda start to the weekend.</p>
-        <div class="where">Details and timing to come</div>
+        <div class="when">Dinner</div>
+        <p>Join us the night before for dinner under the pavilion at Taughannock Falls. Everyone is invited &mdash; it is the easy, no-agenda start to the weekend. Time to come.</p>
+        <div class="where">North Point Pavilion &nbsp;·&nbsp; Taughannock Falls State Park, Trumansburg</div>
       </div>
 
       <div class="detail-card">

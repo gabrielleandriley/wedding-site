@@ -78,7 +78,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       </p>
 
       <ul style="line-height:2.1; padding-left:1.2rem">
-        <li><strong>Taughannock Falls</strong> &mdash; a 215-foot plunge, taller than Niagara. The gorge trail to the base is flat, shaded, and stroller-friendly; the rim trail is the better view.</li>
+        <li><strong>Taughannock Falls</strong> &mdash; a 215-foot plunge, taller than Niagara, and where we are having the Friday welcome party. The gorge trail to the base is flat, shaded, and stroller-friendly; the rim trail is the better view.</li>
         <li><strong>Watkins Glen State Park</strong> &mdash; the showstopper. Nineteen waterfalls along a stone gorge trail with tunnels and bridges. Closest to the venue, and the busiest, so go early.</li>
         <li><strong>Robert H. Treman</strong> &mdash; our pick for a hot day. You can swim at the base of a waterfall in the lower park.</li>
         <li><strong>Buttermilk Falls</strong> &mdash; right in town, quick, and beautiful. Good if you only have an hour.</li>

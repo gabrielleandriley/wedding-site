@@ -46,9 +46,9 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
     </div>
 
     <div class="note-strip">
-      <strong>Room block:</strong> we are working on securing a block &mdash; once it is set we
-      will post the booking link and code here. In the meantime, June is a busy month in Ithaca,
-      so it is worth booking something refundable early.
+      <strong>Book early.</strong> We are not holding a room block, so rooms are first come,
+      first served &mdash; and June is a busy month in Ithaca. It is worth reserving something
+      refundable well ahead and deciding later.
     </div>
 
   </div>
@@ -94,8 +94,9 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 
     <p style="text-align:center; max-width:640px; margin:0 auto; line-height:1.8">
       If you would rather wake up in the country, there are lovely bed and breakfasts in both
-      directions. These are outside the shuttle route, so plan on driving &mdash; but they are a
-      charming way to make a weekend of it.
+      directions. Trumansburg is where the Friday welcome party is, so staying up that way puts
+      you minutes from Taughannock. These are outside the shuttle route, so plan on driving
+      &mdash; but they are a charming way to make a weekend of it.
     </p>
 
     <div class="listing">
