@@ -7,8 +7,8 @@ $green:        #46614a;
 $sage:         #7f9c68;
 $shell:        #8fae79;
 $sage-light:   #c9d9b8;
-$cream:        #faf6ec;
-$cream-deep:   #f2ecdc;
+$cream:        #f8f6f1;
+$cream-deep:   #edeae1;
 $sand:         #d8cda6;
 $ink:          #2b3a2e;
 
@@ -29,7 +29,7 @@ $footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
 
 html { overflow-x: hidden; }
 
@@ -43,7 +43,8 @@ body {
 h1, h2, h3 { letter-spacing: 0.02em; }
 
 .script {
-  font-family: "Style Script", cursive;
+  font-family: $headings-font-family;
+  font-style: italic;
   font-weight: 400;
   color: $sage;
   letter-spacing: 0.01em;
@@ -88,7 +89,7 @@ main.content h2 {
 }
 
 .stripe-rule {
-  height: 15px;
+  height: 22px;
   border: none;
   margin: 0;
   @include cabana-stripe(6px);
@@ -109,7 +110,7 @@ main.content h2 {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  height: 15px;
+  height: 22px;
   @include cabana-stripe(6px);
   opacity: 0.9;
 }
@@ -188,7 +189,7 @@ a:hover { color: $sage; text-decoration: underline; }
   inset: 0;
   background-image: url('images/hero-venue.jpg');
   background-size: cover;
-  background-position: center 42%;
+  background-position: center 58%;
   filter: saturate(0.72) brightness(0.98) contrast(0.94);
   z-index: -2;
 }
@@ -239,9 +240,11 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .hero-amp {
   display: block;
-  font-family: "Style Script", cursive;
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-weight: 400;
   text-transform: none;
-  font-size: 0.62em;
+  font-size: 0.52em;
   color: $sage-light;
   letter-spacing: 0;
   margin: 0.1em 0;
@@ -257,19 +260,6 @@ a:hover { color: $sage; text-decoration: underline; }
   margin: 1.6rem 0 0;
   font-weight: 400;
   text-shadow: 0 1px 14px rgba(30, 45, 35, 0.55);
-}
-
-.hero-meta {
-  font-family: $font-family-sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-size: clamp(0.66rem, 1.5vw, 0.78rem);
-  color: rgba(250, 246, 236, 0.95);
-  margin-top: 2.4rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(250, 246, 236, 0.4);
-  display: inline-block;
-  text-shadow: 0 1px 12px rgba(30, 45, 35, 0.5);
 }
 
 // ------------------------------------------------------------------- sections
@@ -392,6 +382,59 @@ a:hover { color: $sage; text-decoration: underline; }
   margin-top: 1rem;
   font-size: 0.86rem;
   color: rgba(43, 58, 46, 0.75);
+}
+
+// -------------------------------------------------------------- weekend split
+
+// Friday + Saturday stacked on the left, the two of us on the scallop print
+// on the right.
+.weekend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.weekend-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.weekend-cards .detail-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.weekend-photo {
+  background-image: url('images/scallops.jpg');
+  background-size: 300px auto;
+  background-position: center;
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border: 1px solid rgba(47, 71, 57, 0.12);
+}
+
+.weekend-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: $cream;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(47, 71, 57, 0.18);
+}
+
+@media (max-width: 860px) {
+  .weekend-grid { grid-template-columns: 1fr; }
+  .weekend-photo { min-height: 320px; }
 }
 
 // ------------------------------------------------------------------ countdown

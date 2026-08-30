@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#2F4739"/>
-  <path d="M32 14c-9 0-16 7.5-16 17 0 8 6 15 16 19 10-4 16-11 16-19 0-9.5-7-17-16-17z"
-        fill="none" stroke="#EFE6CC" stroke-width="2.5"/>
-  <path d="M32 14v36M32 20l-10 9M32 20l10 9M32 30l-13 11M32 30l13 11" fill="none"
-        stroke="#EFE6CC" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="31" fill="#c9d9b8"/>
+  <text x="32" y="33" text-anchor="middle" dominant-baseline="central"
+        font-family="Georgia, 'Times New Roman', serif" font-size="26"
+        font-weight="600" fill="#2f4739" letter-spacing="0.5">GR</text>
 </svg>

@@ -12,8 +12,6 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 
       <p class="hero-sub">are getting married</p>
 
-      <div class="hero-meta">June 19, 2027 &nbsp;·&nbsp; Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York</div>
-
     </div>
   </div>
 </section>
@@ -42,30 +40,31 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 
     <h2 class="section-title" style="text-align:center">Two days on Cayuta Lake</h2>
 
-    <div class="detail-grid">
+    <div class="weekend-grid">
 
-      <div class="detail-card">
-        <div class="day">Friday, June 18</div>
-        <h3>Welcome Party</h3>
-        <div class="when">Dinner</div>
-        <p>Join us the night before for dinner under the pavilion at Taughannock Falls. Everyone is invited &mdash; it is the easy, no-agenda start to the weekend. Time to come.</p>
-        <div class="where">North Point Pavilion &nbsp;·&nbsp; Taughannock Falls State Park, Trumansburg</div>
+      <div class="weekend-cards">
+
+        <div class="detail-card">
+          <div class="day">Friday, June 18</div>
+          <h3>Welcome Party</h3>
+          <div class="when">Dinner</div>
+          <p>Join us the night before for dinner under the pavilion at Taughannock Falls. Everyone is invited &mdash; it is the easy, no-agenda start to the weekend. Time to come.</p>
+          <div class="where">North Point Pavilion &nbsp;·&nbsp; Taughannock Falls State Park, Trumansburg</div>
+        </div>
+
+        <div class="detail-card">
+          <div class="day">Saturday, June 19</div>
+          <h3>The Wedding</h3>
+          <div class="when">Ceremony &amp; Reception</div>
+          <p>We will be married on the lawn overlooking the lake, with cocktails on the covered patio and dinner and dancing to follow.</p>
+          <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, NY</div>
+        </div>
+
       </div>
 
-      <div class="detail-card">
-        <div class="day">Saturday, June 19</div>
-        <h3>The Wedding</h3>
-        <div class="when">Ceremony &amp; Reception</div>
-        <p>We will be married on the lawn overlooking the lake, with cocktails on the covered patio and dinner and dancing to follow.</p>
-        <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, NY</div>
-      </div>
-
-      <div class="detail-card">
-        <div class="day">Getting there</div>
-        <h3>Shuttle</h3>
-        <div class="when">Downtown Ithaca &harr; Venue</div>
-        <p>A shuttle will run from downtown Ithaca out to the Inn, with an early and a late return trip back downtown at the end of the night.</p>
-        <div class="where"><a href="travel.html">See travel &amp; stay &rarr;</a></div>
+      <div class="weekend-photo">
+        <img src="images/maine.jpg"
+             alt="Gabrielle and Riley on a hike in Maine, with the harbor and green hills behind them.">
       </div>
 
     </div>
@@ -86,19 +85,6 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
       <div class="count-unit"><div class="count-num" id="cd-mins">&mdash;</div><div class="count-label">Minutes</div></div>
       <div class="count-unit"><div class="count-num" id="cd-secs">&mdash;</div><div class="count-label">Seconds</div></div>
     </div>
-
-  </div>
-</section>
-
-<section class="band band-shells">
-  <div class="band-narrow">
-
-    <div class="photo-frame">
-      <img src="images/maine.jpg"
-           alt="Gabrielle and Riley on a hike in Maine, with the harbor and green hills behind them.">
-    </div>
-
-    <p class="photo-caption">More photos coming soon &mdash; engagement pictures are on the way.</p>
 
   </div>
 </section>
