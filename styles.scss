@@ -518,9 +518,117 @@ a:hover { color: $sage; text-decoration: underline; }
 // a soft panel for content sitting on the shell print — headings and card
 // titles are hard to read straight on the pattern
 .print-panel {
-  background: rgba(231, 238, 222, 0.94);
+  background: rgba(250, 247, 240, 0.95);
   border: 1px solid rgba(47, 71, 57, 0.12);
   padding: clamp(1.8rem, 4vw, 3rem);
+}
+
+.fl-map .attrib {
+  font-family: $font-family-sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  fill: rgba(47, 71, 57, 0.35);
+}
+
+// ------------------------------------------------------------------- the map
+
+.map-wrap {
+  margin: 2.5rem auto 0;
+  max-width: 1000px;
+  overflow-x: auto; // the map stays legible rather than shrinking on a phone
+}
+
+.fl-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 660px;
+}
+
+.fl-map .ground { fill: #fbfaf6; }
+.fl-map .ground-fill { fill: #fbfaf6; }
+
+.fl-map .frame {
+  fill: none;
+  stroke: rgba(47, 71, 57, 0.22);
+  stroke-width: 2;
+}
+
+.fl-map .water {
+  fill: #c2d9d3;
+  stroke: #9dbdb5;
+  stroke-width: 1.5;
+}
+
+.fl-map .road {
+  fill: none;
+  stroke: $sage-light;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.fl-map .road.thin { stroke-width: 2.5; opacity: 0.8; }
+
+.fl-map .ink {
+  fill: none;
+  stroke: $green-deep;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fl-map .ink-fill { fill: $green-deep; }
+
+.fl-map .town-ring {
+  fill: none;
+  stroke: $green-deep;
+  stroke-width: 2;
+}
+
+.fl-map .lbl {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: 26px;
+  fill: $green-deep;
+}
+
+.fl-map .lbl-lg { font-size: 33px; }
+
+.fl-map .cap {
+  font-family: $font-family-sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  fill: $sage;
+}
+
+.fl-map .cap.sm { font-size: 11.5px; letter-spacing: 0.12em; }
+
+.fl-map .time {
+  font-family: $font-family-sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  fill: $green;
+}
+
+.fl-map .water-lbl {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: 20px;
+  fill: #7fa39b;
+}
+
+.fl-map .water-lbl.sm { font-size: 16px; }
+
+.map-note {
+  text-align: center;
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $sage;
+  margin: 1rem 0 0;
 }
 
 // ------------------------------------------------------------------ date block

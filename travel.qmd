@@ -4,10 +4,6 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 ---
 
 ```{=html}
-<!-- this page closes on the striped wordmark, so the footer's own stripe
-     would otherwise sit directly beneath it -->
-<style>footer.footer::before { display: none; }</style>
-
 <section class="band band-slim band-green">
   <div class="band-narrow">
 
@@ -29,19 +25,19 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
       <div class="detail-card">
         <div class="day">Flying in</div>
         <h3>Airports</h3>
-        <p>Ithaca Tompkins (ITH) is closest. Syracuse (SYR) and Elmira (ELM) are further out but often cheaper, with more flights.</p>
+        <p>Ithaca Tompkins (ITH) and Elmira Corning (ELM) are the closest airports to the venue. Syracuse (SYR) is a bit further out, about ninety minutes, but often has many more flight options and lower fares.</p>
       </div>
 
       <div class="detail-card">
         <div class="day">Getting around</div>
         <h3>Rent a Car</h3>
-        <p>Downtown Ithaca and Watkins Glen are walkable, but the surrounding area is rural, so you may want a car to explore. Ubers and rideshares can be difficult to get.</p>
+        <p>Downtown Ithaca, Trumansburg, and Watkins Glen are all walkable, but the surrounding area is rural, so you may want a car to explore or to travel to the venue and the welcome party. Ubers and rideshares can be difficult to get.</p>
       </div>
 
       <div class="detail-card">
         <div class="day">On the day</div>
-        <h3>The Shuttle</h3>
-        <p>We will run a shuttle from downtown Ithaca to the venue, with an earlier and a later shuttle back downtown. Times to come.</p>
+        <h3>Shuttle</h3>
+        <p>We plan to run a shuttle from downtown Ithaca to the venue, departing before the ceremony. Two return trips will bring guests back downtown, an earlier one and a later one.</p>
       </div>
 
     </div>
@@ -52,28 +48,92 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 <section class="band band-cream">
   <div class="band-inner">
 
-    <p class="eyebrow" style="text-align:center">Where to stay</p>
+    <p class="eyebrow" style="text-align:center">The lay of the land</p>
 
-    <h2 class="section-title" style="text-align:center">Downtown Ithaca</h2>
+    <h2 class="section-title" style="text-align:center">Where Everything Is</h2>
 
-    <div class="note-strip">
-      Most people will probably want to stay in downtown Ithaca. It is the easiest hub &mdash;
-      walkable to restaurants and the Commons, plenty to do, and it is where the shuttle runs
-      from. We are not doing a room block, so book on your own. Below are our recommendations
-      for staying downtown.
+    <div class="map-wrap">
+      <svg class="fl-map" viewBox="0 0 1000 700" role="img"
+           aria-label="Map of the southern Finger Lakes showing the Fontainebleau Inn on Cayuta Lake, the welcome party at Taughannock Falls, downtown Ithaca, Trumansburg, Watkins Glen, and the nearby airports.">
+
+        <rect class="ground" x="0" y="0" width="1000" height="700"></rect>
+        <rect class="frame" x="10" y="10" width="980" height="680"></rect>
+
+        <path class="water" d="M216.5 2.9 217.7 5.6 217.1 10.9 217.7 21.0 216.3 23.9 216.7 32.4 214.8 35.5 214.1 52.3 212.7 57.9 213.3 59.2 212.7 72.8 211.0 79.9 209.7 81.7 204.9 109.4 202.7 113.3 205.0 115.0 204.9 139.7 203.0 144.2 199.8 147.6 204.1 154.2 201.0 160.2 202.9 163.9 197.9 192.1 195.9 216.2 194.7 218.1 195.5 223.0 195.2 229.7 194.4 231.5 191.3 232.9 188.6 238.0 193.7 241.8 192.3 246.9 193.0 248.8 194.9 249.4 196.2 259.4 199.6 270.0 199.9 274.5 204.5 285.6 208.0 297.1 207.6 298.6 210.6 304.8 214.7 322.4 215.8 323.7 217.3 333.1 216.4 335.2 217.9 336.6 218.7 344.2 218.0 346.0 219.6 352.7 220.8 378.6 224.5 403.5 223.1 408.2 225.0 409.4 227.1 422.0 225.9 425.4 227.7 426.1 234.2 453.9 247.2 484.4 247.5 486.1 245.9 488.5 248.5 492.0 249.6 495.6 247.8 498.7 243.3 498.0 243.4 498.9 240.9 500.0 240.3 498.7 240.3 499.7 238.2 500.8 228.7 502.5 230.2 506.3 227.9 502.0 226.7 502.8 228.3 505.5 224.8 502.8 219.3 504.0 214.1 503.0 213.3 501.7 214.0 501.2 211.8 498.7 211.0 494.8 204.1 482.6 196.3 463.5 194.4 455.9 195.4 449.9 191.1 443.2 189.4 435.4 190.3 433.9 188.8 431.9 187.2 424.5 187.2 422.6 188.2 421.3 186.5 419.4 186.0 416.4 184.6 407.8 185.8 405.7 183.8 403.0 182.9 393.1 181.6 388.3 182.8 385.9 180.9 384.0 180.7 378.1 179.4 375.0 179.3 368.3 178.3 367.1 177.3 358.2 175.7 354.8 176.6 352.9 173.4 346.1 173.0 343.6 173.8 342.6 172.4 341.0 170.7 335.2 171.7 333.5 170.0 331.9 167.8 326.6 167.7 324.2 168.7 323.0 166.9 322.0 163.1 311.7 164.6 308.8 163.1 308.0 160.7 303.5 153.2 281.9 152.0 274.0 154.2 271.6 150.9 268.8 149.4 259.2 153.5 255.7 149.1 253.5 147.9 247.7 146.3 218.7 147.1 199.2 154.8 154.3 154.1 151.6 155.0 148.8 154.7 140.4 157.1 138.6 154.5 135.8 155.1 126.9 153.6 120.3 154.2 117.0 152.8 114.2 155.4 111.2 152.5 109.5 151.2 105.7 149.9 92.1 147.4 83.2 147.4 80.2 149.1 78.3 145.9 75.0 147.0 72.7 144.8 70.7 143.4 59.9 142.8 54.0 146.6 51.6 144.2 49.2 143.7 47.0 143.4 38.0 144.7 35.9 141.1 33.6 137.4 23.0 135.5 13.3 138.0 11.1 139.3 11.3 136.1 2.8 136.4 0.0 216.3 0.0 216.5 2.9Z"></path>
+        <path class="water" d="M631.5 3.1 629.9 5.9 632.8 9.4 632.7 10.8 637.3 10.0 640.4 14.9 643.7 17.2 646.4 20.0 646.4 21.4 653.3 28.3 672.1 53.5 704.0 82.7 705.1 82.5 737.5 105.6 743.8 111.9 748.2 113.0 773.6 131.6 775.9 134.5 776.9 137.8 774.9 141.7 776.5 144.7 774.5 147.1 776.2 147.3 776.0 150.3 777.5 149.5 778.7 152.8 787.0 150.3 790.4 152.5 796.6 150.4 805.1 156.1 814.5 167.4 815.5 172.3 814.8 171.5 814.2 177.3 820.4 180.6 825.1 190.0 829.8 218.6 832.0 225.1 833.4 224.7 834.8 228.5 837.0 239.4 836.5 240.1 838.4 245.7 845.5 280.4 849.1 285.1 849.5 289.2 854.9 297.3 856.9 304.4 857.4 303.1 859.3 306.2 861.8 313.2 861.7 315.5 856.2 320.5 848.4 324.6 845.6 324.6 845.7 327.9 843.4 328.1 837.8 320.8 837.3 320.7 843.9 330.3 845.3 346.9 842.3 354.5 844.2 355.7 842.0 357.2 842.1 358.5 838.8 358.3 842.2 348.1 841.9 345.7 839.6 345.5 842.0 345.2 840.5 342.9 841.5 341.1 840.2 328.9 835.5 322.8 831.5 320.5 823.6 322.3 816.9 308.6 809.5 290.6 809.3 286.7 806.9 282.3 806.9 279.1 802.9 269.1 803.3 266.7 800.7 261.5 798.4 252.8 795.0 246.4 796.0 242.1 793.4 241.9 792.3 240.1 788.4 229.1 789.3 226.3 785.8 221.6 778.9 200.0 775.6 194.0 777.5 191.0 774.9 190.6 771.2 185.4 771.1 183.9 768.6 183.2 762.7 176.2 757.9 172.6 756.8 170.4 749.3 165.6 746.0 161.9 742.3 162.0 732.2 155.7 724.7 154.0 719.1 148.5 716.2 148.1 703.9 137.7 701.2 136.7 696.5 131.5 698.5 124.7 697.0 122.1 693.9 123.3 695.0 121.5 696.7 121.6 692.3 118.5 681.9 123.3 666.4 116.9 653.1 108.4 651.0 105.9 648.2 97.8 643.8 95.3 638.2 95.2 635.2 90.9 626.9 83.2 586.5 31.3 576.1 15.9 576.6 14.2 574.9 13.9 566.3 0.0 630.0 0.0 631.5 3.1Z"></path>
+        <path class="water" d="M444.2 566.0 443.3 565.4 440.9 562.4 440.4 561.3 440.5 560.0 444.2 555.0 444.9 552.7 444.6 551.7 445.4 549.6 449.3 543.0 450.5 540.3 451.9 539.9 452.3 538.8 452.5 538.1 452.0 536.4 452.9 533.4 453.6 528.1 454.3 525.6 454.7 521.3 461.4 521.5 465.4 522.9 467.9 525.0 469.0 527.2 469.0 528.6 468.6 530.9 467.3 533.9 465.7 536.5 467.3 539.9 467.2 541.7 467.8 542.7 467.4 546.3 463.1 550.0 462.7 551.0 462.8 553.1 462.1 554.6 460.0 554.9 459.2 555.4 459.0 556.2 459.5 557.5 458.5 558.9 457.6 559.3 456.7 558.8 456.9 559.5 454.8 561.7 453.5 562.4 445.4 565.0 444.2 566.0Z"></path>
+
+        <text class="water-lbl" x="168" y="300" transform="rotate(-79 168 300)" text-anchor="middle">Seneca Lake</text>
+        <text class="water-lbl" x="742" y="196" transform="rotate(-62 742 196)" text-anchor="middle">Cayuga Lake</text>
+        <text class="water-lbl sm" x="432" y="516" text-anchor="end">Cayuta Lake</text>
+
+        <path class="road" d="M858 368 C 776 316 660 208 594 150"></path>
+        <path class="road" d="M596 140 C 622 130 650 127 666 127"></path>
+        <path class="road" d="M860 390 C 798 482 616 566 452 566"></path>
+        <path class="road" d="M236 528 C 302 552 384 564 446 566"></path>
+        <path class="road thin" d="M876 366 C 902 334 920 300 930 274"></path>
+
+        <text class="time" x="690" y="516" text-anchor="middle">30 MIN</text>
+        <text class="time" x="348" y="538" text-anchor="middle">25 MIN</text>
+
+        <g transform="translate(470,565)">
+          <path class="ink-fill" d="M-25 -4 L0 -27 L25 -4 Z"></path>
+          <rect class="ink-fill" x="-19" y="-4" width="38" height="23"></rect>
+          <rect class="ground-fill" x="-4" y="5" width="8" height="14"></rect>
+          <rect class="ink-fill" x="12" y="-23" width="5" height="11"></rect>
+        </g>
+        <text class="lbl lbl-lg" x="470" y="620" text-anchor="middle">Fontainebleau Inn</text>
+        <text class="cap" x="470" y="643" text-anchor="middle">THE WEDDING &#183; ALPINE</text>
+
+        <g transform="translate(679,128)">
+          <path class="ink-fill" d="M-23 0 L0 -21 L23 0 Z"></path>
+          <path class="ink" d="M-17 0 L-17 17 M17 0 L17 17 M-17 17 L17 17"></path>
+        </g>
+        <text class="lbl" x="646" y="92" text-anchor="end">Welcome Party</text>
+        <text class="cap" x="646" y="112" text-anchor="end">TAUGHANNOCK FALLS</text>
+
+        <g transform="translate(579,140)">
+          <circle class="town-ring" cx="0" cy="0" r="13"></circle>
+          <circle class="ink-fill" cx="0" cy="0" r="6.5"></circle>
+        </g>
+        <text class="lbl" x="566" y="202" text-anchor="middle">Trumansburg</text>
+
+        <g transform="translate(868,378)">
+          <circle class="town-ring" cx="0" cy="0" r="13"></circle>
+          <circle class="ink-fill" cx="0" cy="0" r="6.5"></circle>
+        </g>
+        <text class="lbl" x="868" y="442" text-anchor="middle">Ithaca</text>
+        <text class="cap" x="868" y="463" text-anchor="middle">DOWNTOWN &#183; SHUTTLE</text>
+
+        <g transform="translate(221,520)">
+          <circle class="town-ring" cx="0" cy="0" r="13"></circle>
+          <circle class="ink-fill" cx="0" cy="0" r="6.5"></circle>
+        </g>
+        <text class="lbl" x="221" y="578" text-anchor="middle">Watkins Glen</text>
+
+        <g transform="translate(936,252) rotate(-30)">
+          <path class="ink-fill" d="M0 -14 L4 -3 L18 3 L18 8 L4 5 L2 13 L8 16 L8 19 L0 17 L-8 19 L-8 16 L-2 13 L-4 5 L-18 8 L-18 3 L-4 -3 Z"></path>
+        </g>
+        <text class="cap" x="982" y="212" text-anchor="end">ITHACA &#183; ITH</text>
+
+        <g transform="translate(878,68)"><path class="ink" d="M0 36 L0 6 M-9 16 L0 4 L9 16"></path></g>
+        <text class="cap" x="878" y="128" text-anchor="middle">SYRACUSE &#183; SYR</text>
+        <text class="cap sm" x="878" y="147" text-anchor="middle">90 MIN</text>
+
+        <g transform="translate(150,608)"><path class="ink" d="M0 -30 L0 0 M-9 -11 L0 0 L9 -11"></path></g>
+        <text class="cap" x="150" y="640" text-anchor="middle">ELMIRA &#183; ELM</text>
+        <text class="cap sm" x="150" y="659" text-anchor="middle">1 HR</text>
+
+        <g transform="translate(946,628)">
+          <path class="ink" d="M0 24 L0 -12 M-7 -2 L0 -14 L7 -2"></path>
+          <text class="cap" x="0" y="42" text-anchor="middle">N</text>
+        </g>
+
+        <text class="attrib" x="26" y="676">Lake outlines &#169; OpenStreetMap contributors</text>
+      </svg>
     </div>
 
-    <div class="tbl-wrap">
-```
-
-| Where | The vibe | Address | |
-|---|---|---|---|
-| **Canopy by Hilton Ithaca Downtown** | The newest of the three. Bright, modern rooms on the edge of the Commons. | 324 E State St, Ithaca | [Book](https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/) |
-| **Ithaca Marriott Downtown on the Commons** | Directly on the Commons, with a rooftop bar. The most rooms of the three. | 120 S Aurora St, Ithaca | [Book](https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/) |
-| **Argos Inn** | A restored 1831 brick mansion with a handful of individually designed rooms and a cocktail bar downstairs. | 408 E State St, Ithaca | [Book](https://argosinn.com/) |
-
-```{=html}
-    </div>
+    <p class="map-note">Drive times are approximate.</p>
 
   </div>
 </section>
@@ -81,54 +141,80 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 <section class="band band-shells">
   <div class="band-inner print-panel">
 
-    <p class="eyebrow" style="text-align:center">Closer to the venue</p>
+    <p class="eyebrow" style="text-align:center">Where to stay</p>
 
-    <h2 class="section-title" style="text-align:center">Trumansburg &amp; Watkins Glen</h2>
+    <h2 class="section-title" style="text-align:center">Our Recommendations</h2>
 
     <p style="text-align:center; max-width:660px; margin:0 auto; line-height:1.8">
-      Both towns have plenty to do on their own. Trumansburg is about forty minutes from the
-      venue and is where the Friday welcome party is; Watkins Glen is about twenty-five.
+      We are not holding a room block, so book on your own &mdash; June fills up early. Downtown
+      Ithaca is the easiest base and is where the shuttle runs from, but Trumansburg and Watkins
+      Glen are both lovely and closer to the country.
     </p>
 
     <div class="listing">
 
       <div class="spot">
+        <h4><a href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Canopy by Hilton Ithaca Downtown</a></h4>
+        <div class="place">DOWNTOWN ITHACA &#183; 30 MIN</div>
+        <p>Bright, modern rooms on the edge of the Commons, and the newest of the three.</p>
+      </div>
+
+      <div class="spot">
+        <h4><a href="https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" target="_blank" rel="noopener">Ithaca Marriott Downtown</a></h4>
+        <div class="place">DOWNTOWN ITHACA &#183; 30 MIN</div>
+        <p>Directly on the Commons, with a rooftop bar and the most rooms of the three.</p>
+      </div>
+
+      <div class="spot">
+        <h4><a href="https://argosinn.com/" target="_blank" rel="noopener">Argos Inn</a></h4>
+        <div class="place">DOWNTOWN ITHACA &#183; 30 MIN</div>
+        <p>A restored 1831 brick mansion with a handful of individually designed rooms.</p>
+      </div>
+
+      <div class="spot">
+        <h4><a href="https://www.sixteenelm.com/" target="_blank" rel="noopener">Sixteen Elm Heritage Hotel</a></h4>
+        <div class="place">TRUMANSBURG &#183; 40 MIN</div>
+        <p>Six rooms in a 1921 mansion, a short walk from Main Street.</p>
+      </div>
+
+      <div class="spot">
         <h4>Gothic Eves Inn &amp; Spa</h4>
-        <div class="place">Trumansburg</div>
+        <div class="place">TRUMANSBURG &#183; 40 MIN</div>
         <p>An 1855 inn with a spa and a well-regarded breakfast.</p>
       </div>
 
       <div class="spot">
-        <h4>Inn B Tween Farm B&amp;B</h4>
-        <div class="place">Trumansburg</div>
-        <p>An 1848 farmhouse with five country rooms and a farm-to-table breakfast.</p>
+        <h4>Watkins Glen Harbor Hotel</h4>
+        <div class="place">SENECA LAKE &#183; 25 MIN</div>
+        <p>On the water at the south end of the lake, with a marina and a lakeside restaurant.</p>
       </div>
 
       <div class="spot">
         <h4>The Blackberry Inn</h4>
-        <div class="place">Watkins Glen</div>
-        <p>Three rooms in the village, walkable to Seneca Lake and the state park.</p>
+        <div class="place">SENECA LAKE &#183; 25 MIN</div>
+        <p>Three rooms in the village of Watkins Glen, walkable to the lake and the state park.</p>
+      </div>
+
+      <div class="spot">
+        <h4><a href="https://www.burdetthousebandb.com/" target="_blank" rel="noopener">Burdett House Bed &amp; Breakfast</a></h4>
+        <div class="place">SENECA LAKE &#183; 35 MIN</div>
+        <p>An 1880 Queen Anne Victorian in Burdett, up the east side of the lake and north of Watkins Glen.</p>
       </div>
 
       <div class="spot">
         <h4>Finger Lakes Cider House</h4>
-        <div class="place">Interlaken</div>
+        <div class="place">INTERLAKEN &#183; 45 MIN</div>
         <p>Two yurts and a three-bedroom loft above the tasting room, on an orchard farm.</p>
       </div>
 
       <div class="spot">
         <h4>Lake houses on Cayuta</h4>
-        <div class="place">Alpine</div>
+        <div class="place">ALPINE &#183; WALKABLE</div>
         <p>Several rental houses within walking distance of the Inn. Ask us for the list.</p>
       </div>
 
     </div>
 
   </div>
-</section>
-
-<section class="band wordmark-band">
-  <p class="wordmark-script">Gabrielle &amp; Riley</p>
-  <div class="wordmark-label">June 19, 2027</div>
 </section>
 ```
