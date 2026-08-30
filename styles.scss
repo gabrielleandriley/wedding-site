@@ -518,9 +518,16 @@ a:hover { color: $sage; text-decoration: underline; }
 // a soft panel for content sitting on the shell print — headings and card
 // titles are hard to read straight on the pattern
 .print-panel {
-  background: rgba(250, 247, 240, 0.95);
-  border: 1px solid rgba(47, 71, 57, 0.12);
-  padding: clamp(1.8rem, 4vw, 3rem);
+  // shaded rather than a flat slab, so it reads as a page laid on the print
+  background: linear-gradient(
+    180deg,
+    rgba(253, 252, 249, 0.97) 0%,
+    rgba(247, 243, 235, 0.95) 55%,
+    rgba(241, 236, 225, 0.95) 100%
+  );
+  border: 1px solid rgba(47, 71, 57, 0.09);
+  box-shadow: 0 20px 50px rgba(47, 71, 57, 0.12), 0 2px 6px rgba(47, 71, 57, 0.05);
+  padding: clamp(2rem, 4.5vw, 3.4rem);
 }
 
 .fl-map .attrib {
@@ -545,44 +552,56 @@ a:hover { color: $sage; text-decoration: underline; }
   min-width: 660px;
 }
 
-.fl-map .ground { fill: #fbfaf6; }
-.fl-map .ground-fill { fill: #fbfaf6; }
-
-.fl-map .frame {
-  fill: none;
-  stroke: rgba(47, 71, 57, 0.22);
-  stroke-width: 2;
-}
+.fl-map .ground { fill: #f7f3e9; }
+.fl-map .wood   { fill: #ccdbbd; }
+.fl-map .park   { fill: #bcd2a8; }
 
 .fl-map .water {
-  fill: #c2d9d3;
-  stroke: #9dbdb5;
-  stroke-width: 1.5;
+  fill: #a7c9dd;
+  stroke: #8db4ce;
+  stroke-width: 1.2;
 }
 
-.fl-map .road {
+// roads get a casing under a lighter fill so they read over cream and green alike
+.fl-map .rd-case,
+.fl-map .rd-fill {
   fill: none;
-  stroke: $sage-light;
-  stroke-width: 4;
-  stroke-linecap: round;
-}
-
-.fl-map .road.thin { stroke-width: 2.5; opacity: 0.8; }
-
-.fl-map .ink {
-  fill: none;
-  stroke: $green-deep;
-  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.fl-map .ink-fill { fill: $green-deep; }
+.fl-map .rd-case { stroke: #a3b691; opacity: 0.85; }
+.fl-map .rd-fill { stroke: #fcf9f2; }
 
-.fl-map .town-ring {
+.fl-map .frame {
+  fill: none;
+  stroke: rgba(47, 71, 57, 0.28);
+  stroke-width: 2;
+}
+
+// a cream disc lifts each marker off the busy ground
+.fl-map .mk-halo { fill: #f7f3e9; opacity: 0.9; }
+.fl-map .mk-ring { fill: none; stroke: $green-deep; stroke-width: 2.2; }
+.fl-map .mk-dot,
+.fl-map .mk-fill { fill: $green-deep; }
+.fl-map .mk-door { fill: #f7f3e9; }
+
+.fl-map .mk-line {
   fill: none;
   stroke: $green-deep;
-  stroke-width: 2;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+// labels carry a cream halo so they stay legible over woods and water
+.fl-map .lbl,
+.fl-map .cap,
+.fl-map .water-lbl {
+  paint-order: stroke fill;
+  stroke: #f7f3e9;
+  stroke-width: 4;
+  stroke-linejoin: round;
 }
 
 .fl-map .lbl {
@@ -592,34 +611,34 @@ a:hover { color: $sage; text-decoration: underline; }
   fill: $green-deep;
 }
 
-.fl-map .lbl-lg { font-size: 33px; }
+.fl-map .lbl-lg { font-size: 33px; stroke-width: 5; }
 
 .fl-map .cap {
   font-family: $font-family-sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.16em;
-  fill: $sage;
+  fill: $green;
 }
 
 .fl-map .cap.sm { font-size: 11.5px; letter-spacing: 0.12em; }
-
-.fl-map .time {
-  font-family: $font-family-sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  fill: $green;
-}
 
 .fl-map .water-lbl {
   font-family: $headings-font-family;
   font-style: italic;
   font-size: 20px;
-  fill: #7fa39b;
+  fill: #4f7f96;
+  stroke-width: 3;
 }
 
 .fl-map .water-lbl.sm { font-size: 16px; }
+
+.fl-map .attrib {
+  font-family: $font-family-sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  fill: rgba(47, 71, 57, 0.4);
+}
 
 .map-note {
   text-align: center;
