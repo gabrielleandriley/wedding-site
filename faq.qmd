@@ -9,11 +9,6 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
     <p class="eyebrow-lg">Questions</p>
 
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem; margin-top:1.4rem">
-      Everything we have been asked so far. If your question is not here, just text or email
-      either of us &mdash; we would rather answer it than have you wonder.
-    </p>
-
   </div>
 </section>
 
@@ -24,50 +19,32 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
       <details class="faq-item" open>
         <summary>What is the dress code?</summary>
-        <p>The dress code is formal &mdash; suits for men, and floor-length or tea-length dresses
-        for women. If you have any questions, feel free to ask us. One practical note: the ceremony
-        is on the lawn, so block heels or flats will serve you better than stilettos.</p>
+        <p>We ask that guests wear formal attire. We suggest suits for men, and floor-length or
+        tea-length dresses for women. If you have any questions, feel free to ask us. One practical
+        note: the ceremony is on the lawn, so you may be more comfortable in block heels or flats.</p>
       </details>
 
       <details class="faq-item">
-        <summary>Is the ceremony outside?</summary>
-        <p>Yes &mdash; on the lawn looking out over Cayuta Lake. If the weather turns, we move
-        under a tent on the property, so the day happens rain or shine either way.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>What time should we arrive?</summary>
-        <p>Plan on getting there about thirty minutes before the ceremony so you have time to
-        park, find a drink, and sit down without rushing. The exact start time will be on your
-        invitation.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Is there a shuttle?</summary>
-        <p>There is. It runs from downtown Ithaca out to the Inn before the ceremony, then makes
-        an early and a late return trip back downtown. Pickup spot and times will be posted on the
-        <a href="travel.html">Travel &amp; Stay</a> page closer to the date.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>Where should we stay?</summary>
-        <p>Most people are staying in downtown Ithaca, which is where the shuttle runs from. We
-        are not holding a room block, so book early &mdash; June fills up. All our recommendations,
-        including bed and breakfasts closer to the venue, are on the
-        <a href="travel.html">Travel &amp; Stay</a> page.</p>
+        <summary>Is the wedding outside?</summary>
+        <p>Partly. We plan to hold the ceremony on the lawn overlooking the lake, and will move
+        indoors if the weather is bad. Cocktail hour follows under a covered tent on the patio,
+        weather permitting, and dinner will be inside the Inn. You are welcome to step inside at
+        any point during the day.</p>
       </details>
 
       <details class="faq-item">
         <summary>Can I bring a guest?</summary>
-        <p>Your invitation will name everyone we have saved a seat for. If you are unsure after it
-        arrives, ask us &mdash; it is never an awkward question.</p>
+        <p>Unfortunately, due to capacity limits at our venue, your invitation will name everyone
+        we have saved a seat for.</p>
       </details>
 
       <details class="faq-item">
         <summary>Are kids welcome?</summary>
-        <p>Yes. There will be a kids' meal option, and there is plenty of room to run around.
-        Taughannock, the Sciencenter, and the farmers market all make good use of a morning &mdash;
-        see <a href="things-to-do.html">Things to Do</a>.</p>
+        <p>Yes &mdash; your children are welcome. If you know us, you know we love getting to be
+        the big cousins to all the children in our lives. Children twelve and under will have a
+        children's meal at the venue. There is also plenty for them to do nearby: the Sciencenter,
+        the Ithaca Children's Garden, the Museum of the Earth, and the farmers market are all on
+        our <a href="things-to-do.html">Things to Do</a> page.</p>
       </details>
 
       <details class="faq-item">
@@ -85,7 +62,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
       <details class="faq-item">
         <summary>Is there parking at the venue?</summary>
         <p>Yes, there is plenty of parking at the Inn. If you would rather not drive at the end of
-        the night, take the shuttle &mdash; that is exactly what it is for.</p>
+        the night, take the shuttle from downtown Ithaca.</p>
       </details>
 
       <details class="faq-item">
