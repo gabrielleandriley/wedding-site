@@ -4,19 +4,47 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-green">
+<!-- this page closes on the striped wordmark, so the footer's own stripe
+     would otherwise sit directly beneath it -->
+<style>footer.footer::before { display: none; }</style>
+
+<section class="band band-slim band-green">
   <div class="band-narrow">
 
-    <p class="eyebrow">Getting here</p>
+    <p class="eyebrow-lg">Travel &amp; Stay</p>
 
-    <h2 class="section-title">Travel &amp; Stay</h2>
-
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem">
-      The wedding is at the Fontainebleau Inn in Alpine, New York &mdash; tucked on Cayuta Lake,
-      about half an hour south of Ithaca and twenty-odd minutes east of Watkins Glen. Most of our
-      guests stay in downtown Ithaca, and we are running a shuttle so nobody has to think about
-      driving.
+    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem; margin-top:1.4rem">
+      Our wedding is taking place at the Fontainebleau Inn in Alpine, New York. The Inn sits on
+      Cayuta Lake, just south of and in between Cayuga and Seneca lakes.
     </p>
+
+  </div>
+</section>
+
+<section class="band band-shells">
+  <div class="band-inner">
+
+    <div class="detail-grid">
+
+      <div class="detail-card">
+        <div class="day">Flying in</div>
+        <h3>Airports</h3>
+        <p>Ithaca Tompkins (ITH) is closest. Syracuse (SYR) and Elmira (ELM) are further out but often cheaper, with more flights.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="day">Getting around</div>
+        <h3>Rent a Car</h3>
+        <p>Downtown Ithaca and Watkins Glen are walkable, but the surrounding area is rural, so you may want a car to explore. Ubers and rideshares can be difficult to get.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="day">On the day</div>
+        <h3>The Shuttle</h3>
+        <p>We will run a shuttle from downtown Ithaca to the venue, with an earlier and a later shuttle back downtown. Times to come.</p>
+      </div>
+
+    </div>
 
   </div>
 </section>
@@ -28,75 +56,38 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 
     <h2 class="section-title" style="text-align:center">Downtown Ithaca</h2>
 
-    <p style="text-align:center; max-width:620px; margin:0 auto; line-height:1.8">
-      These three are our picks. All are walkable to the Commons, to dinner, and to the shuttle
-      pickup &mdash; so this is the easiest home base for the weekend.
-    </p>
+    <div class="note-strip">
+      Most people will probably want to stay in downtown Ithaca. It is the easiest hub &mdash;
+      walkable to restaurants and the Commons, plenty to do, and it is where the shuttle runs
+      from. We are not doing a room block, so book on your own. Below are our recommendations
+      for staying downtown.
+    </div>
 
     <div class="tbl-wrap">
 ```
 
 | Where | The vibe | Address | |
 |---|---|---|---|
-| **Canopy by Hilton Ithaca Downtown** | Newest of the three. Bright, modern rooms right on the edge of the Commons. Our easiest recommendation if you want something fresh and simple. | 324 E State St, Ithaca | [Book](https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/) |
-| **Ithaca Marriott Downtown on the Commons** | Directly on the Commons, with a rooftop bar. Reliable, central, and the most rooms of the three — good for families. | 120 S Aurora St, Ithaca | [Book](https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/) |
-| **Argos Inn** | For a more unique stay. A restored 1831 brick mansion with just a handful of individually designed rooms and a very good cocktail bar downstairs. | 408 E State St, Ithaca | [Book](https://argosinn.com/) |
+| **Canopy by Hilton Ithaca Downtown** | The newest of the three. Bright, modern rooms on the edge of the Commons. | 324 E State St, Ithaca | [Book](https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/) |
+| **Ithaca Marriott Downtown on the Commons** | Directly on the Commons, with a rooftop bar. The most rooms of the three. | 120 S Aurora St, Ithaca | [Book](https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/) |
+| **Argos Inn** | A restored 1831 brick mansion with a handful of individually designed rooms and a cocktail bar downstairs. | 408 E State St, Ithaca | [Book](https://argosinn.com/) |
 
 ```{=html}
-    </div>
-
-    <div class="note-strip">
-      <strong>Book early.</strong> We are not holding a room block, so rooms are first come,
-      first served &mdash; and June is a busy month in Ithaca. It is worth reserving something
-      refundable well ahead and deciding later.
     </div>
 
   </div>
 </section>
 
 <section class="band band-shells">
-  <div class="band-narrow">
-
-    <div class="panel-card">
-
-      <p class="eyebrow">Between downtown and the lawn</p>
-
-      <h2 class="section-title">The Shuttle</h2>
-
-      <p style="line-height:1.8">
-        We are running a shuttle between downtown Ithaca and the Fontainebleau Inn so you can
-        enjoy the Finger Lakes wine without worrying about the drive back.
-      </p>
-
-      <ul style="line-height:2; padding-left:1.2rem">
-        <li><strong>Out to the venue</strong> &mdash; one pickup from downtown Ithaca before the ceremony.</li>
-        <li><strong>Early return</strong> &mdash; a first run back downtown for anyone calling it a night.</li>
-        <li><strong>Late return</strong> &mdash; a second run back downtown at the end of the reception.</li>
-      </ul>
-
-      <p style="line-height:1.8; margin-bottom:0">
-        Exact pickup spot and times will be posted here closer to the wedding, and will be in your
-        invitation. If you are staying out near the lake instead, you are welcome to drive &mdash;
-        there is plenty of parking at the Inn.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="band band-cream">
   <div class="band-inner">
 
     <p class="eyebrow" style="text-align:center">Closer to the venue</p>
 
     <h2 class="section-title" style="text-align:center">Trumansburg &amp; Watkins Glen</h2>
 
-    <p style="text-align:center; max-width:640px; margin:0 auto; line-height:1.8">
-      If you would rather wake up in the country, there are lovely bed and breakfasts in both
-      directions. Trumansburg is where the Friday welcome party is, so staying up that way puts
-      you minutes from Taughannock. These are outside the shuttle route, so plan on driving
-      &mdash; but they are a charming way to make a weekend of it.
+    <p style="text-align:center; max-width:660px; margin:0 auto; line-height:1.8">
+      Both towns have plenty to do on their own. Trumansburg is about forty minutes from the
+      venue and is where the Friday welcome party is; Watkins Glen is about twenty-five.
     </p>
 
     <div class="listing">
@@ -104,53 +95,40 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
       <div class="spot">
         <h4>Gothic Eves Inn &amp; Spa</h4>
         <div class="place">Trumansburg</div>
-        <p>An 1855 house turned inn with a spa and a well-regarded breakfast. The most full-service option of the bunch, and right in the village where our caterer is based.</p>
+        <p>An 1855 inn with a spa and a well-regarded breakfast.</p>
       </div>
 
       <div class="spot">
         <h4>Inn B Tween Farm B&amp;B</h4>
         <div class="place">Trumansburg</div>
-        <p>An 1848 Greek revival farmhouse set in the hills between Cayuga and Seneca, with five country rooms and a farm-to-table breakfast from their own eggs and preserves.</p>
+        <p>An 1848 farmhouse with five country rooms and a farm-to-table breakfast.</p>
       </div>
 
       <div class="spot">
         <h4>The Blackberry Inn</h4>
         <div class="place">Watkins Glen</div>
-        <p>A three-room 1830s Greek revival in the village, walkable to Seneca Lake, Watkins Glen State Park, and the shops and restaurants downtown. The closest of these to the venue.</p>
+        <p>Three rooms in the village, walkable to Seneca Lake and the state park.</p>
       </div>
 
       <div class="spot">
         <h4>Finger Lakes Cider House</h4>
         <div class="place">Interlaken</div>
-        <p>Two yurts and a three-bedroom loft above the tasting room, on an organic orchard farm on Route 89. Genuinely one of our favorite places in the area &mdash; see the Things to Do page.</p>
+        <p>Two yurts and a three-bedroom loft above the tasting room, on an orchard farm.</p>
       </div>
 
       <div class="spot">
         <h4>Lake houses on Cayuta</h4>
         <div class="place">Alpine</div>
-        <p>There are several rental houses within walking distance of the Inn on Cayuta Lake. If you are coming as a group and want to be steps from the party, ask us and we will point you to the list.</p>
+        <p>Several rental houses within walking distance of the Inn. Ask us for the list.</p>
       </div>
 
-      <div class="spot">
-        <h4>The Inn itself</h4>
-        <div class="place">Alpine</div>
-        <p>The Fontainebleau Inn has eight rooms and sleeps about eighteen. Those are spoken for by our immediate families and wedding party, but we wanted you to know the layout.</p>
-      </div>
-
-    </div>
-
-    <div class="note-strip">
-      <strong>Flying in?</strong> The closest airport is Ithaca Tompkins (ITH), about forty
-      minutes from the venue. Syracuse (SYR) and Elmira (ELM) are each roughly an hour and a half,
-      and both usually have more flights and cheaper fares. You will want a car from any of them.
     </div>
 
   </div>
 </section>
 
-<section class="band script-banner">
-  <div class="plaque">
-    <p>Come early, stay late, and make a weekend of the Finger Lakes.</p>
-  </div>
+<section class="band wordmark-band">
+  <p class="wordmark-script">Gabrielle &amp; Riley</p>
+  <div class="wordmark-label">June 19, 2027</div>
 </section>
 ```

@@ -7,13 +7,12 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 <section class="band band-green">
   <div class="band-narrow">
 
-    <p class="eyebrow">Our Finger Lakes</p>
+    <p class="eyebrow">The Finger Lakes</p>
 
     <h2 class="section-title">Things to Do</h2>
 
-    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1rem">
-      We have spent years eating, hiking, and drinking our way around this place, and June is
-      the best month to be here. Make a weekend of it &mdash; here is where we would send you.
+    <p class="date-place" style="text-transform:none; letter-spacing:0.04em; font-size:1.05rem">
+      Below are some of our favorite places to hike, eat, drink wine, and get a cute memento.
     </p>
 
   </div>
@@ -24,43 +23,32 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <p class="eyebrow" style="text-align:center">Cayuga, Seneca &amp; Keuka</p>
 
-    <h2 class="section-title" style="text-align:center">Wineries &amp; Cider</h2>
-
-    <div class="feature">
-      <div class="feature-body">
-        <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
-        <h3>Hosmer Winery</h3>
-        <p>Start here. The Riesling and Cabernet Franc genuinely set the bar on this lake, and the
-        vineyards are some of the oldest on Cayuga &mdash; planted more than fifty years ago.</p>
-        <p class="feature-note">Riley worked here, so we are hopelessly biased.</p>
-      </div>
-      <div class="feature-pattern"></div>
-    </div>
+    <h2 class="section-title" style="text-align:center">Wineries</h2>
 
     <div class="listing">
 
       <div class="spot">
+        <h4>Hosmer Winery</h4>
+        <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
+        <p>Riley worked here, so we are biased. The Riesling and Cabernet Franc set the bar on this lake, and the vineyards are some of the oldest on Cayuga.</p>
+      </div>
+
+      <div class="spot">
         <h4>Six Eighty Cellars</h4>
         <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
-        <p>The most interesting tasting in the region. Small-batch wines aged in clay, concrete, and terracotta, on a steep slope with a huge view down the lake. Go if you want something unexpected.</p>
+        <p>Small-batch wines aged in clay, concrete, and terracotta, on a steep slope with a long view down the lake.</p>
       </div>
 
       <div class="spot">
         <h4>Hermann J. Wiemer</h4>
         <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
-        <p>The benchmark for Finger Lakes Riesling, full stop. Worth crossing over to Seneca for. Their dry Riesling is on the wine list at our reception.</p>
+        <p>The benchmark for Finger Lakes Riesling. Their dry Riesling is on the wine list at our reception.</p>
       </div>
 
       <div class="spot">
         <h4>Dr. Konstantin Frank</h4>
         <div class="place">Hammondsport &nbsp;·&nbsp; Keuka Lake</div>
-        <p>The furthest drive of the bunch and the one with the most history &mdash; the winery that proved vinifera could grow here at all. Pair it with a day around Keuka if you have the time.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Finger Lakes Cider House</h4>
-        <div class="place">Interlaken &nbsp;·&nbsp; Route 89</div>
-        <p>Our favorite low-key afternoon. Excellent dry cider, a food menu sourced from the neighboring farms and their own organic land, and a porch looking out over the orchard.</p>
+        <p>The furthest drive and the most history &mdash; the winery that proved vinifera could grow here at all.</p>
       </div>
 
     </div>
@@ -69,29 +57,37 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 </section>
 
 <section class="band band-shells">
-  <div class="band-narrow">
+  <div class="band-inner">
 
-    <div class="panel-card">
+    <p class="eyebrow" style="text-align:center">Waterfalls &amp; gorges</p>
 
-      <p class="eyebrow">Gorges, obviously</p>
+    <h2 class="section-title" style="text-align:center">Hiking</h2>
 
-      <h2 class="section-title">Get Outside</h2>
+    <div class="listing">
 
-      <p style="line-height:1.8">
-        Ithaca is gorges. We are contractually obligated to say it, and it is also true &mdash;
-        there are waterfalls within fifteen minutes of town in nearly every direction.
-      </p>
+      <div class="spot">
+        <h4>Taughannock Falls</h4>
+        <div class="place">Trumansburg</div>
+        <p>A 215-foot waterfall, taller than Niagara, and where the Friday welcome party is. The gorge trail to the base is flat and shaded.</p>
+      </div>
 
-      <ul style="line-height:2.1; padding-left:1.2rem">
-        <li><strong>Taughannock Falls</strong> &mdash; a 215-foot plunge, taller than Niagara, and where we are having the Friday welcome party. The gorge trail to the base is flat, shaded, and stroller-friendly; the rim trail is the better view.</li>
-        <li><strong>Watkins Glen State Park</strong> &mdash; the showstopper. Nineteen waterfalls along a stone gorge trail with tunnels and bridges. Closest to the venue, and the busiest, so go early.</li>
-        <li><strong>Robert H. Treman</strong> &mdash; our pick for a hot day. You can swim at the base of a waterfall in the lower park.</li>
-        <li><strong>Buttermilk Falls</strong> &mdash; right in town, quick, and beautiful. Good if you only have an hour.</li>
-      </ul>
+      <div class="spot">
+        <h4>Watkins Glen State Park</h4>
+        <div class="place">Watkins Glen</div>
+        <p>Nineteen waterfalls along a stone gorge trail with tunnels and bridges. Closest to the venue and the busiest, so go early.</p>
+      </div>
 
-      <p style="line-height:1.8; margin-bottom:0">
-        Wear real shoes &mdash; the gorge trails are wet stone and they stay slick even in June.
-      </p>
+      <div class="spot">
+        <h4>Robert H. Treman</h4>
+        <div class="place">Ithaca</div>
+        <p>Our pick for a hot day. You can swim at the base of a waterfall in the lower park.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Buttermilk Falls</h4>
+        <div class="place">Ithaca</div>
+        <p>Right in town and quick, if you only have an hour. The gorge trails are wet stone, so wear real shoes.</p>
+      </div>
 
     </div>
 
@@ -103,32 +99,32 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <p class="eyebrow" style="text-align:center">Where we actually eat</p>
 
-    <h2 class="section-title" style="text-align:center">Food, Coffee &amp; Ice Cream</h2>
+    <h2 class="section-title" style="text-align:center">Food &amp; Coffee</h2>
 
     <div class="listing">
 
       <div class="spot">
-        <h4>Sweet Melissa's</h4>
-        <div class="place">Ithaca &amp; Trumansburg</div>
-        <p>The ice cream institution. Homemade hard ice cream and a serious vegan lineup. There is a shop on West Seneca in Ithaca and one in Trumansburg.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Spotted Duck Creamery</h4>
-        <div class="place">Penn Yan</div>
-        <p>Frozen custard made with duck egg yolks instead of chicken &mdash; denser and richer than anything you have had. It is a drive and it is worth it. Our sentimental favorite.</p>
+        <h4>Finger Lakes Cider House</h4>
+        <div class="place">Interlaken &nbsp;·&nbsp; Route 89</div>
+        <p>A food menu sourced from neighboring farms and their own orchard, plus cider tastings. Our favorite low-key afternoon.</p>
       </div>
 
       <div class="spot">
         <h4>Main Street Market</h4>
         <div class="place">Trumansburg</div>
-        <p>Sandwiches, salads, local groceries, Wide Awake Bakery bread, and beer and cider on tap. The best quick lunch on the way to or from the lake.</p>
+        <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
       </div>
 
       <div class="spot">
-        <h4>Finger Lakes Cider House</h4>
-        <div class="place">Interlaken</div>
-        <p>Worth listing twice. The food menu is as good a reason to go as the cider &mdash; everything comes off neighboring farms.</p>
+        <h4>Sweet Melissa's</h4>
+        <div class="place">Ithaca &amp; Trumansburg</div>
+        <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Spotted Duck Creamery</h4>
+        <div class="place">Penn Yan</div>
+        <p>Frozen custard made with duck egg yolks instead of chicken, which makes it denser and richer. Worth the drive.</p>
       </div>
 
       <div class="spot">
@@ -140,19 +136,18 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       <div class="spot">
         <h4>Press Bay Alley</h4>
         <div class="place">Ithaca</div>
-        <p>Coffee plus a cluster of tiny shops in a converted alley off West State. A nice half hour on a Saturday morning.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Forty Weight Coffee Roasters</h4>
-        <div class="place">Ithaca</div>
-        <p>Rounding out the three. You genuinely cannot get a bad cup of coffee in this town.</p>
+        <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
       </div>
 
     </div>
 
+  </div>
+</section>
 
-    <p class="eyebrow" style="text-align:center">Bring home something good</p>
+<section class="band band-shells">
+  <div class="band-inner">
+
+    <p class="eyebrow" style="text-align:center">Bring something home</p>
 
     <h2 class="section-title" style="text-align:center">Shops</h2>
 
@@ -161,25 +156,31 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       <div class="spot">
         <h4>Home Green Home</h4>
         <div class="place">Ithaca Commons</div>
-        <p>Sustainable home goods, linens, and gifts. Where a fair amount of our own apartment came from.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Petrune</h4>
-        <div class="place">Ithaca Commons</div>
-        <p>Beautifully curated vintage clothing. Worth a browse even if you are not buying.</p>
+        <p>Sustainable home goods, linens, and gifts. A fair amount of our own apartment came from here.</p>
       </div>
 
       <div class="spot">
         <h4>Handwork</h4>
         <div class="place">Ithaca Commons</div>
-        <p>A craft cooperative &mdash; pottery, jewelry, and textiles made by local artists who take turns staffing the shop.</p>
+        <p>A craft cooperative &mdash; pottery, jewelry, and textiles made by local artists who staff the shop themselves.</p>
       </div>
 
       <div class="spot">
         <h4>Sundries</h4>
         <div class="place">Trumansburg</div>
-        <p>A small, very well-edited general store. The good version of a gift shop.</p>
+        <p>A small, well-edited general store.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Autumn Leaves</h4>
+        <div class="place">Ithaca Commons</div>
+        <p>Sixty thousand used books, ten thousand records, and a café, all under one roof.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Buffalo Street Books</h4>
+        <div class="place">DeWitt Mall, Ithaca</div>
+        <p>Ithaca's community-owned cooperative bookstore, just off the Commons.</p>
       </div>
 
     </div>
@@ -194,19 +195,34 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <h2 class="section-title" style="text-align:center">With Kids</h2>
 
-    <div class="kid-list">
-      <p><strong>Sciencenter</strong> &mdash; a hands-on science museum built for kids, with an outdoor play area.</p>
-      <p><strong>Ithaca Children's Garden</strong> &mdash; three acres of gardens designed to be climbed on and dug in.</p>
-      <p><strong>Museum of the Earth</strong> &mdash; fossils, a full whale skeleton, and a very good rainy-day option.</p>
-      <p><strong>Ithaca Farmers Market</strong> &mdash; Saturday and Sunday mornings on the water at Steamboat Landing. Food stalls, music, and room to run around. Our favorite thing to do in this town.</p>
+    <div class="listing">
+
+      <div class="spot">
+        <h4>Sciencenter</h4>
+        <div class="place">Ithaca</div>
+        <p>A hands-on science museum built for kids, with an outdoor play area.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Ithaca Children's Garden</h4>
+        <div class="place">Ithaca</div>
+        <p>Three acres of gardens designed to be climbed on and dug in.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Museum of the Earth</h4>
+        <div class="place">Ithaca</div>
+        <p>Fossils, a full whale skeleton, and a very good rainy-day option.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Ithaca Farmers Market</h4>
+        <div class="place">Steamboat Landing</div>
+        <p>Saturday and Sunday mornings on the water. Food stalls, music, and room to run around.</p>
+      </div>
+
     </div>
 
-  </div>
-</section>
-
-<section class="band script-banner">
-  <div class="plaque">
-    <p>Ithaca is gorges, and we will not apologise for saying so.</p>
   </div>
 </section>
 ```
