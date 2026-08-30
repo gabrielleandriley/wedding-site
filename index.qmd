@@ -85,7 +85,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
   </div>
 </section>
 
-<section class="band band-stripe">
+<section class="band band-shells">
 
   <div class="wordmark">
     <p class="wordmark-script">Gabrielle &amp; Riley</p>

@@ -101,14 +101,6 @@ main.content h2 {
   );
 }
 
-.stripe-rule {
-  height: 22px;
-  border: none;
-  margin: 0;
-  @include cabana-stripe(6px);
-  opacity: 0.85;
-}
-
 // ---------------------------------------------------------------------- navbar
 
 .navbar {
@@ -316,15 +308,6 @@ a:hover { color: $sage; text-decoration: underline; }
   margin: 0 auto;
 }
 
-// blue-flower stripe, an alternative to the shell print
-.band-flowers {
-  position: relative;
-  background-image: url('images/blueflowers.jpg');
-  background-size: 330px auto;
-  background-position: center;
-  background-repeat: repeat;
-}
-
 // ------------------------------------------------- editorial feature block
 
 // one highlighted entry: pattern on one side, copy on the other
@@ -342,8 +325,6 @@ a:hover { color: $sage; text-decoration: underline; }
   background-size: 300px auto;
   min-height: 250px;
 }
-
-.feature-pattern.is-flowers { background-image: url('images/blueflowers.jpg'); }
 
 .feature-body {
   background: #fff;
@@ -396,7 +377,7 @@ a:hover { color: $sage; text-decoration: underline; }
 // ------------------------------------------- script plaque over the stripe
 
 .script-banner {
-  @include cabana-stripe(10px);
+  background-color: $cream-deep;
   padding: clamp(2.6rem, 6vw, 4.5rem) 1.5rem;
   text-align: center;
 }
@@ -417,9 +398,6 @@ a:hover { color: $sage; text-decoration: underline; }
   color: $green-deep;
   margin: 0;
 }
-
-// plain striped band, for a plaque or wordmark to sit on
-.band-stripe { @include cabana-stripe(10px); }
 
 // ------------------------------------------------------------- wordmark
 
@@ -842,7 +820,7 @@ table td:last-child a:hover {
 // page rather than a bare white rectangle.
 .zola-embed-frame {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 100%;
   background: #fff;
   border: 1px solid rgba(47, 71, 57, 0.14);
   padding: 0.5rem;

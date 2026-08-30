@@ -54,7 +54,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-flowers">
+<section class="band band-shells">
   <div class="band-narrow">
 
     <div class="panel-card">

@@ -34,7 +34,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
         vineyards are some of the oldest on Cayuga &mdash; planted more than fifty years ago.</p>
         <p class="feature-note">Riley worked here, so we are hopelessly biased.</p>
       </div>
-      <div class="feature-pattern is-flowers"></div>
+      <div class="feature-pattern"></div>
     </div>
 
     <div class="listing">
@@ -151,7 +151,6 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     </div>
 
-    <hr class="stripe-rule" style="max-width:220px; margin:4rem auto 3.5rem">
 
     <p class="eyebrow" style="text-align:center">Bring home something good</p>
 
