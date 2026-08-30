@@ -22,97 +22,96 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
     <div class="faq-list">
 
-      <div class="faq-item">
-        <h4>What should we wear?</h4>
-        <p>The dress code is still being settled and we will post it here.
-        <span class="pending">One thing we can tell you now:</span> the ceremony is on the lawn,
-        so stilettos and soft June grass will not get along. Block heels or flats will make your
-        night much better.</p>
-      </div>
+      <details class="faq-item" open>
+        <summary>What is the dress code?</summary>
+        <p>The dress code is formal &mdash; suits for men, and floor-length or tea-length dresses
+        for women. If you have any questions, feel free to ask us. One practical note: the ceremony
+        is on the lawn, so block heels or flats will serve you better than stilettos.</p>
+      </details>
 
-      <div class="faq-item">
-        <h4>Is the ceremony outside?</h4>
+      <details class="faq-item">
+        <summary>Is the ceremony outside?</summary>
         <p>Yes &mdash; on the lawn looking out over Cayuta Lake. If the weather turns, we move
         under a tent on the property, so the day happens rain or shine either way.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>What time should we arrive?</h4>
+      <details class="faq-item">
+        <summary>What time should we arrive?</summary>
         <p>Plan on getting there about thirty minutes before the ceremony so you have time to
         park, find a drink, and sit down without rushing. The exact start time will be on your
         invitation.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Is there a shuttle?</h4>
+      <details class="faq-item">
+        <summary>Is there a shuttle?</summary>
         <p>There is. It runs from downtown Ithaca out to the Inn before the ceremony, then makes
         an early and a late return trip back downtown. Pickup spot and times will be posted on the
         <a href="travel.html">Travel &amp; Stay</a> page closer to the date.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Where should we stay?</h4>
+      <details class="faq-item">
+        <summary>Where should we stay?</summary>
         <p>Most people are staying in downtown Ithaca, which is where the shuttle runs from. We
-        are not holding a room block, so book early &mdash; June fills up. All our
-        recommendations, including bed and breakfasts closer to the venue, are on the
+        are not holding a room block, so book early &mdash; June fills up. All our recommendations,
+        including bed and breakfasts closer to the venue, are on the
         <a href="travel.html">Travel &amp; Stay</a> page.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Can I bring a guest?</h4>
+      <details class="faq-item">
+        <summary>Can I bring a guest?</summary>
         <p>Your invitation will name everyone we have saved a seat for. If you are unsure after it
         arrives, ask us &mdash; it is never an awkward question.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Are kids welcome?</h4>
+      <details class="faq-item">
+        <summary>Are kids welcome?</summary>
         <p>Yes. There will be a kids' meal option, and there is plenty of room to run around.
         Taughannock, the Sciencenter, and the farmers market all make good use of a morning &mdash;
         see <a href="things-to-do.html">Things to Do</a>.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>When do we need to RSVP?</h4>
+      <details class="faq-item">
+        <summary>When do we need to RSVP?</summary>
         <p>Invitations go out in early spring 2027 and the RSVP deadline will be on them. You do
         not need to do anything before that.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>I have a dietary restriction.</h4>
+      <details class="faq-item">
+        <summary>I have a dietary restriction.</summary>
         <p>Tell us when you RSVP &mdash; there is a place for it. Our caterer handles vegetarian,
         vegan, gluten-free, and allergies routinely, and every dish at dinner is labelled.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Is there parking at the venue?</h4>
+      <details class="faq-item">
+        <summary>Is there parking at the venue?</summary>
         <p>Yes, there is plenty of parking at the Inn. If you would rather not drive at the end of
         the night, take the shuttle &mdash; that is exactly what it is for.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>When does the night end?</h4>
+      <details class="faq-item">
+        <summary>When does the night end?</summary>
         <p>The reception wraps up around eleven. For anyone staying on the estate or nearby, there
         is a bonfire afterward.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>What is the weather like in June?</h4>
+      <details class="faq-item">
+        <summary>What is the weather like in June?</summary>
         <p>Usually beautiful &mdash; warm days in the seventies and evenings that cool off more
         than people expect near the water. Bring a layer for after sunset.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Where should we fly into?</h4>
+      <details class="faq-item">
+        <summary>Where should we fly into?</summary>
         <p>Ithaca Tompkins (ITH) is closest, about forty minutes out. Syracuse (SYR) and Elmira
         (ELM) are each roughly an hour and a half and usually cheaper with more flights. You will
         want a car from any of them.</p>
-      </div>
+      </details>
 
-      <div class="faq-item">
-        <h4>Is there a registry?</h4>
+      <details class="faq-item">
+        <summary>Is there a registry?</summary>
         <p>There is, on <a href="registry.html">Zola</a> &mdash; though your being there is
         genuinely the part we care about.</p>
-      </div>
+      </details>
 
     </div>
 

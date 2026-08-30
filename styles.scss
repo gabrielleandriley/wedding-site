@@ -885,37 +885,55 @@ table td:last-child a:hover {
 // ---------------------------------------------------------------------- faq
 
 .faq-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 1.6rem 2.6rem;
-  margin-top: 2.5rem;
+  max-width: 780px;
+  margin: 2.5rem auto 0;
   text-align: left;
+  border-bottom: 1px solid rgba(47, 71, 57, 0.16);
 }
 
+// native <details>, so the open/shut works with no JavaScript
 .faq-item {
   border-top: 1px solid rgba(47, 71, 57, 0.16);
-  padding-top: 1.3rem;
 }
 
-.faq-item h4 {
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 1.2rem 2.6rem 1.2rem 0;
   font-family: $headings-font-family;
   font-weight: 500;
   font-size: 1.35rem;
   color: $green-deep;
-  margin: 0 0 0.5rem;
 }
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary:hover { color: $sage; }
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $sage;
+}
+
+.faq-item[open] summary::after { content: "\2013"; }
 
 .faq-item p {
   font-family: $headings-font-family;
   font-size: 1.08rem;
-  line-height: 1.7;
+  line-height: 1.75;
   color: $ink;
-  margin: 0;
-}
-
-.faq-item .pending {
-  font-style: italic;
-  color: $sage;
+  margin: 0 0 1.5rem;
+  padding-right: 2.6rem;
+  max-width: 68ch;
 }
 
 // ---------------------------------------------------------------------- buttons
