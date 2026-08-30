@@ -165,31 +165,31 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
       <div class="spot">
         <h4><a href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Canopy by Hilton Ithaca Downtown</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
-        <p>Bright, modern rooms on the edge of the Commons, and the newest of the three.</p>
+        <p>In downtown Ithaca, right on the edge of the Commons. Bright, modern rooms, and the newest of the three.</p>
       </div>
 
       <div class="spot">
         <h4><a href="https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" target="_blank" rel="noopener">Ithaca Marriott Downtown</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
-        <p>Directly on the Commons, with a rooftop bar and the most rooms of the three.</p>
+        <p>In downtown Ithaca, directly on the Commons, and the largest of the three.</p>
       </div>
 
       <div class="spot">
         <h4><a href="https://argosinn.com/" target="_blank" rel="noopener">Argos Inn</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
-        <p>A restored 1831 brick mansion with a handful of individually designed rooms.</p>
+        <p>A boutique thirteen-room hotel just off the Commons in downtown Ithaca, with a distinctive cocktail bar and parking for guests.</p>
       </div>
 
       <div class="spot">
-        <h4><a href="https://www.sixteenelm.com/" target="_blank" rel="noopener">Sixteen Elm Heritage Hotel</a></h4>
+        <h4><a href="https://www.sixteenelm.com/" target="_blank" rel="noopener">16 Elm Heritage Hotel</a></h4>
         <div class="place">TRUMANSBURG</div>
-        <p>Six rooms in a 1921 mansion, a short walk from Main Street.</p>
+        <p>A boutique hotel just off Main Street with five rooms, some of which have kitchens.</p>
       </div>
 
       <div class="spot">
         <h4>Gothic Eves Inn &amp; Spa</h4>
         <div class="place">TRUMANSBURG</div>
-        <p>An 1855 inn with a spa and a well-regarded breakfast.</p>
+        <p>An adorable bed and breakfast in the heart of downtown Trumansburg, with a spa and a delicious breakfast.</p>
       </div>
 
       <div class="spot">
