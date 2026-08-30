@@ -40,6 +40,18 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       </div>
 
       <div class="spot">
+        <h4>Bet the Farm</h4>
+        <div class="place">Cayuga Lake</div>
+        <p>Just up the lake from us, and the quietest and prettiest of the bunch. Women-owned, in a blue barn surrounded by vines.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Six Mile Creek Vineyard</h4>
+        <div class="place">Ithaca</div>
+        <p>The closest winery to Ithaca, about two miles from downtown. The town's oldest, and a distillery as well.</p>
+      </div>
+
+      <div class="spot">
         <h4>Hermann J. Wiemer</h4>
         <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
         <p>The benchmark for Finger Lakes Riesling. Their dry Riesling is on the wine list at our reception.</p>
