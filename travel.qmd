@@ -79,7 +79,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 </section>
 
 <section class="band band-shells">
-  <div class="band-inner">
+  <div class="band-inner print-panel">
 
     <p class="eyebrow" style="text-align:center">Closer to the venue</p>
 

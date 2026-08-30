@@ -304,7 +304,7 @@ a:hover { color: $sage; text-decoration: underline; }
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(250, 249, 245, 0.5);
+  background: rgba(250, 249, 245, 0.3);
   pointer-events: none;
 }
 
@@ -514,6 +514,14 @@ a:hover { color: $sage; text-decoration: underline; }
 }
 
 .contact a:hover { color: $sage; }
+
+// a soft panel for content sitting on the shell print — headings and card
+// titles are hard to read straight on the pattern
+.print-panel {
+  background: rgba(231, 238, 222, 0.94);
+  border: 1px solid rgba(47, 71, 57, 0.12);
+  padding: clamp(1.8rem, 4vw, 3rem);
+}
 
 // ------------------------------------------------------------------ date block
 

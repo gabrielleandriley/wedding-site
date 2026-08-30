@@ -57,11 +57,11 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 </section>
 
 <section class="band band-shells">
-  <div class="band-inner">
+  <div class="band-inner print-panel">
 
-    <p class="eyebrow" style="text-align:center">Waterfalls &amp; gorges</p>
+    <p class="eyebrow" style="text-align:center">Waterfalls &amp; lakeside paths</p>
 
-    <h2 class="section-title" style="text-align:center">Hiking</h2>
+    <h2 class="section-title" style="text-align:center">Hiking &amp; Walking Trails</h2>
 
     <div class="listing">
 
@@ -89,6 +89,18 @@ pagetitle: "Things to Do — Gabrielle & Riley"
         <p>Right in town and quick, if you only have an hour. The gorge trails are wet stone, so wear real shoes.</p>
       </div>
 
+      <div class="spot">
+        <h4>Beebe Lake Loop</h4>
+        <div class="place">Cornell campus, Ithaca</div>
+        <p>An easy loop around the lake on Cornell's campus, past a gorge and a waterfall. Flat, shaded, and about a mile.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Stewart Park &amp; the Waterfront Trail</h4>
+        <div class="place">Ithaca</div>
+        <p>A flat paved path along the south end of Cayuga Lake. It runs right past the farmers market on Saturday and Sunday mornings.</p>
+      </div>
+
     </div>
 
   </div>
@@ -99,7 +111,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 
     <p class="eyebrow" style="text-align:center">Where we actually eat</p>
 
-    <h2 class="section-title" style="text-align:center">Food &amp; Coffee</h2>
+    <h2 class="section-title" style="text-align:center">Food, Ice Cream &amp; Coffee</h2>
 
     <div class="listing">
 
@@ -139,13 +151,25 @@ pagetitle: "Things to Do — Gabrielle & Riley"
         <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
       </div>
 
+      <div class="spot">
+        <h4>Saigon Kitchen</h4>
+        <div class="place">Ithaca</div>
+        <p>Our favorite Vietnamese food, and it makes great takeout.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Ithaca Farmers Market</h4>
+        <div class="place">Steamboat Landing</div>
+        <p>Saturday and Sunday mornings on the water. Prepared food from a dozen stalls, plus produce, bread, and cider to take home.</p>
+      </div>
+
     </div>
 
   </div>
 </section>
 
 <section class="band band-shells">
-  <div class="band-inner">
+  <div class="band-inner print-panel">
 
     <p class="eyebrow" style="text-align:center">Bring something home</p>
 
