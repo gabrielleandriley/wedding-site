@@ -47,7 +47,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
           <h3>Welcome Party</h3>
           <div class="when">Dinner</div>
           <p>Join us the night before for a casual BBQ dinner at North Point Pavilion at Taughannock Falls State Park.</p>
-          <div class="where">Trumansburg, New York</div>
+          <div class="where">North Point Pavilion &nbsp;·&nbsp; Trumansburg, New York</div>
         </div>
 
         <div class="detail-card">
@@ -55,7 +55,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
           <h3>The Wedding</h3>
           <div class="when">Ceremony &amp; Reception</div>
           <p>We will have a ceremony at the venue, followed by cocktails, dinner, and dancing.</p>
-          <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, NY</div>
+          <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York</div>
         </div>
 
       </div>
