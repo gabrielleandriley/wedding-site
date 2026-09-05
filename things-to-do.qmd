@@ -7,9 +7,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 <section class="band band-green">
   <div class="band-narrow">
 
-    <p class="eyebrow">The Finger Lakes</p>
-
-    <h2 class="section-title">Things to Do</h2>
+    <p class="eyebrow-lg">Things to Do</p>
 
     <p class="subtitle">
       Below are some of our favorite places to hike, eat, drink wine, and get a cute memento.

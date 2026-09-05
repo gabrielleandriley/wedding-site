@@ -46,24 +46,20 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 </section>
 
 <section class="band band-shells">
-  <div class="band-wide print-panel">
+  <div class="band-inner print-panel">
 
-    <div class="split">
+    <p class="eyebrow" style="text-align:center">Where to stay</p>
 
-      <div class="split-stay">
+    <h2 class="section-title" style="text-align:center">Our Recommendations</h2>
 
-        <p class="eyebrow">Where to stay</p>
-
-        <h2 class="section-title">Our Recommendations</h2>
-
-        <p style="line-height:1.8">
+    <p style="text-align:center; max-width:700px; margin:0 auto; line-height:1.8">
       We are not doing a room block for our wedding, to give guests the flexibility to stay in a
       range of places across the Finger Lakes. Below are some of the places our friends and family
       have stayed when they are in town and have enjoyed. We also recommend browsing Airbnb and
       other sites, and we are happy to answer any questions.
     </p>
 
-        <div class="listing">
+    <div class="listing">
 
       <div class="spot">
         <h4><a href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Canopy by Hilton Ithaca Downtown</a></h4>
@@ -121,14 +117,16 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 
     </div>
 
-      </div>
+  </div>
+</section>
 
-      <div class="split-map">
+<section class="band band-cream">
+  <div class="band-inner">
 
-        <h2 class="section-title">Lay of the Land</h2>
+    <h2 class="section-title" style="text-align:center">Lay of the Land</h2>
 
-        <div class="map-wrap">
-          <svg class="fl-map" viewBox="0 0 1000 700" role="img"
+    <div class="map-wrap">
+      <svg class="fl-map" viewBox="0 0 1000 700" role="img"
            aria-label="Map of the southern Finger Lakes showing the Fontainebleau Inn on Cayuta Lake, the welcome party near Taughannock Falls, Ithaca, Trumansburg, Watkins Glen, and the Ithaca, Syracuse and Elmira airports.">
 
         <rect class="ground" x="0" y="0" width="1000" height="700"></rect>
@@ -211,10 +209,6 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
         <text class="attrib" x="470" y="684">Map data &#169; OpenStreetMap contributors</text>
         <rect class="frame" x="6" y="6" width="988" height="688"></rect>
       </svg>
-        </div>
-
-      </div>
-
     </div>
 
   </div>

@@ -532,7 +532,7 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .fl-map .attrib {
   font-family: $font-family-sans-serif;
-  font-size: 13px;
+  font-size: 10.5px;
   letter-spacing: 0.08em;
   fill: rgba(47, 71, 57, 0.35);
 }
@@ -570,7 +570,7 @@ a:hover { color: $sage; text-decoration: underline; }
 .split > * { min-width: 0; }
 .map-wrap { min-width: 0; max-width: 100%; }
 
-.split-map { position: sticky; top: 92px; }
+.split-map { position: sticky; top: 92px; } // unused: map now sits below
 
 .split .listing { grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); }
 
@@ -636,31 +636,31 @@ a:hover { color: $sage; text-decoration: underline; }
 .fl-map .lbl {
   font-family: $headings-font-family;
   font-style: italic;
-  font-size: 34px;
+  font-size: 26px;
   fill: $green-deep;
 }
 
-.fl-map .lbl-lg { font-size: 42px; stroke-width: 5; }
+.fl-map .lbl-lg { font-size: 32px; stroke-width: 5; }
 
 .fl-map .cap {
   font-family: $font-family-sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.16em;
   fill: $green;
 }
 
-.fl-map .cap.sm { font-size: 15px; letter-spacing: 0.12em; }
+.fl-map .cap.sm { font-size: 12.5px; letter-spacing: 0.12em; }
 
 .fl-map .water-lbl {
   font-family: $headings-font-family;
   font-style: italic;
-  font-size: 28px;
+  font-size: 21px;
   fill: #4f7f96;
   stroke-width: 3;
 }
 
-.fl-map .water-lbl.sm { font-size: 22px; }
+.fl-map .water-lbl.sm { font-size: 17px; }
 
 .fl-map .attrib {
   font-family: $font-family-sans-serif;
