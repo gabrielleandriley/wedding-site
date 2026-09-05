@@ -7,8 +7,8 @@ $green:        #46614a;
 $sage:         #7f9c68;
 $shell:        #8fae79;
 $sage-light:   #c9d9b8;
-$cream:        #faf9f5;
-$cream-deep:   #f0eee8;
+$cream:        #f7f3ea;
+$cream-deep:   #ece7db;
 $sand:         #d8cda6;
 $ink:          #2b3a2e;
 
@@ -58,15 +58,16 @@ h1, h2, h3 { letter-spacing: 0.02em; }
   font-size: 0.72rem;
   font-weight: 500;
   color: $sage;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.2rem;
 }
 
 .section-title {
   font-family: $headings-font-family;
   font-weight: 400;
-  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-style: italic;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
   color: $green-deep;
-  margin: 0 0 1.4rem;
+  margin: 0 0 1.6rem;
   border-bottom: none; // Quarto underlines h2 by default
   padding-bottom: 0;
 }
@@ -79,11 +80,13 @@ main.content h2 {
 
 // large uppercase heading — replaces the eyebrow + title pair in some sections
 .eyebrow-lg {
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: clamp(1.25rem, 2.8vw, 1.85rem);
-  font-weight: 500;
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  line-height: 1.1;
   color: $green-deep;
   margin: 0;
 }
@@ -270,7 +273,7 @@ a:hover { color: $sage; text-decoration: underline; }
 // ------------------------------------------------------------------- sections
 
 .band {
-  padding: clamp(3.5rem, 8vw, 6rem) 1.5rem;
+  padding: clamp(4.5rem, 9vw, 7.5rem) 1.5rem;
 }
 
 .band-green {
@@ -285,7 +288,32 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .band-green .eyebrow { color: $sage-light; }
 
+// open cards have to invert where they sit on green
+.band-green .spot,
+.band-green .detail-card { border-top-color: rgba(247, 243, 234, 0.28); }
+
+.band-green .spot h4,
+.band-green .detail-card h3 { color: $cream; }
+
+.band-green .spot .place,
+.band-green .detail-card .day { color: $sage-light; }
+
+.band-green .spot p,
+.band-green .detail-card p,
+.band-green .detail-card .where { color: rgba(247, 243, 234, 0.86); }
+
+.band-green .detail-card .when { color: $sage-light; }
+
+// links inherit $link-color, which is dark green and vanishes on a green
+// ground — the hotel names were all but invisible
+.band-green a { color: $cream; }
+.band-green a:hover { color: $sage-light; }
+
 .band-cream { background-color: $cream; }
+
+// a hair deeper than $cream — enough to separate stacked sections without
+// adding another colour to the page
+.band-alt { background-color: #f3f1e9; }
 
 // shallower band — used for the save-the-date stripe
 .band-slim { padding-top: clamp(2.2rem, 4vw, 3.2rem); padding-bottom: clamp(2.2rem, 4vw, 3.2rem); }
@@ -313,7 +341,7 @@ a:hover { color: $sage; text-decoration: underline; }
   z-index: 1;
 }
 
-.band-shells .eyebrow { color: $green; }
+
 
 .band-inner {
   max-width: 1040px;
@@ -712,17 +740,18 @@ a:hover { color: $sage; text-decoration: underline; }
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2.5rem;
+  gap: 2.4rem 3.4rem;
+  margin-top: 3.2rem;
 }
 
 .detail-card {
-  background: #fff;
-  border: 1px solid rgba(47, 71, 57, 0.12);
-  border-radius: 4px;
-  padding: 2.2rem 1.9rem;
-  text-align: center;
-  box-shadow: 0 8px 26px rgba(47, 71, 57, 0.06);
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(47, 71, 57, 0.18);
+  border-radius: 0;
+  padding: 1.7rem 0 0;
+  text-align: left;
+  box-shadow: none;
 }
 
 .detail-card .day {
@@ -736,6 +765,7 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .detail-card h3 {
   font-family: $headings-font-family;
+  font-style: italic;
   font-weight: 400;
   font-size: 1.85rem;
   color: $green-deep;
@@ -994,23 +1024,24 @@ table td:last-child a:hover {
 
 .listing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.4rem;
-  margin: 2rem 0 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2.6rem 3.4rem;
+  margin: 3.2rem 0 0;
 }
 
 .spot {
   position: relative;
-  background: #fff;
-  border: 1px solid rgba(47, 71, 57, 0.12);
-  border-left: 3px solid $sage;
-  padding: 1.4rem 1.5rem;
-  border-radius: 3px;
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(47, 71, 57, 0.18);
+  padding: 1.5rem 0 0;
+  border-radius: 0;
 }
 
 .spot h4 {
   font-family: $headings-font-family;
-  font-size: 1.32rem;
+  font-style: italic;
+  font-size: 1.42rem;
   font-weight: 500;
   color: $green-deep;
   margin: 0 0 0.15rem;
@@ -1026,10 +1057,11 @@ table td:last-child a:hover {
 }
 
 .spot p {
-  font-size: 0.92rem;
-  line-height: 1.65;
+  font-family: $headings-font-family;
+  font-size: 1.06rem;
+  line-height: 1.7;
   margin: 0;
-  color: rgba(43, 58, 46, 0.88);
+  color: rgba(43, 58, 46, 0.9);
 }
 
 // ------------------------------------------------- cream panels over the print

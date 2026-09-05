@@ -66,8 +66,8 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-shells">
-  <div class="band-inner print-panel">
+<section class="band band-green">
+  <div class="band-inner">
 
     <p class="eyebrow" style="text-align:center">Waterfalls &amp; lakeside paths</p>
 
@@ -184,8 +184,8 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-shells">
-  <div class="band-inner print-panel">
+<section class="band band-green">
+  <div class="band-inner">
 
     <p class="eyebrow" style="text-align:center">Bring something home</p>
 
