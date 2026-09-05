@@ -17,7 +17,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
+<section class="band band-blue">
   <div class="band-inner">
 
     <div class="detail-grid">
@@ -64,18 +64,21 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
       <div class="spot">
         <h4><a href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Canopy by Hilton Ithaca Downtown</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
+        <div class="spot-flag">On the shuttle route</div>
         <p>In downtown Ithaca, right on the edge of the Commons. Bright, modern rooms, and the newest of the three.</p>
       </div>
 
       <div class="spot">
         <h4><a href="https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" target="_blank" rel="noopener">Ithaca Marriott Downtown</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
+        <div class="spot-flag">On the shuttle route</div>
         <p>In downtown Ithaca, directly on the Commons, and the largest of the three.</p>
       </div>
 
       <div class="spot">
         <h4><a href="https://argosinn.com/" target="_blank" rel="noopener">Argos Inn</a></h4>
         <div class="place">DOWNTOWN ITHACA</div>
+        <div class="spot-flag">On the shuttle route</div>
         <p>A boutique thirteen-room hotel just off the Commons in downtown Ithaca, with a distinctive cocktail bar and parking for guests.</p>
       </div>
 
@@ -152,6 +155,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
           <circle class="mk-dot" r="6"></circle>
         </g>
         <text class="lbl" x="470" y="610" text-anchor="middle">Fontainebleau Inn</text>
+        <text class="cap sm" x="470" y="634" text-anchor="middle">THE VENUE</text>
 
         <g transform="translate(679,128)">
           <circle class="mk-halo" r="17"></circle>
@@ -159,6 +163,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
           <circle class="mk-dot" r="6"></circle>
         </g>
         <text class="lbl" x="679" y="92" text-anchor="middle">Welcome Party</text>
+        <text class="cap sm" x="679" y="68" text-anchor="middle">40 MIN</text>
 
         <g transform="translate(579,140)">
           <circle class="mk-halo" r="17"></circle>
@@ -166,6 +171,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
           <circle class="mk-dot" r="6"></circle>
         </g>
         <text class="lbl" x="556" y="150" text-anchor="end">Trumansburg</text>
+        <text class="cap sm" x="556" y="174" text-anchor="end">40 MIN</text>
 
         <g transform="translate(868,378)">
           <circle class="mk-halo" r="17"></circle>
@@ -173,6 +179,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
           <circle class="mk-dot" r="6"></circle>
         </g>
         <text class="lbl" x="868" y="422" text-anchor="middle">Ithaca</text>
+        <text class="cap sm" x="868" y="446" text-anchor="middle">30 MIN</text>
 
         <g transform="translate(221,520)">
           <circle class="mk-halo" r="17"></circle>
@@ -180,12 +187,14 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
           <circle class="mk-dot" r="6"></circle>
         </g>
         <text class="lbl" x="221" y="562" text-anchor="middle">Watkins Glen</text>
+        <text class="cap sm" x="221" y="586" text-anchor="middle">25 MIN</text>
 
         <g transform="translate(936,248)">
           <circle class="mk-halo" r="20"></circle>
           <g transform="rotate(-30)"><path class="mk-fill" d="M0 -13 L4 -3 L17 3 L17 7 L4 5 L2 12 L7 15 L7 18 L0 16 L-7 18 L-7 15 L-2 12 L-4 5 L-17 7 L-17 3 L-4 -3 Z"></path></g>
         </g>
         <text class="cap sm" x="988" y="290" text-anchor="end">ITHACA AIRPORT</text>
+        <text class="cap sm" x="988" y="310" text-anchor="end">35 MIN</text>
 
         <g transform="translate(902,56)">
           <circle class="mk-halo" r="20"></circle>
@@ -210,6 +219,8 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
         <rect class="frame" x="6" y="6" width="988" height="688"></rect>
       </svg>
     </div>
+
+    <p class="map-note">Approximate drive times to the venue.</p>
 
   </div>
 </section>

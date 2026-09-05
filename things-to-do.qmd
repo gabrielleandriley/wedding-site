@@ -19,6 +19,95 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 <section class="band band-cream">
   <div class="band-inner">
 
+    <p class="eyebrow" style="text-align:center">Where we actually eat</p>
+
+    <h2 class="section-title" style="text-align:center">Food, Ice Cream &amp; Coffee</h2>
+
+    <div class="group-list">
+
+      <details class="group" open>
+        <summary>Food</summary>
+        <div class="listing">
+
+      <div class="spot">
+        <h4>Finger Lakes Cider House</h4>
+        <div class="place">Interlaken &nbsp;·&nbsp; Route 89</div>
+        <p>A food menu sourced from neighboring farms and their own orchard, plus cider tastings. Our favorite low-key afternoon.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Tabora Farm</h4>
+        <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
+        <p>Our favorite lunch stop when we are heading to the Seneca Lake wineries. A bakery and deli café, with soups, sandwiches, and South African dishes.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Main Street Market</h4>
+        <div class="place">Trumansburg</div>
+        <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Saigon Kitchen</h4>
+        <div class="place">Ithaca</div>
+        <p>Our favorite Vietnamese food, and it makes great takeout.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Ithaca Farmers Market</h4>
+        <div class="place">Steamboat Landing</div>
+        <p>Saturday and Sunday mornings on the water. Prepared food from a dozen stalls, plus produce, bread, and cider to take home.</p>
+      </div>
+
+    </div>
+      </details>
+
+      <details class="group">
+        <summary>Ice Cream</summary>
+        <div class="listing">
+
+      <div class="spot">
+        <h4>Sweet Melissa's</h4>
+        <div class="place">Ithaca &amp; Trumansburg</div>
+        <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Spotted Duck Creamery</h4>
+        <div class="place">Penn Yan</div>
+        <p>Frozen custard made with duck egg yolks instead of chicken, which makes it denser and richer. Worth the drive.</p>
+      </div>
+
+    </div>
+      </details>
+
+      <details class="group">
+        <summary>Coffee</summary>
+        <div class="listing">
+
+      <div class="spot">
+        <h4>Gimme! Coffee</h4>
+        <div class="place">Ithaca</div>
+        <p>The original Ithaca roaster and still the one we go to most.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Press Bay Alley</h4>
+        <div class="place">Ithaca</div>
+        <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
+      </div>
+
+    </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="band band-green">
+  <div class="band-inner">
+
     <p class="eyebrow" style="text-align:center">Cayuga, Seneca &amp; Keuka</p>
 
     <h2 class="section-title" style="text-align:center">Wineries</h2>
@@ -66,7 +155,9 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-green">
+<hr class="rule-shells">
+
+<section class="band band-blue">
   <div class="band-inner">
 
     <p class="eyebrow" style="text-align:center">Waterfalls &amp; lakeside paths</p>
@@ -116,118 +207,6 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
-  <div class="band-inner">
-
-    <p class="eyebrow" style="text-align:center">Where we actually eat</p>
-
-    <h2 class="section-title" style="text-align:center">Food, Ice Cream &amp; Coffee</h2>
-
-    <div class="listing">
-
-      <div class="spot">
-        <h4>Finger Lakes Cider House</h4>
-        <div class="place">Interlaken &nbsp;·&nbsp; Route 89</div>
-        <p>A food menu sourced from neighboring farms and their own orchard, plus cider tastings. Our favorite low-key afternoon.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Tabora Farm</h4>
-        <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
-        <p>Our favorite lunch stop when we are heading to the Seneca Lake wineries. A bakery and deli café, with soups, sandwiches, and South African dishes.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Main Street Market</h4>
-        <div class="place">Trumansburg</div>
-        <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Sweet Melissa's</h4>
-        <div class="place">Ithaca &amp; Trumansburg</div>
-        <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Spotted Duck Creamery</h4>
-        <div class="place">Penn Yan</div>
-        <p>Frozen custard made with duck egg yolks instead of chicken, which makes it denser and richer. Worth the drive.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Gimme! Coffee</h4>
-        <div class="place">Ithaca</div>
-        <p>The original Ithaca roaster and still the one we go to most.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Press Bay Alley</h4>
-        <div class="place">Ithaca</div>
-        <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Saigon Kitchen</h4>
-        <div class="place">Ithaca</div>
-        <p>Our favorite Vietnamese food, and it makes great takeout.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Ithaca Farmers Market</h4>
-        <div class="place">Steamboat Landing</div>
-        <p>Saturday and Sunday mornings on the water. Prepared food from a dozen stalls, plus produce, bread, and cider to take home.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="band band-green">
-  <div class="band-inner">
-
-    <p class="eyebrow" style="text-align:center">Bring something home</p>
-
-    <h2 class="section-title" style="text-align:center">Shops</h2>
-
-    <div class="listing">
-
-      <div class="spot">
-        <h4>Home Green Home</h4>
-        <div class="place">Ithaca Commons</div>
-        <p>Sustainable home goods, linens, and gifts. A fair amount of our own apartment came from here.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Handwork</h4>
-        <div class="place">Ithaca Commons</div>
-        <p>A craft cooperative &mdash; pottery, jewelry, and textiles made by local artists who staff the shop themselves.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Sundries</h4>
-        <div class="place">Trumansburg</div>
-        <p>A small, well-edited general store.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Autumn Leaves</h4>
-        <div class="place">Ithaca Commons</div>
-        <p>Sixty thousand used books, ten thousand records, and a café, all under one roof.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Buffalo Street Books</h4>
-        <div class="place">DeWitt Mall, Ithaca</div>
-        <p>Ithaca's community-owned cooperative bookstore, just off the Commons.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
 <section class="band band-green">
   <div class="band-inner">
 
@@ -256,9 +235,21 @@ pagetitle: "Things to Do — Gabrielle & Riley"
       </div>
 
       <div class="spot">
-        <h4>Ithaca Farmers Market</h4>
-        <div class="place">Steamboat Landing</div>
-        <p>Saturday and Sunday mornings on the water. Food stalls, music, and room to run around.</p>
+        <h4>Stewart Park Playground</h4>
+        <div class="place">Ithaca</div>
+        <p>An inclusive playscape on the lakefront, built so children of all abilities can play side by side. The carousel runs through the summer.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Cayuga Nature Center</h4>
+        <div class="place">Ithaca</div>
+        <p>A six-storey treehouse up into the forest canopy, live animals to meet, and miles of trails across a hillside above the lake.</p>
+      </div>
+
+      <div class="spot">
+        <h4>Cornell Botanic Gardens</h4>
+        <div class="place">Cornell campus, Ithaca</div>
+        <p>Free gardens and arboretum, easy to wander with small children and beautiful in June.</p>
       </div>
 
     </div>
