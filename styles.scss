@@ -7,22 +7,22 @@
 // on the site is built from what is declared here; nothing further down the
 // file introduces a colour or a face of its own.
 //
-//   navy       dark anchor — title bands, headings, map marks
+//   green-deep dark anchor — title bands, headings, map marks
 //   ivory      the page ground
 //   blue-pale  the secondary light ground, and the stripe
 //   sage       the green accent — labels, links, small marks
-//   leaf       the light green — accents set on navy
+//   leaf       the light green — accents set on the deep green
 // ============================================================================
 
-$navy:        #22374f;
-$navy-mid:    #3d5872;
-$ivory:       #fafaf7;
-$ivory-deep:  #f0f2f0;
+$green-deep:  #3c5c45;
+$green-mid:   #4d7059;
+$ivory:       #fcfcfa;
+$ivory-deep:  #f2f4f0;
 $blue-pale:   #dbe7f2;
 $blue:        #4f6b8a;
 $sage:        #617a55;
 $leaf:        #d6e2b6;
-$ink:         #26313c;
+$ink:         #2a3527;
 
 // Cormorant is reserved for the two names in the hero, where it acts as a
 // wordmark. Playfair carries every heading. Tenor Sans carries everything
@@ -32,19 +32,19 @@ $font-display: "Playfair Display", Georgia, serif;
 $font-body:    "Tenor Sans", "Optima", "Avenir Next", sans-serif;
 
 // one hairline, wherever entries or rows are separated
-$rule:         rgba(34, 55, 79, 0.16);
-$rule-on-navy: rgba(250, 250, 247, 0.26);
+$rule:         rgba(60, 92, 69, 0.18);
+$rule-on-deep: rgba(250, 250, 247, 0.26);
 
 $body-bg: $ivory;
 $body-color: $ink;
-$link-color: $navy-mid;
+$link-color: $green-mid;
 $font-family-sans-serif: $font-body;
 $headings-font-family: $font-display;
-$headings-color: $navy;
+$headings-color: $green-deep;
 $headings-font-weight: 400;
 $navbar-fg: $ink;
 $footer-bg: $ivory-deep;
-$footer-fg: $navy;
+$footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
@@ -61,7 +61,7 @@ body {
   overflow-x: hidden;
 }
 
-a { color: $navy-mid; text-decoration: none; }
+a { color: $green-mid; text-decoration: none; }
 a:hover { color: $sage; text-decoration: underline; }
 
 // Quarto underlines h2 by default
@@ -69,7 +69,7 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
 
 // ---------------------------------------------------------------- type
 
-// page title — the navy band at the top of every interior page, and the one
+// page title — the deep band at the top of every interior page, and the one
 // standalone feature band on the home page
 .eyebrow-lg {
   font-family: $font-display;
@@ -78,7 +78,7 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
   letter-spacing: 0.12em;
   font-size: clamp(1.6rem, 3.2vw, 2.4rem);
   line-height: 1.2;
-  color: $navy;
+  color: $green-deep;
   margin: 0;
 }
 
@@ -89,7 +89,7 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
   font-weight: 400;
   font-size: clamp(1.7rem, 3.4vw, 2.4rem);
   line-height: 1.15;
-  color: $navy;
+  color: $green-deep;
   margin: 0 0 1.4rem;
   border-bottom: none;
   padding-bottom: 0;
@@ -126,14 +126,14 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
   );
 }
 
-// a scallop drawn as SVG in our own navy, so it needs no licence and scales
+// a scallop drawn as SVG in our own green, so it needs no licence and scales
 // cleanly. It frames the photo on the home page and the registry card.
-$scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%2322374f' stroke-opacity='0.16' stroke-width='1.1'><path d='M-10 10 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0'/><path d='M0 30 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0'/><path d='M-10 20 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0'/><path d='M0 40 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0'/></g></svg>";
+$scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'><path d='M0 14 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0 L28 14 L0 14Z' fill='%233c5c45' fill-opacity='0.07'/><path d='M0 14 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0' fill='none' stroke='%233c5c45' stroke-opacity='0.18' stroke-width='0.7'/></svg>";
 
 .scallop {
   background-color: $blue-pale;
   background-image: url($scallop);
-  background-size: 40px 40px;
+  background-size: 28px 14px;
 }
 
 // ---------------------------------------------------------------- navbar
@@ -174,7 +174,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   text-transform: uppercase;
   font-size: 0.76rem;
   letter-spacing: 0.16em;
-  color: $navy;
+  color: $green-deep;
   padding: 0.5rem 1.15rem !important;
   margin: 0.3rem 0.15rem;
 }
@@ -204,7 +204,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   isolation: isolate;
 }
 
-// the venue photo, washed toward navy so the type reads over it
+// the venue photo, washed toward green so the type reads over it
 .hero::before {
   content: "";
   position: absolute;
@@ -222,8 +222,8 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(22, 40, 60, 0.45) 0%, rgba(22, 40, 60, 0) 100%),
-    linear-gradient(180deg, rgba(30, 50, 72, 0.62) 0%, rgba(30, 50, 72, 0.46) 45%, rgba(30, 50, 72, 0.72) 100%);
+    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(34, 58, 42, 0.45) 0%, rgba(34, 58, 42, 0) 100%),
+    linear-gradient(180deg, rgba(46, 74, 55, 0.62) 0%, rgba(46, 74, 55, 0.46) 45%, rgba(46, 74, 55, 0.72) 100%);
 }
 
 .hero-inner { padding: 4.5rem 1.5rem; max-width: 900px; width: 100%; }
@@ -242,7 +242,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
-  text-shadow: 0 2px 24px rgba(15, 28, 42, 0.35);
+  text-shadow: 0 2px 24px rgba(24, 42, 30, 0.35);
 }
 
 .hero-amp {
@@ -255,7 +255,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   color: $leaf;
   letter-spacing: 0;
   margin: 0.1em 0;
-  text-shadow: 0 2px 20px rgba(15, 28, 42, 0.4);
+  text-shadow: 0 2px 20px rgba(24, 42, 30, 0.4);
 }
 
 .hero-sub {
@@ -265,13 +265,13 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: $ivory;
   margin: 1.8rem 0 0;
-  text-shadow: 0 1px 14px rgba(15, 28, 42, 0.55);
+  text-shadow: 0 1px 14px rgba(24, 42, 30, 0.55);
 }
 
 // ---------------------------------------------------------------- bands
 
-// every section is a full-bleed band, on one of three grounds: navy for the
-// title band and at most one deep section per page, ivory as the default,
+// every section is a full-bleed band, on one of three grounds: deep green for
+// the title band and at most one deep section per page, ivory as the default,
 // and pale blue for one lighter feature section
 .band { padding: clamp(2.6rem, 5vw, 4rem) 1.5rem; }
 .band-slim { padding-top: clamp(1.8rem, 3vw, 2.6rem); padding-bottom: clamp(1.8rem, 3vw, 2.6rem); }
@@ -281,22 +281,22 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
 
 .band-ivory { background-color: $ivory; }
 
-.band-navy {
-  background-color: $navy;
+.band-deep {
+  background-color: $green-deep;
   color: $ivory;
   text-align: center;
 }
 
-.band-navy .eyebrow-lg,
-.band-navy .section-title { color: $ivory; }
-.band-navy .subtitle { color: rgba(250, 250, 247, 0.88); }
-.band-navy .eyebrow { color: $leaf; }
-.band-navy a { color: $ivory; }
-.band-navy a:hover { color: $leaf; }
+.band-deep .eyebrow-lg,
+.band-deep .section-title { color: $ivory; }
+.band-deep .subtitle { color: rgba(250, 250, 247, 0.88); }
+.band-deep .eyebrow { color: $leaf; }
+.band-deep a { color: $ivory; }
+.band-deep a:hover { color: $leaf; }
 
 .band-blue {
   background-color: $blue-pale;
-  color: $navy;
+  color: $green-deep;
   text-align: center;
 }
 
@@ -349,7 +349,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-family: $font-display;
   font-style: italic;
   font-size: clamp(1.6rem, 3vw, 2.1rem);
-  color: $navy;
+  color: $green-deep;
   line-height: 1.1;
 }
 
@@ -374,7 +374,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-family: $font-display;
   font-style: italic;
   font-size: 0.98rem;
-  color: $navy-mid;
+  color: $green-mid;
   margin-top: 0.55rem;
 }
 
@@ -398,7 +398,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   height: auto;
   background: $ivory;
   padding: 10px;
-  box-shadow: 0 10px 30px rgba(34, 55, 79, 0.18);
+  box-shadow: 0 10px 30px rgba(60, 92, 69, 0.18);
 }
 
 // ---------------------------------------------------------------- countdown
@@ -417,7 +417,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-family: $font-display;
   font-size: clamp(2.2rem, 6.5vw, 3.4rem);
   font-weight: 400;
-  color: $navy;
+  color: $green-deep;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
@@ -459,7 +459,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-style: italic;
   font-weight: 400;
   font-size: 1.6rem;
-  color: $navy;
+  color: $green-deep;
   margin: 0.45rem 0 0.5rem;
 }
 
@@ -492,7 +492,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   letter-spacing: 0.12em;
   font-size: 0.84rem;
   font-weight: 400;
-  color: $navy;
+  color: $green-deep;
   margin: 0 0 0.25rem;
 }
 
@@ -526,13 +526,13 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   color: $blue;
 }
 
-// on navy, entries invert
-.band-navy .listing { text-align: left; }
-.band-navy .spot { border-top-color: $rule-on-navy; }
-.band-navy .spot h4 { color: $ivory; }
-.band-navy .spot .place { color: $leaf; }
-.band-navy .spot p { color: rgba(250, 250, 247, 0.86); }
-.band-navy .spot-flag { color: $blue-pale; border-color: rgba(219, 231, 242, 0.5); }
+// on the deep green, entries invert
+.band-deep .listing { text-align: left; }
+.band-deep .spot { border-top-color: $rule-on-deep; }
+.band-deep .spot h4 { color: $ivory; }
+.band-deep .spot .place { color: $leaf; }
+.band-deep .spot p { color: rgba(250, 250, 247, 0.86); }
+.band-deep .spot-flag { color: $blue-pale; border-color: rgba(219, 231, 242, 0.5); }
 
 // ---------------------------------------------------------------- collapsible groups
 
@@ -552,7 +552,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-family: $font-display;
   font-style: italic;
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
-  color: $navy;
+  color: $green-deep;
 }
 
 .group > summary::-webkit-details-marker { display: none; }
@@ -593,7 +593,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   font-family: $font-display;
   font-style: italic;
   font-size: 1.25rem;
-  color: $navy;
+  color: $green-deep;
 }
 
 .faq-item summary::-webkit-details-marker { display: none; }
@@ -641,7 +641,7 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   line-height: 1.7;
   max-width: 520px;
   margin: 0 auto 1.6rem;
-  color: $navy;
+  color: $green-deep;
 }
 
 // Zola's widget lands in here; the ivory panel gives it a home
@@ -689,14 +689,14 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
 .fl-map .rd-case { stroke: #a9bc94; opacity: 0.85; }
 .fl-map .rd-fill { stroke: $ivory; }
 
-.fl-map .frame { fill: none; stroke: rgba(34, 55, 79, 0.28); stroke-width: 2; }
+.fl-map .frame { fill: none; stroke: rgba(60, 92, 69, 0.28); stroke-width: 2; }
 
 .fl-map .mk-halo { fill: #eef1ee; opacity: 0.92; }
-.fl-map .mk-ring { fill: none; stroke: $navy; stroke-width: 2.2; }
+.fl-map .mk-ring { fill: none; stroke: $green-deep; stroke-width: 2.2; }
 .fl-map .mk-dot,
-.fl-map .mk-fill { fill: $navy; }
+.fl-map .mk-fill { fill: $green-deep; }
 .fl-map .mk-door { fill: #eef1ee; }
-.fl-map .mk-line { fill: none; stroke: $navy; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.fl-map .mk-line { fill: none; stroke: $green-deep; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
 .fl-map .lbl,
 .fl-map .cap,
@@ -707,11 +707,11 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   stroke-linejoin: round;
 }
 
-.fl-map .lbl { font-family: $font-display; font-style: italic; font-size: 26px; fill: $navy; }
-.fl-map .cap { font-family: $font-body; font-size: 14px; letter-spacing: 0.16em; fill: $navy-mid; }
+.fl-map .lbl { font-family: $font-display; font-style: italic; font-size: 26px; fill: $green-deep; }
+.fl-map .cap { font-family: $font-body; font-size: 14px; letter-spacing: 0.16em; fill: $green-mid; }
 .fl-map .cap.sm { font-size: 12.5px; letter-spacing: 0.12em; }
 .fl-map .water-lbl { font-family: $font-display; font-style: italic; font-size: 21px; fill: $blue; stroke-width: 3; }
-.fl-map .attrib { font-family: $font-body; font-size: 10.5px; letter-spacing: 0.08em; fill: rgba(34, 55, 79, 0.4); }
+.fl-map .attrib { font-family: $font-body; font-size: 10.5px; letter-spacing: 0.08em; fill: rgba(60, 92, 69, 0.4); }
 
 // ---------------------------------------------------------------- footer
 
@@ -724,7 +724,7 @@ footer.footer {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.68rem;
-  color: $navy;
+  color: $green-deep;
 }
 
 footer.footer::before {

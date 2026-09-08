@@ -4,7 +4,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-navy">
+<section class="band band-slim band-deep">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Travel &amp; Stay</p>
@@ -45,7 +45,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-navy">
+<section class="band band-deep">
   <div class="band-inner">
 
     <h2 class="section-title" style="text-align:center">Our Recommendations</h2>

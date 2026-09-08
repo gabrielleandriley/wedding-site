@@ -4,7 +4,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-navy">
+<section class="band band-slim band-deep">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Questions</p>

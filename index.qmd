@@ -16,7 +16,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
   </div>
 </section>
 
-<section class="band band-slim band-navy">
+<section class="band band-slim band-deep">
   <div class="band-narrow">
 
     <p class="eyebrow">Save the date</p>
