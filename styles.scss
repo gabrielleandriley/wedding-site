@@ -2,17 +2,17 @@
 
 // Coastal-chic, green + preppy. Pulled from the green shell print,
 // the cabana stripe, and the deep-green inspo layouts.
-$green-deep:   #4e5636;
-$green:        #6b7548;
-$sage:         #8b9663;
-$shell:        #a8b184;
-$sage-light:   #cbd1af;
-$cream:        #eff0e9;
-$cream-deep:   #e3e5da;
+$green-deep:   #1d3b28;
+$green:        #3f5a3a;
+$sage:         #617a55;
+$shell:        #8ca37c;
+$sage-light:   #d6e2b6;
+$cream:        #f7f6f0;
+$cream-deep:   #edebe1;
 $sand:         #edbe9a;
-$blue:         #7d97ad;
-$blue-light:   #dce6f0;
-$ink:          #333a2c;
+$blue:         #7a93b0;
+$blue-light:   #c7d6e8;
+$ink:          #2a3527;
 
 $body-bg: $cream;
 $body-color: $ink;
@@ -212,14 +212,14 @@ a:hover { color: $sage; text-decoration: underline; }
     // pool of shade behind the type so the names read over the bright water
     radial-gradient(
       ellipse 70% 55% at 50% 48%,
-      rgba(58, 64, 40, 0.45) 0%,
-      rgba(58, 64, 40, 0) 100%
+      rgba(22, 45, 31, 0.45) 0%,
+      rgba(22, 45, 31, 0) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(78, 86, 54, 0.64) 0%,
-      rgba(78, 86, 54, 0.48) 45%,
-      rgba(78, 86, 54, 0.72) 100%
+      rgba(29, 59, 40, 0.64) 0%,
+      rgba(29, 59, 40, 0.48) 45%,
+      rgba(29, 59, 40, 0.72) 100%
     );
   z-index: -1;
 }
@@ -1235,19 +1235,21 @@ table td:last-child a:hover {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.24rem 0.75rem;
-  border: 1px solid rgba(127, 156, 104, 0.6);
+  border: 1px solid rgba(122, 147, 176, 0.65);
+  background: rgba(199, 214, 232, 0.35);
   border-radius: 999px;
   font-family: $font-family-sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.6rem;
   font-weight: 500;
-  color: $sage;
+  color: #4d6d8f;
 }
 
 .band-green .spot-flag {
-  color: $sage-light;
-  border-color: rgba(201, 217, 184, 0.5);
+  color: $blue-light;
+  border-color: rgba(199, 214, 232, 0.5);
+  background: rgba(199, 214, 232, 0.12);
 }
 
 // ---------------------------------------------------------------------- faq

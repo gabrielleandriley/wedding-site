@@ -51,6 +51,12 @@ pagetitle: "Things to Do — Gabrielle & Riley"
           <p>Gourmet sandwiches, wraps, and salads, with plenty for vegetarians and vegans.</p>
         </div>
         <div class="spot">
+          <h4><a href="https://www.allechantithaca.com/" target="_blank" rel="noopener">Allechant</a></h4>
+          <div class="place">Ithaca</div>
+          <p>Fine dining out on Hanshaw Road, and our pick for brunch &mdash; served Saturday and Sunday mornings.</p>
+        </div>
+
+        <div class="spot">
           <h4>The Heights</h4>
           <div class="place">Ithaca</div>
           <p>The fancier option. Contemporary American cooking with a view over downtown.</p>
@@ -78,6 +84,12 @@ pagetitle: "Things to Do — Gabrielle & Riley"
           <div class="place">Ithaca &amp; Trumansburg</div>
           <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
         </div>
+        <div class="spot">
+          <h4><a href="https://www.trimmersicecream.com/" target="_blank" rel="noopener">Trimmers Ice Cream</a></h4>
+          <div class="place">Trumansburg</div>
+          <p>A family-run shop on Route 96 and a village institution, right by the welcome party.</p>
+        </div>
+
         <div class="spot">
           <h4>Spotted Duck Creamery</h4>
           <div class="place">Penn Yan</div>
