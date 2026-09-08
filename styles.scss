@@ -2,15 +2,17 @@
 
 // Coastal-chic, green + preppy. Pulled from the green shell print,
 // the cabana stripe, and the deep-green inspo layouts.
-$green-deep:   #2f4739;
-$green:        #46614a;
-$sage:         #7f9c68;
-$shell:        #8fae79;
-$sage-light:   #c9d9b8;
-$cream:        #f7f3ea;
-$cream-deep:   #ece7db;
-$sand:         #d8cda6;
-$ink:          #2b3a2e;
+$green-deep:   #4e5636;
+$green:        #6b7548;
+$sage:         #8b9663;
+$shell:        #a8b184;
+$sage-light:   #cbd1af;
+$cream:        #eff0e9;
+$cream-deep:   #e3e5da;
+$sand:         #edbe9a;
+$blue:         #7d97ad;
+$blue-light:   #dce6f0;
+$ink:          #333a2c;
 
 $body-bg: $cream;
 $body-color: $ink;
@@ -210,14 +212,14 @@ a:hover { color: $sage; text-decoration: underline; }
     // pool of shade behind the type so the names read over the bright water
     radial-gradient(
       ellipse 70% 55% at 50% 48%,
-      rgba(35, 55, 43, 0.45) 0%,
-      rgba(35, 55, 43, 0) 100%
+      rgba(58, 64, 40, 0.45) 0%,
+      rgba(58, 64, 40, 0) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(47, 71, 57, 0.62) 0%,
-      rgba(47, 71, 57, 0.46) 45%,
-      rgba(47, 71, 57, 0.70) 100%
+      rgba(78, 86, 54, 0.64) 0%,
+      rgba(78, 86, 54, 0.48) 45%,
+      rgba(78, 86, 54, 0.72) 100%
     );
   z-index: -1;
 }
@@ -273,7 +275,7 @@ a:hover { color: $sage; text-decoration: underline; }
 // ------------------------------------------------------------------- sections
 
 .band {
-  padding: clamp(4.5rem, 9vw, 7.5rem) 1.5rem;
+  padding: clamp(2.4rem, 4.5vw, 3.6rem) 1.5rem;
 }
 
 .band-green {
@@ -316,7 +318,7 @@ a:hover { color: $sage; text-decoration: underline; }
 .band-alt { background-color: #f3f1e9; }
 
 // shallower band — used for the save-the-date stripe
-.band-slim { padding-top: clamp(2.2rem, 4vw, 3.2rem); padding-bottom: clamp(2.2rem, 4vw, 3.2rem); }
+.band-slim { padding-top: clamp(1.8rem, 3vw, 2.6rem); padding-bottom: clamp(1.8rem, 3vw, 2.6rem); }
 
 .band-shells {
   position: relative;
@@ -831,8 +833,9 @@ a:hover { color: $sage; text-decoration: underline; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(1.5rem, 3vw, 2.4rem);
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
   border: 1px solid rgba(47, 71, 57, 0.12);
+  margin-top: 2.2rem;
 }
 
 .weekend-photo img {
@@ -847,6 +850,60 @@ a:hover { color: $sage; text-decoration: underline; }
 @media (max-width: 860px) {
   .weekend-grid { grid-template-columns: 1fr; }
   .weekend-photo { min-height: 320px; }
+}
+
+// ---------------------------------------------------------- the weekend
+
+.day-list {
+  margin: 2rem 0 0;
+  text-align: left;
+  border-bottom: 1px solid rgba(47, 71, 57, 0.18);
+}
+
+.day-entry {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: start;
+  border-top: 1px solid rgba(47, 71, 57, 0.18);
+  padding: 1.6rem 0;
+}
+
+.day-name {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  color: $green-deep;
+  line-height: 1.1;
+}
+
+.day-meta {
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  color: $sage;
+  margin-bottom: 0.5rem;
+}
+
+.day-body p {
+  font-family: $headings-font-family;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: $ink;
+  margin: 0;
+}
+
+.day-where {
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(43, 58, 46, 0.72);
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 620px) {
+  .day-entry { grid-template-columns: 1fr; gap: 0.5rem; }
 }
 
 // ------------------------------------------------------------------ countdown
@@ -1039,21 +1096,24 @@ table td:last-child a:hover {
 }
 
 .spot h4 {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: 1.42rem;
-  font-weight: 500;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.88rem;
+  font-weight: 400;
   color: $green-deep;
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.3rem;
 }
 
 .spot .place {
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.64rem;
+  font-family: $headings-font-family;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 1rem;
   color: $sage;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
 }
 
 .spot p {

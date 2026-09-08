@@ -17,7 +17,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
     <div class="faq-list">
 
-      <details class="faq-item" open>
+      <details class="faq-item">
         <summary>What is the dress code?</summary>
         <p>We ask that guests wear formal attire. We suggest suits for men, and floor-length or
         tea-length dresses for women. If you have any questions, feel free to ask us. One practical
@@ -38,14 +38,6 @@ pagetitle: "FAQs — Gabrielle & Riley"
         we have saved a seat for.</p>
       </details>
 
-      <details class="faq-item">
-        <summary>Are kids welcome?</summary>
-        <p>Yes &mdash; your children are welcome. If you know us, you know we love getting to be
-        the big cousins to all the children in our lives. Children twelve and under will have a
-        children's meal at the venue. There is also plenty for them to do nearby: the Sciencenter,
-        the Ithaca Children's Garden, the Museum of the Earth, and the farmers market are all on
-        our <a href="things-to-do.html">Things to Do</a> page.</p>
-      </details>
 
       <details class="faq-item">
         <summary>When do we need to RSVP?</summary>
@@ -70,22 +62,4 @@ pagetitle: "FAQs — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band script-banner">
-  <div class="plaque">
-
-    <p>Please do not hesitate to reach out to us with any other questions.</p>
-
-    <div class="contact-row">
-      <div class="contact">
-        <span class="contact-name">Gabrielle</span>
-        <a href="tel:+17033149502">(703) 314-9502</a>
-      </div>
-      <div class="contact">
-        <span class="contact-name">Riley</span>
-        <a href="tel:+16073424142">(607) 342-4142</a>
-      </div>
-    </div>
-
-  </div>
-</section>
 ```

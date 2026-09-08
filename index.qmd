@@ -34,37 +34,37 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 </section>
 
 <section class="band band-cream">
-  <div class="band-inner">
+  <div class="band-narrow">
 
-    <p class="eyebrow-lg" style="text-align:center">The Weekend</p>
+    <p class="eyebrow" style="text-align:center">The weekend</p>
 
-    <div class="weekend-grid">
+    <h2 class="section-title" style="text-align:center">Two Days in the Finger Lakes</h2>
 
-      <div class="weekend-cards">
+    <div class="day-list">
 
-        <div class="detail-card">
-          <div class="day">Friday, June 18</div>
-          <h3>Welcome Party</h3>
-          <div class="when">Dinner</div>
+      <div class="day-entry">
+        <div class="day-name">Friday</div>
+        <div class="day-body">
+          <div class="day-meta">June 18 &nbsp;·&nbsp; Welcome Party</div>
           <p>Join us the night before for a casual BBQ dinner at North Point Pavilion at Taughannock Falls State Park.</p>
-          <div class="where">North Point Pavilion &nbsp;·&nbsp; Trumansburg, New York</div>
+          <div class="day-where">North Point Pavilion &nbsp;·&nbsp; Trumansburg, New York</div>
         </div>
+      </div>
 
-        <div class="detail-card">
-          <div class="day">Saturday, June 19</div>
-          <h3>The Wedding</h3>
-          <div class="when">Ceremony &amp; Reception</div>
+      <div class="day-entry">
+        <div class="day-name">Saturday</div>
+        <div class="day-body">
+          <div class="day-meta">June 19 &nbsp;·&nbsp; The Wedding</div>
           <p>We will have a ceremony at the venue, followed by cocktails, dinner, and dancing.</p>
-          <div class="where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York</div>
+          <div class="day-where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York</div>
         </div>
-
       </div>
 
-      <div class="weekend-photo">
-        <img src="images/maine.jpg"
-             alt="Gabrielle and Riley on a hike in Maine, with the harbor and green hills behind them.">
-      </div>
+    </div>
 
+    <div class="weekend-photo">
+      <img src="images/maine.jpg"
+           alt="Gabrielle and Riley on a hike in Maine, with the harbor and green hills behind them.">
     </div>
 
   </div>

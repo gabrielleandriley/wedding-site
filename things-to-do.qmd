@@ -4,7 +4,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-green">
+<section class="band band-slim band-green">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Things to Do</p>
@@ -19,236 +19,205 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 <section class="band band-cream">
   <div class="band-inner">
 
-    <p class="eyebrow" style="text-align:center">Where we actually eat</p>
-
-    <h2 class="section-title" style="text-align:center">Food, Ice Cream &amp; Coffee</h2>
-
     <div class="group-list">
 
-      <details class="group" open>
+      <details class="group">
         <summary>Food</summary>
         <div class="listing">
 
-      <div class="spot">
-        <h4>Finger Lakes Cider House</h4>
-        <div class="place">Interlaken &nbsp;·&nbsp; Route 89</div>
-        <p>A food menu sourced from neighboring farms and their own orchard, plus cider tastings. Our favorite low-key afternoon.</p>
-      </div>
+        <div class="spot">
+          <h4>Finger Lakes Cider House</h4>
+          <div class="place">Interlaken</div>
+          <p>A food menu sourced from neighboring farms and their own orchard, plus cider tastings. Our favorite low-key afternoon.</p>
+        </div>
+        <div class="spot">
+          <h4>Tabora Farm</h4>
+          <div class="place">Dundee</div>
+          <p>Our favorite lunch stop when we are heading to the Seneca Lake wineries. A bakery and deli café, with soups, sandwiches, and South African dishes.</p>
+        </div>
+        <div class="spot">
+          <h4>Main Street Market</h4>
+          <div class="place">Trumansburg</div>
+          <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
+        </div>
+        <div class="spot">
+          <h4>Bickering Twins</h4>
+          <div class="place">Ithaca</div>
+          <p>Mexican, with tacos, birria quesadillas, and a tequila and mezcal bar.</p>
+        </div>
+        <div class="spot">
+          <h4>Gorgers</h4>
+          <div class="place">Ithaca</div>
+          <p>Gourmet sandwiches, wraps, and salads, with plenty for vegetarians and vegans.</p>
+        </div>
+        <div class="spot">
+          <h4>The Heights</h4>
+          <div class="place">Ithaca</div>
+          <p>The fancier option. Contemporary American cooking with a view over downtown.</p>
+        </div>
+        <div class="spot">
+          <h4>Saigon Kitchen</h4>
+          <div class="place">Ithaca</div>
+          <p>Our favorite Vietnamese food, and it makes great takeout.</p>
+        </div>
+        <div class="spot">
+          <h4>Ithaca Farmers Market</h4>
+          <div class="place">Ithaca</div>
+          <p>Saturday and Sunday mornings on the water at Steamboat Landing. Prepared food from a dozen stalls, plus produce, bread, and cider to take home.</p>
+        </div>
 
-      <div class="spot">
-        <h4>Tabora Farm</h4>
-        <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
-        <p>Our favorite lunch stop when we are heading to the Seneca Lake wineries. A bakery and deli café, with soups, sandwiches, and South African dishes.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Main Street Market</h4>
-        <div class="place">Trumansburg</div>
-        <p>Sandwiches, salads, local groceries, and Wide Awake Bakery bread. The best quick lunch on the way to the lake.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Saigon Kitchen</h4>
-        <div class="place">Ithaca</div>
-        <p>Our favorite Vietnamese food, and it makes great takeout.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Ithaca Farmers Market</h4>
-        <div class="place">Steamboat Landing</div>
-        <p>Saturday and Sunday mornings on the water. Prepared food from a dozen stalls, plus produce, bread, and cider to take home.</p>
-      </div>
-
-    </div>
+        </div>
       </details>
 
       <details class="group">
         <summary>Ice Cream</summary>
         <div class="listing">
 
-      <div class="spot">
-        <h4>Sweet Melissa's</h4>
-        <div class="place">Ithaca &amp; Trumansburg</div>
-        <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
-      </div>
+        <div class="spot">
+          <h4>Sweet Melissa's</h4>
+          <div class="place">Ithaca &amp; Trumansburg</div>
+          <p>Homemade hard ice cream and a large vegan lineup. There is a shop in each town.</p>
+        </div>
+        <div class="spot">
+          <h4>Spotted Duck Creamery</h4>
+          <div class="place">Penn Yan</div>
+          <p>Frozen custard made with duck egg yolks instead of chicken, which makes it denser and richer. Worth the drive.</p>
+        </div>
 
-      <div class="spot">
-        <h4>Spotted Duck Creamery</h4>
-        <div class="place">Penn Yan</div>
-        <p>Frozen custard made with duck egg yolks instead of chicken, which makes it denser and richer. Worth the drive.</p>
-      </div>
-
-    </div>
+        </div>
       </details>
 
       <details class="group">
         <summary>Coffee</summary>
         <div class="listing">
 
-      <div class="spot">
-        <h4>Gimme! Coffee</h4>
-        <div class="place">Ithaca</div>
-        <p>The original Ithaca roaster and still the one we go to most.</p>
-      </div>
+        <div class="spot">
+          <h4>Gimme! Coffee</h4>
+          <div class="place">Ithaca</div>
+          <p>The original Ithaca roaster and still the one we go to most.</p>
+        </div>
+        <div class="spot">
+          <h4>Press Bay Alley</h4>
+          <div class="place">Ithaca</div>
+          <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
+        </div>
 
-      <div class="spot">
-        <h4>Press Bay Alley</h4>
-        <div class="place">Ithaca</div>
-        <p>Coffee and a cluster of small shops in a converted alley off West State Street.</p>
-      </div>
-
-    </div>
+        </div>
       </details>
 
-    </div>
+      <details class="group">
+        <summary>Wineries</summary>
+        <div class="listing">
 
-  </div>
-</section>
+        <div class="spot">
+          <h4>Hosmer Winery</h4>
+          <div class="place">Ovid</div>
+          <p>Riley worked here, so we are biased. The Riesling and Cabernet Franc set the bar on Cayuga, and the vineyards are some of the oldest on the lake.</p>
+        </div>
+        <div class="spot">
+          <h4>Six Eighty Cellars</h4>
+          <div class="place">Ovid</div>
+          <p>Small-batch wines aged in clay, concrete, and terracotta, on a steep slope with a long view down Cayuga.</p>
+        </div>
+        <div class="spot">
+          <h4>Bet the Farm</h4>
+          <div class="place">Interlaken</div>
+          <p>Just up Cayuga from us, and the quietest and prettiest of the bunch. Women-owned, in a blue barn surrounded by vines.</p>
+        </div>
+        <div class="spot">
+          <h4>Six Mile Creek Vineyard</h4>
+          <div class="place">Ithaca</div>
+          <p>The closest winery to town, about two miles from downtown. Ithaca's oldest, and a distillery as well.</p>
+        </div>
+        <div class="spot">
+          <h4>Hermann J. Wiemer</h4>
+          <div class="place">Dundee</div>
+          <p>The benchmark for Finger Lakes Riesling, over on Seneca. Their dry Riesling is on the wine list at our reception.</p>
+        </div>
+        <div class="spot">
+          <h4>Dr. Konstantin Frank</h4>
+          <div class="place">Hammondsport</div>
+          <p>The furthest drive and the most history &mdash; the Keuka winery that proved vinifera could grow here at all.</p>
+        </div>
 
-<section class="band band-green">
-  <div class="band-inner">
+        </div>
+      </details>
 
-    <p class="eyebrow" style="text-align:center">Cayuga, Seneca &amp; Keuka</p>
+      <details class="group">
+        <summary>Hiking &amp; Walking Trails</summary>
+        <div class="listing">
 
-    <h2 class="section-title" style="text-align:center">Wineries</h2>
+        <div class="spot">
+          <h4>Taughannock Falls</h4>
+          <div class="place">Trumansburg</div>
+          <p>A 215-foot waterfall, taller than Niagara, and where the Friday welcome party is. The gorge trail to the base is flat and shaded.</p>
+        </div>
+        <div class="spot">
+          <h4>Watkins Glen State Park</h4>
+          <div class="place">Watkins Glen</div>
+          <p>Nineteen waterfalls along a stone gorge trail with tunnels and bridges. Closest to the venue and the busiest, so go early.</p>
+        </div>
+        <div class="spot">
+          <h4>Robert H. Treman</h4>
+          <div class="place">Ithaca</div>
+          <p>Our pick for a hot day. You can swim at the base of a waterfall in the lower park.</p>
+        </div>
+        <div class="spot">
+          <h4>Buttermilk Falls</h4>
+          <div class="place">Ithaca</div>
+          <p>Right in town and quick, if you only have an hour. The gorge trails are wet stone, so wear real shoes.</p>
+        </div>
+        <div class="spot">
+          <h4>Beebe Lake Loop</h4>
+          <div class="place">Ithaca</div>
+          <p>An easy loop around the lake on Cornell's campus, past a gorge and a waterfall. Flat, shaded, and about a mile.</p>
+        </div>
+        <div class="spot">
+          <h4>Stewart Park &amp; the Waterfront Trail</h4>
+          <div class="place">Ithaca</div>
+          <p>A flat paved path along the south end of Cayuga Lake. It runs right past the farmers market on weekend mornings.</p>
+        </div>
 
-    <div class="listing">
+        </div>
+      </details>
 
-      <div class="spot">
-        <h4>Hosmer Winery</h4>
-        <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
-        <p>Riley worked here, so we are biased. The Riesling and Cabernet Franc set the bar on this lake, and the vineyards are some of the oldest on Cayuga.</p>
-      </div>
+      <details class="group">
+        <summary>With Kids</summary>
+        <div class="listing">
 
-      <div class="spot">
-        <h4>Six Eighty Cellars</h4>
-        <div class="place">Ovid &nbsp;·&nbsp; Cayuga Lake</div>
-        <p>Small-batch wines aged in clay, concrete, and terracotta, on a steep slope with a long view down the lake.</p>
-      </div>
+        <div class="spot">
+          <h4>Sciencenter</h4>
+          <div class="place">Ithaca</div>
+          <p>A hands-on science museum built for kids, with an outdoor play area.</p>
+        </div>
+        <div class="spot">
+          <h4>Ithaca Children's Garden</h4>
+          <div class="place">Ithaca</div>
+          <p>Three acres of gardens designed to be climbed on and dug in.</p>
+        </div>
+        <div class="spot">
+          <h4>Museum of the Earth</h4>
+          <div class="place">Ithaca</div>
+          <p>Fossils, a full whale skeleton, and a very good rainy-day option.</p>
+        </div>
+        <div class="spot">
+          <h4>Stewart Park Playground</h4>
+          <div class="place">Ithaca</div>
+          <p>An inclusive playscape on the lakefront, built so children of all abilities can play side by side. The carousel runs through the summer.</p>
+        </div>
+        <div class="spot">
+          <h4>Cayuga Nature Center</h4>
+          <div class="place">Ithaca</div>
+          <p>A six-storey treehouse up into the forest canopy, live animals to meet, and miles of trails across a hillside above the lake.</p>
+        </div>
+        <div class="spot">
+          <h4>Cornell Botanic Gardens</h4>
+          <div class="place">Ithaca</div>
+          <p>Free gardens and arboretum on campus, easy to wander with small children and beautiful in June.</p>
+        </div>
 
-      <div class="spot">
-        <h4>Bet the Farm</h4>
-        <div class="place">Cayuga Lake</div>
-        <p>Just up the lake from us, and the quietest and prettiest of the bunch. Women-owned, in a blue barn surrounded by vines.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Six Mile Creek Vineyard</h4>
-        <div class="place">Ithaca</div>
-        <p>The closest winery to Ithaca, about two miles from downtown. The town's oldest, and a distillery as well.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Hermann J. Wiemer</h4>
-        <div class="place">Dundee &nbsp;·&nbsp; Seneca Lake</div>
-        <p>The benchmark for Finger Lakes Riesling. Their dry Riesling is on the wine list at our reception.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Dr. Konstantin Frank</h4>
-        <div class="place">Hammondsport &nbsp;·&nbsp; Keuka Lake</div>
-        <p>The furthest drive and the most history &mdash; the winery that proved vinifera could grow here at all.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="band band-cream">
-  <div class="band-inner">
-
-    <p class="eyebrow" style="text-align:center">Waterfalls &amp; lakeside paths</p>
-
-    <h2 class="section-title" style="text-align:center">Hiking &amp; Walking Trails</h2>
-
-    <div class="listing">
-
-      <div class="spot">
-        <h4>Taughannock Falls</h4>
-        <div class="place">Trumansburg</div>
-        <p>A 215-foot waterfall, taller than Niagara, and where the Friday welcome party is. The gorge trail to the base is flat and shaded.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Watkins Glen State Park</h4>
-        <div class="place">Watkins Glen</div>
-        <p>Nineteen waterfalls along a stone gorge trail with tunnels and bridges. Closest to the venue and the busiest, so go early.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Robert H. Treman</h4>
-        <div class="place">Ithaca</div>
-        <p>Our pick for a hot day. You can swim at the base of a waterfall in the lower park.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Buttermilk Falls</h4>
-        <div class="place">Ithaca</div>
-        <p>Right in town and quick, if you only have an hour. The gorge trails are wet stone, so wear real shoes.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Beebe Lake Loop</h4>
-        <div class="place">Cornell campus, Ithaca</div>
-        <p>An easy loop around the lake on Cornell's campus, past a gorge and a waterfall. Flat, shaded, and about a mile.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Stewart Park &amp; the Waterfront Trail</h4>
-        <div class="place">Ithaca</div>
-        <p>A flat paved path along the south end of Cayuga Lake. It runs right past the farmers market on Saturday and Sunday mornings.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="band band-green">
-  <div class="band-inner">
-
-    <p class="eyebrow" style="text-align:center">For the little ones</p>
-
-    <h2 class="section-title" style="text-align:center">With Kids</h2>
-
-    <div class="listing">
-
-      <div class="spot">
-        <h4>Sciencenter</h4>
-        <div class="place">Ithaca</div>
-        <p>A hands-on science museum built for kids, with an outdoor play area.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Ithaca Children's Garden</h4>
-        <div class="place">Ithaca</div>
-        <p>Three acres of gardens designed to be climbed on and dug in.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Museum of the Earth</h4>
-        <div class="place">Ithaca</div>
-        <p>Fossils, a full whale skeleton, and a very good rainy-day option.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Stewart Park Playground</h4>
-        <div class="place">Ithaca</div>
-        <p>An inclusive playscape on the lakefront, built so children of all abilities can play side by side. The carousel runs through the summer.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Cayuga Nature Center</h4>
-        <div class="place">Ithaca</div>
-        <p>A six-storey treehouse up into the forest canopy, live animals to meet, and miles of trails across a hillside above the lake.</p>
-      </div>
-
-      <div class="spot">
-        <h4>Cornell Botanic Gardens</h4>
-        <div class="place">Cornell campus, Ithaca</div>
-        <p>Free gardens and arboretum, easy to wander with small children and beautiful in June.</p>
-      </div>
+        </div>
+      </details>
 
     </div>
 
