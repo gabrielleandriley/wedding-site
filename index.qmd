@@ -36,9 +36,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
 <section class="band band-cream">
   <div class="band-narrow">
 
-    <p class="eyebrow" style="text-align:center">The weekend</p>
-
-    <h2 class="section-title" style="text-align:center">Two Days in the Finger Lakes</h2>
+    <h2 class="section-title" style="text-align:center">Weekend Itinerary</h2>
 
     <div class="day-list">
 
@@ -70,7 +68,7 @@ pagetitle: "Gabrielle & Riley — June 19, 2027"
   </div>
 </section>
 
-<section class="band band-green">
+<section class="band band-blue">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Counting Down</p>

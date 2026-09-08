@@ -2,16 +2,16 @@
 
 // Coastal-chic, green + preppy. Pulled from the green shell print,
 // the cabana stripe, and the deep-green inspo layouts.
-$green-deep:   #1d3b28;
-$green:        #34543d;
-$sage:         #9d8748;
-$shell:        #c0a86a;
-$sage-light:   #e1cc96;
-$cream:        #fcebd0;
-$cream-deep:   #f4dfbe;
+$green-deep:   #3c5c45;
+$green:        #4d7059;
+$sage:         #617a55;
+$shell:        #8ca37c;
+$sage-light:   #d6e2b6;
+$cream:        #fafaf7;
+$cream-deep:   #f0f0ec;
 $sand:         #edbe9a;
-$blue:         #6d7b93;
-$blue-light:   #b1baca;
+$blue:         #5f7793;
+$blue-light:   #c7d6e8;
 $ink:          #24301f;
 
 $body-bg: $cream;
@@ -19,8 +19,9 @@ $body-color: $ink;
 $link-color: $green;
 
 $font-family-sans-serif: "Tenor Sans", "Optima", "Avenir Next", sans-serif;
-$headings-font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-$display-font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+$headings-font-family: "Playfair Display", Georgia, serif;
+$display-font-family: "Playfair Display", Georgia, serif;
+$hero-font-family:    "Cormorant Garamond", Georgia, serif;
 $headings-color: $green-deep;
 $headings-font-weight: 600;
 
@@ -32,7 +33,7 @@ $footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Yellowtail&display=swap');
 
 html { overflow-x: hidden; }
 
@@ -102,7 +103,7 @@ main.content h2 {
 @mixin cabana-stripe($w: 6px) {
   background-image: repeating-linear-gradient(
     90deg,
-    $sage-light 0, $sage-light $w,
+    $blue-light 0, $blue-light $w,
     $cream $w, $cream ($w * 2)
   );
 }
@@ -213,14 +214,14 @@ a:hover { color: $sage; text-decoration: underline; }
     // pool of shade behind the type so the names read over the bright water
     radial-gradient(
       ellipse 70% 55% at 50% 48%,
-      rgba(22, 45, 31, 0.45) 0%,
-      rgba(22, 45, 31, 0) 100%
+      rgba(34, 58, 42, 0.45) 0%,
+      rgba(34, 58, 42, 0) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(29, 59, 40, 0.64) 0%,
-      rgba(29, 59, 40, 0.48) 45%,
-      rgba(29, 59, 40, 0.72) 100%
+      rgba(46, 74, 55, 0.62) 0%,
+      rgba(46, 74, 55, 0.46) 45%,
+      rgba(46, 74, 55, 0.70) 100%
     );
   z-index: -1;
 }
@@ -238,7 +239,7 @@ a:hover { color: $sage; text-decoration: underline; }
 }
 
 .hero-names {
-  font-family: $headings-font-family;
+  font-family: $hero-font-family;
   font-weight: 300;
   color: $cream;
   font-size: clamp(2.6rem, 9vw, 5.6rem);
@@ -251,7 +252,7 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .hero-amp {
   display: block;
-  font-family: $headings-font-family;
+  font-family: $hero-font-family;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
@@ -313,6 +314,30 @@ a:hover { color: $sage; text-decoration: underline; }
 .band-green a:hover { color: $sage-light; }
 
 .band-cream { background-color: $cream; }
+
+// the powder blue and soft leaf, used as grounds in their own right
+.band-blue { background-color: $blue-light; }
+.band-leaf { background-color: #eef3e6; } // a pale wash, not the full swatch
+
+.band-blue .eyebrow,
+.band-leaf .eyebrow { color: $green; }
+
+// dark type on the blue, so it can host a section of its own
+.band-blue {
+  color: $green-deep;
+  text-align: center;
+}
+
+.band-blue .eyebrow-lg,
+.band-blue .section-title,
+.band-blue .count-num { color: $green-deep; }
+
+.band-blue .count-label { color: $green; }
+
+.band-blue .date-line { color: $green-deep; }
+
+.band-blue .date-place,
+.band-blue .subtitle { color: rgba(40, 62, 47, 0.85); }
 
 // a hair deeper than $cream — enough to separate stacked sections without
 // adding another colour to the page
@@ -612,13 +637,13 @@ a:hover { color: $sage; text-decoration: underline; }
   .fl-map { min-width: 560px; }
 }
 
-.fl-map .ground { fill: #e7eede; }
-.fl-map .wood   { fill: #c2d4ae; }
-.fl-map .park   { fill: #b3caa0; }
+.fl-map .ground { fill: #eef0e6; }
+.fl-map .wood   { fill: #d6e2b6; }
+.fl-map .park   { fill: #c3d4a0; }
 
 .fl-map .water {
-  fill: #a7c9dd;
-  stroke: #8db4ce;
+  fill: #c7d6e8;
+  stroke: #9fb6d0;
   stroke-width: 1.2;
 }
 
@@ -630,8 +655,8 @@ a:hover { color: $sage; text-decoration: underline; }
   stroke-linejoin: round;
 }
 
-.fl-map .rd-case { stroke: #a3b691; opacity: 0.85; }
-.fl-map .rd-fill { stroke: #f8faf3; }
+.fl-map .rd-case { stroke: #a9bc94; opacity: 0.85; }
+.fl-map .rd-fill { stroke: #fbfcf6; }
 
 .fl-map .frame {
   fill: none;
@@ -640,11 +665,11 @@ a:hover { color: $sage; text-decoration: underline; }
 }
 
 // a cream disc lifts each marker off the busy ground
-.fl-map .mk-halo { fill: #f2f6ec; opacity: 0.92; }
+.fl-map .mk-halo { fill: #eef0e6; opacity: 0.92; }
 .fl-map .mk-ring { fill: none; stroke: $green-deep; stroke-width: 2.2; }
 .fl-map .mk-dot,
 .fl-map .mk-fill { fill: $green-deep; }
-.fl-map .mk-door { fill: #f2f6ec; }
+.fl-map .mk-door { fill: #eef0e6; }
 
 .fl-map .mk-line {
   fill: none;
@@ -659,7 +684,7 @@ a:hover { color: $sage; text-decoration: underline; }
 .fl-map .cap,
 .fl-map .water-lbl {
   paint-order: stroke fill;
-  stroke: #eef3e6;
+  stroke: #eef0e6;
   stroke-width: 4.5;
   stroke-linejoin: round;
 }
@@ -687,7 +712,7 @@ a:hover { color: $sage; text-decoration: underline; }
   font-family: $headings-font-family;
   font-style: italic;
   font-size: 21px;
-  fill: #4f7f96;
+  fill: #5b7f9c;
   stroke-width: 3;
 }
 
@@ -785,8 +810,8 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .detail-card p {
   font-family: $headings-font-family;
-  font-size: 1.12rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   color: $ink;
   margin-bottom: 0;
 }
@@ -889,8 +914,8 @@ a:hover { color: $sage; text-decoration: underline; }
 
 .day-body p {
   font-family: $headings-font-family;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   color: $ink;
   margin: 0;
 }
@@ -1108,19 +1133,19 @@ table td:last-child a:hover {
 }
 
 .spot .place {
-  font-family: $headings-font-family;
-  font-style: italic;
+  font-family: $font-family-sans-serif;
+  font-style: normal;
   text-transform: none;
-  letter-spacing: 0.01em;
-  font-size: 1rem;
+  letter-spacing: 0.03em;
+  font-size: 0.82rem;
   color: $sage;
   margin-bottom: 0.6rem;
 }
 
 .spot p {
   font-family: $headings-font-family;
-  font-size: 1.06rem;
-  line-height: 1.7;
+  font-size: 0.94rem;
+  line-height: 1.75;
   margin: 0;
   color: rgba(43, 58, 46, 0.9);
 }
@@ -1299,8 +1324,8 @@ table td:last-child a:hover {
 
 .faq-item p {
   font-family: $headings-font-family;
-  font-size: 1.08rem;
-  line-height: 1.75;
+  font-size: 0.97rem;
+  line-height: 1.8;
   color: $ink;
   margin: 0 0 1.5rem;
   padding-right: 2.6rem;

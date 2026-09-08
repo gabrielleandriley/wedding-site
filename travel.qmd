@@ -108,7 +108,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 
       <div class="spot">
         <h4><a href="https://www.burdetthousebandb.com/" target="_blank" rel="noopener">Burdett House</a></h4>
-        <div class="place">BURDETT &nbsp;·&nbsp; SENECA LAKE</div>
+        <div class="place">BURDETT</div>
         <p>An 1880 Queen Anne Victorian up the east side of the lake, north of Watkins Glen.</p>
       </div>
 
