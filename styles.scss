@@ -3,16 +3,16 @@
 // Coastal-chic, green + preppy. Pulled from the green shell print,
 // the cabana stripe, and the deep-green inspo layouts.
 $green-deep:   #1d3b28;
-$green:        #3f5a3a;
-$sage:         #617a55;
-$shell:        #8ca37c;
-$sage-light:   #d6e2b6;
-$cream:        #f7f6f0;
-$cream-deep:   #edebe1;
+$green:        #34543d;
+$sage:         #9d8748;
+$shell:        #c0a86a;
+$sage-light:   #e1cc96;
+$cream:        #fcebd0;
+$cream-deep:   #f4dfbe;
 $sand:         #edbe9a;
-$blue:         #7a93b0;
-$blue-light:   #c7d6e8;
-$ink:          #2a3527;
+$blue:         #6d7b93;
+$blue-light:   #b1baca;
+$ink:          #24301f;
 
 $body-bg: $cream;
 $body-color: $ink;
@@ -20,6 +20,7 @@ $link-color: $green;
 
 $font-family-sans-serif: "Tenor Sans", "Optima", "Avenir Next", sans-serif;
 $headings-font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+$display-font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
 $headings-color: $green-deep;
 $headings-font-weight: 600;
 
@@ -31,7 +32,7 @@ $footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=Playfair+Display:wght@400;500&family=Yellowtail&display=swap');
 
 html { overflow-x: hidden; }
 
@@ -82,13 +83,13 @@ main.content h2 {
 
 // large uppercase heading — replaces the eyebrow + title pair in some sections
 .eyebrow-lg {
-  font-family: $headings-font-family;
-  font-style: italic;
+  font-family: $display-font-family;
+  font-style: normal;
   font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0.01em;
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem);
+  line-height: 1.18;
   color: $green-deep;
   margin: 0;
 }
