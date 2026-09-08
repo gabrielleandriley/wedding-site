@@ -16,7 +16,7 @@ $body-bg: $cream;
 $body-color: $ink;
 $link-color: $green;
 
-$font-family-sans-serif: "Jost", "Avenir Next", "Helvetica Neue", sans-serif;
+$font-family-sans-serif: "Tenor Sans", "Optima", "Avenir Next", sans-serif;
 $headings-font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
 $headings-color: $green-deep;
 $headings-font-weight: 600;
@@ -29,7 +29,7 @@ $footer-fg: $green-deep;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Tenor+Sans&family=Yellowtail&display=swap');
 
 html { overflow-x: hidden; }
 
