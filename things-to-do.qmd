@@ -155,9 +155,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<hr class="rule-shells">
-
-<section class="band band-blue">
+<section class="band band-cream">
   <div class="band-inner">
 
     <p class="eyebrow" style="text-align:center">Waterfalls &amp; lakeside paths</p>

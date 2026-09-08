@@ -7,11 +7,9 @@ $green:        #46614a;
 $sage:         #7f9c68;
 $shell:        #8fae79;
 $sage-light:   #c9d9b8;
-$cream:        #fcfbf7;
-$cream-deep:   #f2efe6;
+$cream:        #f7f3ea;
+$cream-deep:   #ece7db;
 $sand:         #d8cda6;
-$blue:         #5f8ba3;
-$blue-light:   #e8f0f4;
 $ink:          #2b3a2e;
 
 $body-bg: $cream;
@@ -60,7 +58,7 @@ h1, h2, h3 { letter-spacing: 0.02em; }
   font-size: 0.72rem;
   font-weight: 500;
   color: $sage;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.2rem;
 }
 
 .section-title {
@@ -69,7 +67,7 @@ h1, h2, h3 { letter-spacing: 0.02em; }
   font-style: italic;
   font-size: clamp(1.9rem, 4vw, 2.9rem);
   color: $green-deep;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.6rem;
   border-bottom: none; // Quarto underlines h2 by default
   padding-bottom: 0;
 }
@@ -275,7 +273,7 @@ a:hover { color: $sage; text-decoration: underline; }
 // ------------------------------------------------------------------- sections
 
 .band {
-  padding: clamp(2.4rem, 4.5vw, 3.6rem) 1.5rem;
+  padding: clamp(4.5rem, 9vw, 7.5rem) 1.5rem;
 }
 
 .band-green {
@@ -315,12 +313,10 @@ a:hover { color: $sage; text-decoration: underline; }
 
 // a hair deeper than $cream — enough to separate stacked sections without
 // adding another colour to the page
-.band-alt { background-color: #f6f4ed; }
-
-.band-blue { background-color: $blue-light; }
+.band-alt { background-color: #f3f1e9; }
 
 // shallower band — used for the save-the-date stripe
-.band-slim { padding-top: clamp(1.8rem, 3vw, 2.6rem); padding-bottom: clamp(1.8rem, 3vw, 2.6rem); }
+.band-slim { padding-top: clamp(2.2rem, 4vw, 3.2rem); padding-bottom: clamp(2.2rem, 4vw, 3.2rem); }
 
 .band-shells {
   position: relative;
@@ -744,8 +740,8 @@ a:hover { color: $sage; text-decoration: underline; }
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.9rem 3rem;
-  margin-top: 2rem;
+  gap: 2.4rem 3.4rem;
+  margin-top: 3.2rem;
 }
 
 .detail-card {
@@ -1029,8 +1025,8 @@ table td:last-child a:hover {
 .listing {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1.9rem 3rem;
-  margin: 2rem 0 0;
+  gap: 2.6rem 3.4rem;
+  margin: 3.2rem 0 0;
 }
 
 .spot {
@@ -1130,7 +1126,7 @@ table td:last-child a:hover {
 // ------------------------------------------------------- collapsible groups
 
 .group-list {
-  margin-top: 1.8rem;
+  margin-top: 2.6rem;
   text-align: left;
   border-bottom: 1px solid rgba(47, 71, 57, 0.18);
 }
@@ -1142,9 +1138,9 @@ table td:last-child a:hover {
   list-style: none;
   position: relative;
   padding: 1.5rem 2.8rem 1.5rem 0;
-  font-family: "Yellowtail", "Brush Script MT", cursive;
-  font-style: normal;
-  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-family: $headings-font-family;
+  font-style: italic;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
   color: $green-deep;
 }
 
@@ -1167,21 +1163,31 @@ table td:last-child a:hover {
 
 .group[open] > summary::after { content: "\2013"; }
 
-.group .listing { margin: 0.4rem 0 1.8rem; }
+.group .listing { margin: 0.4rem 0 2.6rem; }
 
 .band-green .group-list,
-.band-green .group { border-color: rgba(252, 251, 247, 0.28); }
+.band-green .group { border-color: rgba(247, 243, 234, 0.28); }
 
 .band-green .group > summary { color: $cream; }
 
-// the shell print as a slim divider, rather than sitting behind content
-.rule-shells {
-  height: 84px;
-  border: none;
-  margin: 0;
-  background-image: url('images/greenshells.jpg');
-  background-size: 250px auto;
-  background-repeat: repeat;
+// marks the entries the shuttle actually serves
+.spot-flag {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.24rem 0.75rem;
+  border: 1px solid rgba(127, 156, 104, 0.6);
+  border-radius: 999px;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: $sage;
+}
+
+.band-green .spot-flag {
+  color: $sage-light;
+  border-color: rgba(201, 217, 184, 0.5);
 }
 
 // ---------------------------------------------------------------------- faq
@@ -1236,28 +1242,6 @@ table td:last-child a:hover {
   margin: 0 0 1.5rem;
   padding-right: 2.6rem;
   max-width: 68ch;
-}
-
-// a note on the entries the shuttle actually serves
-.spot-flag {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.24rem 0.75rem;
-  border: 1px solid rgba(95, 139, 163, 0.55);
-  border-radius: 999px;
-  background: rgba(232, 240, 244, 0.7);
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.6rem;
-  font-weight: 500;
-  color: $blue;
-}
-
-.band-green .spot-flag {
-  color: #bcd7e4;
-  border-color: rgba(188, 215, 228, 0.5);
-  background: rgba(188, 215, 228, 0.12);
 }
 
 // ---------------------------------------------------------------------- buttons

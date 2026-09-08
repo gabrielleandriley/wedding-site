@@ -17,7 +17,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-blue">
+<section class="band band-cream">
   <div class="band-inner">
 
     <div class="detail-grid">
