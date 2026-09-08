@@ -4,7 +4,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-green">
+<section class="band band-slim band-navy">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Questions</p>
@@ -12,7 +12,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream" style="padding-top:1.6rem">
+<section class="band band-ivory" style="padding-top:1.6rem">
   <div class="band-inner">
 
     <div class="faq-list">
@@ -54,7 +54,7 @@ pagetitle: "FAQs — Gabrielle & Riley"
 
       <details class="faq-item">
         <summary>Is there parking at the venue?</summary>
-        <p>Yes, there is plenty of parking at the Inn if you choose to drive!</p>
+        <p>Yes, there is plenty of parking at the Inn if you choose to drive.</p>
       </details>
 
     </div>

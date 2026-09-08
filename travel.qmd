@@ -4,7 +4,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-green">
+<section class="band band-slim band-navy">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Travel &amp; Stay</p>
@@ -17,7 +17,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
+<section class="band band-ivory">
   <div class="band-inner">
 
     <div class="detail-grid">
@@ -45,10 +45,8 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-green">
+<section class="band band-navy">
   <div class="band-inner">
-
-    <p class="eyebrow" style="text-align:center">Where to stay</p>
 
     <h2 class="section-title" style="text-align:center">Our Recommendations</h2>
 
@@ -123,7 +121,7 @@ pagetitle: "Travel & Stay — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
+<section class="band band-ivory">
   <div class="band-inner">
 
     <h2 class="section-title" style="text-align:center">Lay of the Land</h2>

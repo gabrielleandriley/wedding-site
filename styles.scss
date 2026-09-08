@@ -1,117 +1,145 @@
 /*-- scss:defaults --*/
 
-// Coastal-chic, green + preppy. Pulled from the green shell print,
-// the cabana stripe, and the deep-green inspo layouts.
-$green-deep:   #3c5c45;
-$green:        #4d7059;
-$sage:         #617a55;
-$shell:        #8ca37c;
-$sage-light:   #d6e2b6;
-$cream:        #fafaf7;
-$cream-deep:   #f0f0ec;
-$sand:         #edbe9a;
-$blue:         #5f7793;
-$blue-light:   #c7d6e8;
-$ink:          #24301f;
+// ============================================================================
+// THE SYSTEM
+//
+// Five colours, three typefaces, one spacing scale, two patterns. Everything
+// on the site is built from what is declared here; nothing further down the
+// file introduces a colour or a face of its own.
+//
+//   navy       dark anchor — title bands, headings, map marks
+//   ivory      the page ground
+//   blue-pale  the secondary light ground, and the stripe
+//   sage       the green accent — labels, links, small marks
+//   leaf       the light green — accents set on navy
+// ============================================================================
 
-$body-bg: $cream;
+$navy:        #22374f;
+$navy-mid:    #3d5872;
+$ivory:       #fafaf7;
+$ivory-deep:  #f0f2f0;
+$blue-pale:   #dbe7f2;
+$blue:        #4f6b8a;
+$sage:        #617a55;
+$leaf:        #d6e2b6;
+$ink:         #26313c;
+
+// Cormorant is reserved for the two names in the hero, where it acts as a
+// wordmark. Playfair carries every heading. Tenor Sans carries everything
+// else — body, labels, navigation — so the text stays clean and readable.
+$font-hero:    "Cormorant Garamond", Georgia, serif;
+$font-display: "Playfair Display", Georgia, serif;
+$font-body:    "Tenor Sans", "Optima", "Avenir Next", sans-serif;
+
+// one hairline, wherever entries or rows are separated
+$rule:         rgba(34, 55, 79, 0.16);
+$rule-on-navy: rgba(250, 250, 247, 0.26);
+
+$body-bg: $ivory;
 $body-color: $ink;
-$link-color: $green;
-
-$font-family-sans-serif: "Tenor Sans", "Optima", "Avenir Next", sans-serif;
-$headings-font-family: "Playfair Display", Georgia, serif;
-$display-font-family: "Playfair Display", Georgia, serif;
-$hero-font-family:    "Cormorant Garamond", Georgia, serif;
-$headings-color: $green-deep;
-$headings-font-weight: 600;
-
+$link-color: $navy-mid;
+$font-family-sans-serif: $font-body;
+$headings-font-family: $font-display;
+$headings-color: $navy;
+$headings-font-weight: 400;
 $navbar-fg: $ink;
-$navbar-hl: $green;
-
-$footer-bg: $cream-deep;
-$footer-fg: $green-deep;
+$footer-bg: $ivory-deep;
+$footer-fg: $navy;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Tenor+Sans&display=swap');
+
+// ---------------------------------------------------------------- base
 
 html { overflow-x: hidden; }
 
 body {
-  letter-spacing: 0.01em;
-  background-color: $cream;
+  background-color: $ivory;
+  color: $ink;
+  font-family: $font-body;
+  overflow-x: hidden;
 }
 
-// ---------------------------------------------------------------- type scale
+a { color: $navy-mid; text-decoration: none; }
+a:hover { color: $sage; text-decoration: underline; }
 
-h1, h2, h3 { letter-spacing: 0.02em; }
+// Quarto underlines h2 by default
+main.content h2 { border-bottom: none; padding-bottom: 0; }
 
-.script {
-  font-family: $headings-font-family;
-  font-style: italic;
+// ---------------------------------------------------------------- type
+
+// page title — the navy band at the top of every interior page, and the one
+// standalone feature band on the home page
+.eyebrow-lg {
+  font-family: $font-display;
   font-weight: 400;
-  color: $sage;
-  letter-spacing: 0.01em;
-}
-
-// small letterspaced label — used above section headings
-.eyebrow {
-  font-family: $font-family-sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: $sage;
-  margin-bottom: 1.2rem;
+  letter-spacing: 0.12em;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.2;
+  color: $navy;
+  margin: 0;
 }
 
+// section heading
 .section-title {
-  font-family: $headings-font-family;
-  font-weight: 400;
+  font-family: $font-display;
   font-style: italic;
-  font-size: clamp(1.9rem, 4vw, 2.9rem);
-  color: $green-deep;
-  margin: 0 0 1.6rem;
-  border-bottom: none; // Quarto underlines h2 by default
-  padding-bottom: 0;
-}
-
-// the theme's h2 rule would otherwise cut across our centered titles
-main.content h2 {
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  line-height: 1.15;
+  color: $navy;
+  margin: 0 0 1.4rem;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-// large uppercase heading — replaces the eyebrow + title pair in some sections
-.eyebrow-lg {
-  font-family: $display-font-family;
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.11em;
-  font-size: clamp(1.7rem, 3.6vw, 2.8rem);
-  line-height: 1.18;
-  color: $green-deep;
-  margin: 0;
+// the line under a page title
+.subtitle {
+  font-family: $font-body;
+  font-size: clamp(0.95rem, 1.6vw, 1.08rem);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 1rem auto 0;
 }
 
-.band-green .eyebrow-lg { color: $sage-light; }
+// small letterspaced label — dates, places, kickers inside components
+.eyebrow {
+  font-family: $font-body;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  color: $sage;
+  margin: 0 0 0.7rem;
+}
 
-// ------------------------------------------------------------------ shell rule
+// ---------------------------------------------------------------- patterns
 
-// thin preppy stripe, drawn in CSS so it stays crisp at any size
-@mixin cabana-stripe($w: 6px) {
+// the cabana stripe, drawn in CSS so it stays crisp at any size. It runs
+// under the navigation and over the footer, and nowhere else.
+@mixin stripe($w: 6px) {
   background-image: repeating-linear-gradient(
     90deg,
-    $blue-light 0, $blue-light $w,
-    $cream $w, $cream ($w * 2)
+    $blue-pale 0, $blue-pale $w,
+    $ivory $w, $ivory ($w * 2)
   );
 }
 
-// ---------------------------------------------------------------------- navbar
+// a scallop drawn as SVG in our own navy, so it needs no licence and scales
+// cleanly. It frames the photo on the home page and the registry card.
+$scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><g fill='none' stroke='%2322374f' stroke-opacity='0.16' stroke-width='1.1'><path d='M-10 10 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0'/><path d='M0 30 a10 10 0 0 1 20 0 a10 10 0 0 1 20 0'/><path d='M-10 20 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0'/><path d='M0 40 a10 10 0 0 0 20 0 a10 10 0 0 0 20 0'/></g></svg>";
+
+.scallop {
+  background-color: $blue-pale;
+  background-image: url($scallop);
+  background-size: 40px 40px;
+}
+
+// ---------------------------------------------------------------- navbar
 
 .navbar {
-  background-color: $cream !important;
+  background-color: $ivory !important;
   border-bottom: none;
   box-shadow: none;
   position: relative;
@@ -122,9 +150,8 @@ main.content h2 {
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0;
-  height: 22px;
-  @include cabana-stripe(6px);
-  opacity: 0.9;
+  height: 18px;
+  @include stripe(6px);
 }
 
 .navbar-brand-container { display: none; }
@@ -143,45 +170,28 @@ main.content h2 {
 }
 
 .navbar .nav-link {
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   letter-spacing: 0.16em;
-  font-weight: 500;
-  color: $green-deep;
+  color: $navy;
   padding: 0.5rem 1.15rem !important;
   margin: 0.3rem 0.15rem;
 }
 
 .navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: $sage;
-}
+.navbar .nav-link.active { color: $sage; }
 
 @media (max-width: 575.98px) {
-  .navbar .nav-link {
-    padding: 0.35rem 0.45rem !important;
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
-  }
+  .navbar .nav-link { padding: 0.35rem 0.45rem !important; font-size: 0.62rem; letter-spacing: 0.08em; }
 }
 
-// keep all four links on one row on a narrow phone
 @media (max-width: 430px) {
   .navbar-nav { flex-wrap: nowrap; }
-
-  .navbar .nav-link {
-    padding: 0.3rem 0.3rem !important;
-    font-size: 0.55rem;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-  }
+  .navbar .nav-link { padding: 0.3rem 0.3rem !important; font-size: 0.55rem; letter-spacing: 0.05em; white-space: nowrap; }
 }
 
-a { text-decoration: none; }
-a:hover { color: $sage; text-decoration: underline; }
-
-// ------------------------------------------------------------------------ hero
+// ---------------------------------------------------------------- hero
 
 .hero {
   position: relative;
@@ -194,7 +204,7 @@ a:hover { color: $sage; text-decoration: underline; }
   isolation: isolate;
 }
 
-// the venue photo, washed out and pushed green so type reads over it
+// the venue photo, washed toward navy so the type reads over it
 .hero::before {
   content: "";
   position: absolute;
@@ -210,680 +220,120 @@ a:hover { color: $sage; text-decoration: underline; }
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    // pool of shade behind the type so the names read over the bright water
-    radial-gradient(
-      ellipse 70% 55% at 50% 48%,
-      rgba(34, 58, 42, 0.45) 0%,
-      rgba(34, 58, 42, 0) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(46, 74, 55, 0.62) 0%,
-      rgba(46, 74, 55, 0.46) 45%,
-      rgba(46, 74, 55, 0.70) 100%
-    );
   z-index: -1;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(22, 40, 60, 0.45) 0%, rgba(22, 40, 60, 0) 100%),
+    linear-gradient(180deg, rgba(30, 50, 72, 0.62) 0%, rgba(30, 50, 72, 0.46) 45%, rgba(30, 50, 72, 0.72) 100%);
 }
 
-.hero-inner {
-  padding: 4.5rem 1.5rem;
-  max-width: 900px;
-  width: 100%;
-}
+.hero-inner { padding: 4.5rem 1.5rem; max-width: 900px; width: 100%; }
 
-// hairline frame, like the bordered plates in the inspo
 .hero-frame {
-  border: 1px solid rgba(250, 246, 236, 0.45);
+  border: 1px solid rgba(250, 250, 247, 0.45);
   padding: clamp(2rem, 6vw, 3.6rem) clamp(1.2rem, 5vw, 3rem);
 }
 
 .hero-names {
-  font-family: $hero-font-family;
+  font-family: $font-hero;
   font-weight: 300;
-  color: $cream;
+  color: $ivory;
   font-size: clamp(2.6rem, 9vw, 5.6rem);
   line-height: 1.05;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
-  text-shadow: 0 2px 24px rgba(30, 45, 35, 0.35);
+  text-shadow: 0 2px 24px rgba(15, 28, 42, 0.35);
 }
 
 .hero-amp {
   display: block;
-  font-family: $hero-font-family;
+  font-family: $font-hero;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
   font-size: 0.52em;
-  color: $sage-light;
+  color: $leaf;
   letter-spacing: 0;
   margin: 0.1em 0;
-  text-shadow: 0 2px 20px rgba(30, 45, 35, 0.4);
+  text-shadow: 0 2px 20px rgba(15, 28, 42, 0.4);
 }
 
 .hero-sub {
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
   letter-spacing: 0.28em;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: $cream;
+  color: $ivory;
   margin: 1.8rem 0 0;
-  font-weight: 400;
-  text-shadow: 0 1px 14px rgba(30, 45, 35, 0.55);
+  text-shadow: 0 1px 14px rgba(15, 28, 42, 0.55);
 }
 
-// ------------------------------------------------------------------- sections
+// ---------------------------------------------------------------- bands
 
-.band {
-  padding: clamp(2.4rem, 4.5vw, 3.6rem) 1.5rem;
-}
-
-.band-green {
-  background-color: $green-deep;
-  color: $cream-deep;
-  text-align: center;
-}
-
-.band-green .section-title,
-.band-green h2,
-.band-green h3 { color: $cream; }
-
-.band-green .eyebrow { color: $sage-light; }
-
-// open cards have to invert where they sit on green
-.band-green .spot,
-.band-green .detail-card { border-top-color: rgba(247, 243, 234, 0.28); }
-
-.band-green .spot h4,
-.band-green .detail-card h3 { color: $cream; }
-
-.band-green .spot .place,
-.band-green .detail-card .day { color: $sage-light; }
-
-.band-green .spot p,
-.band-green .detail-card p,
-.band-green .detail-card .where { color: rgba(247, 243, 234, 0.86); }
-
-.band-green .detail-card .when { color: $sage-light; }
-
-// links inherit $link-color, which is dark green and vanishes on a green
-// ground — the hotel names were all but invisible
-.band-green a { color: $cream; }
-.band-green a:hover { color: $sage-light; }
-
-.band-cream { background-color: $cream; }
-
-// the powder blue and soft leaf, used as grounds in their own right
-.band-blue { background-color: $blue-light; }
-.band-leaf { background-color: #eef3e6; } // a pale wash, not the full swatch
-
-.band-blue .eyebrow,
-.band-leaf .eyebrow { color: $green; }
-
-// dark type on the blue, so it can host a section of its own
-.band-blue {
-  color: $green-deep;
-  text-align: center;
-}
-
-.band-blue .eyebrow-lg,
-.band-blue .section-title,
-.band-blue .count-num { color: $green-deep; }
-
-.band-blue .count-label { color: $green; }
-
-.band-blue .date-line { color: $green-deep; }
-
-.band-blue .date-place,
-.band-blue .subtitle { color: rgba(40, 62, 47, 0.85); }
-
-// a hair deeper than $cream — enough to separate stacked sections without
-// adding another colour to the page
-.band-alt { background-color: #f3f1e9; }
-
-// shallower band — used for the save-the-date stripe
+// every section is a full-bleed band, on one of three grounds: navy for the
+// title band and at most one deep section per page, ivory as the default,
+// and pale blue for one lighter feature section
+.band { padding: clamp(2.6rem, 5vw, 4rem) 1.5rem; }
 .band-slim { padding-top: clamp(1.8rem, 3vw, 2.6rem); padding-bottom: clamp(1.8rem, 3vw, 2.6rem); }
 
-.band-shells {
-  position: relative;
-  background-image: url('images/greenshells.jpg');
-  background-size: 460px auto;
-  background-position: center;
-  background-repeat: repeat;
-}
+.band-inner  { max-width: 1040px; margin: 0 auto; }
+.band-narrow { max-width: 760px;  margin: 0 auto; }
 
-// the print is busy enough that headings sitting straight on it are hard to
-// read, so soften it with a cream veil and keep the content above it
-.band-shells::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(250, 249, 245, 0.3);
-  pointer-events: none;
-}
+.band-ivory { background-color: $ivory; }
 
-.band-shells > * {
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.band-inner {
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.band-narrow {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-// ------------------------------------------------- editorial feature block
-
-// one highlighted entry: pattern on one side, copy on the other
-.feature {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: stretch;
-  margin: 2.5rem 0 0;
-  border: 1px solid rgba(47, 71, 57, 0.14);
-  overflow: hidden;
-}
-
-.feature-pattern {
-  background-image: url('images/greenshells.jpg');
-  background-size: 300px auto;
-  min-height: 250px;
-}
-
-.feature-body {
-  background: #fff;
-  padding: clamp(1.8rem, 4vw, 3rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-// pattern on the left instead
-.feature-rev .feature-pattern { order: -1; }
-
-.feature-body h3 {
-  font-family: $headings-font-family;
-  font-weight: 500;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: $green-deep;
-  margin: 0.3rem 0 0.2rem;
-}
-
-.feature-body .place {
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.66rem;
-  color: $sage;
-}
-
-.feature-body p {
-  font-family: $headings-font-family;
-  font-size: 1.12rem;
-  line-height: 1.7;
-  margin: 0.9rem 0 0;
-  color: $ink;
-}
-
-.feature-note {
-  font-family: $headings-font-family;
-  font-style: italic;
-  color: $sage;
-  font-size: 1.05rem;
-  margin-top: 1rem !important;
-}
-
-@media (max-width: 760px) {
-  .feature { grid-template-columns: 1fr; }
-  .feature-pattern { min-height: 150px; order: -1; }
-}
-
-// ------------------------------------------- script plaque over the stripe
-
-.script-banner {
-  background-color: $cream-deep;
-  padding: clamp(2.6rem, 6vw, 4.5rem) 1.5rem;
+.band-navy {
+  background-color: $navy;
+  color: $ivory;
   text-align: center;
 }
 
-.script-banner > .plaque {
-  background: $cream;
-  border: 1px solid rgba(47, 71, 57, 0.14);
-  max-width: 700px;
-  margin: 0 auto;
-  padding: clamp(1.6rem, 4vw, 2.6rem) clamp(1.4rem, 4vw, 3rem);
-}
+.band-navy .eyebrow-lg,
+.band-navy .section-title { color: $ivory; }
+.band-navy .subtitle { color: rgba(250, 250, 247, 0.88); }
+.band-navy .eyebrow { color: $leaf; }
+.band-navy a { color: $ivory; }
+.band-navy a:hover { color: $leaf; }
 
-.script-banner p {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: clamp(1.3rem, 3vw, 2rem);
-  line-height: 1.45;
-  color: $green-deep;
-  margin: 0;
-}
-
-// full-bleed version: the script sits straight on the stripe, as in the
-// font inspo, rather than inside a plaque
-.wordmark-band {
-  @include cabana-stripe(10px);
-  padding: clamp(3rem, 7vw, 5rem) 1.5rem;
+.band-blue {
+  background-color: $blue-pale;
+  color: $navy;
   text-align: center;
 }
 
-// ------------------------------------------------------------- wordmark
-
-// The "club" lockup from the font inspo: a retro script over the cabana
-// stripe with a boxed, letterspaced label beneath — in our greens.
-.wordmark {
-  background: $cream;
-  border: 1px solid rgba(47, 71, 57, 0.16);
-  max-width: 620px;
-  margin: 0 auto;
-  padding: clamp(2rem, 5vw, 3.2rem) clamp(1.5rem, 4vw, 3rem);
-  text-align: center;
-}
-
-.wordmark-script {
-  font-family: "Yellowtail", "Brush Script MT", cursive;
-  font-size: clamp(2.6rem, 7vw, 4.4rem);
-  line-height: 1.1;
-  color: $green-deep;
-  margin: 0;
-}
-
-.wordmark-label {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0.5rem 1.4rem;
-  border: 1px solid $sage;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.26em;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: $sage;
-}
-
-// intro paragraphs in a header band
-.lede {
-  max-width: 640px;
-  margin: 1.6rem auto 0;
-  text-align: left;
-}
-
-.lede p {
-  font-family: $headings-font-family;
-  font-size: 1.12rem;
-  line-height: 1.75;
-  color: $cream-deep;
-  margin-bottom: 1rem;
-}
-
-.lede p:last-child { margin-bottom: 0; }
-
-// the line under a page title
-.subtitle {
-  font-family: $headings-font-family;
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
-  line-height: 1.65;
-  max-width: 640px;
-  margin: 1.4rem auto 0;
-}
-
-.band-green .subtitle { color: $cream-deep; }
-
-// --------------------------------------------------------------- contact row
-
-.contact-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem 3rem;
-  margin-top: 1.8rem;
-}
-
-.contact-name {
-  display: block;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.68rem;
-  font-weight: 500;
-  color: $sage;
-  margin-bottom: 0.3rem;
-}
-
-.contact a {
-  font-family: $headings-font-family;
-  font-size: 1.3rem;
-  color: $green-deep;
-}
-
-.contact a:hover { color: $sage; }
-
-// a soft panel for content sitting on the shell print — headings and card
-// titles are hard to read straight on the pattern
-.print-panel {
-  // shaded rather than a flat slab, so it reads as a page laid on the print
-  background: linear-gradient(
-    180deg,
-    rgba(253, 252, 249, 0.97) 0%,
-    rgba(247, 243, 235, 0.95) 55%,
-    rgba(241, 236, 225, 0.95) 100%
-  );
-  border: 1px solid rgba(47, 71, 57, 0.09);
-  box-shadow: 0 20px 50px rgba(47, 71, 57, 0.12), 0 2px 6px rgba(47, 71, 57, 0.05);
-  padding: clamp(2rem, 4.5vw, 3.4rem);
-}
-
-.fl-map .attrib {
-  font-family: $font-family-sans-serif;
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  fill: rgba(47, 71, 57, 0.35);
-}
-
-// ------------------------------------------------------------------- the map
-
-.map-wrap {
-  margin: 1.6rem 0 0;
-  overflow-x: auto;
-}
-
-.fl-map {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-// map beside the lodging list on a wide screen; below it on a narrow one,
-// where the recommendations matter more than the geography
-.band-wide {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(1.5rem, 3vw, 3rem);
-  align-items: start;
-}
-
-// grid children default to min-width:auto, which lets the map's min-width
-// push the whole panel wider than the screen. Let them shrink instead and
-// keep the sideways scroll inside the map's own container.
-.split > * { min-width: 0; }
-.map-wrap { min-width: 0; max-width: 100%; }
-
-.split-map { position: sticky; top: 92px; } // unused: map now sits below
-
-.split .listing { grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); }
-
-@media (max-width: 980px) {
-  .split { grid-template-columns: 1fr; gap: 2.5rem; }
-  .split-stay { order: 1; }
-  .split-map { order: 2; position: static; }
-  .fl-map { min-width: 560px; }
-}
-
-.fl-map .ground { fill: #eef0e6; }
-.fl-map .wood   { fill: #d6e2b6; }
-.fl-map .park   { fill: #c3d4a0; }
-
-.fl-map .water {
-  fill: #c7d6e8;
-  stroke: #9fb6d0;
-  stroke-width: 1.2;
-}
-
-// roads get a casing under a lighter fill so they read over cream and green alike
-.fl-map .rd-case,
-.fl-map .rd-fill {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.fl-map .rd-case { stroke: #a9bc94; opacity: 0.85; }
-.fl-map .rd-fill { stroke: #fbfcf6; }
-
-.fl-map .frame {
-  fill: none;
-  stroke: rgba(47, 71, 57, 0.28);
-  stroke-width: 2;
-}
-
-// a cream disc lifts each marker off the busy ground
-.fl-map .mk-halo { fill: #eef0e6; opacity: 0.92; }
-.fl-map .mk-ring { fill: none; stroke: $green-deep; stroke-width: 2.2; }
-.fl-map .mk-dot,
-.fl-map .mk-fill { fill: $green-deep; }
-.fl-map .mk-door { fill: #eef0e6; }
-
-.fl-map .mk-line {
-  fill: none;
-  stroke: $green-deep;
-  stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-// labels carry a cream halo so they stay legible over woods and water
-.fl-map .lbl,
-.fl-map .cap,
-.fl-map .water-lbl {
-  paint-order: stroke fill;
-  stroke: #eef0e6;
-  stroke-width: 4.5;
-  stroke-linejoin: round;
-}
-
-.fl-map .lbl {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: 26px;
-  fill: $green-deep;
-}
-
-.fl-map .lbl-lg { font-size: 32px; stroke-width: 5; }
-
-.fl-map .cap {
-  font-family: $font-family-sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  fill: $green;
-}
-
-.fl-map .cap.sm { font-size: 12.5px; letter-spacing: 0.12em; }
-
-.fl-map .water-lbl {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: 21px;
-  fill: #5b7f9c;
-  stroke-width: 3;
-}
-
-.fl-map .water-lbl.sm { font-size: 17px; }
-
-.fl-map .attrib {
-  font-family: $font-family-sans-serif;
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  fill: rgba(47, 71, 57, 0.4);
-}
-
-.map-note {
-  text-align: center;
-  font-family: $font-family-sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: $sage;
-  margin: 1rem 0 0;
-}
-
-// ------------------------------------------------------------------ date block
+// ---------------------------------------------------------------- save the date
 
 .date-line {
-  font-family: $headings-font-family;
-  font-size: clamp(1.9rem, 5.5vw, 3.2rem);
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  color: $cream;
+  font-family: $font-display;
+  font-size: clamp(1.7rem, 4.6vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: $ivory;
   margin: 0;
 }
 
 .date-rule {
-  width: 64px;
+  width: 56px;
   height: 1px;
-  background: rgba(250, 246, 236, 0.5);
-  margin: 1.8rem auto;
+  background: rgba(250, 250, 247, 0.5);
+  margin: 1.4rem auto;
   border: none;
 }
 
 .date-place {
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.8rem;
-  color: rgba(250, 246, 236, 0.85);
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  color: rgba(250, 250, 247, 0.85);
   line-height: 2;
 }
 
-// --------------------------------------------------------------- detail cards
-
-.detail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.4rem 3.4rem;
-  margin-top: 3.2rem;
-}
-
-.detail-card {
-  background: none;
-  border: none;
-  border-top: 1px solid rgba(47, 71, 57, 0.18);
-  border-radius: 0;
-  padding: 1.7rem 0 0;
-  text-align: left;
-  box-shadow: none;
-}
-
-.detail-card .day {
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.72rem;
-  color: $sage;
-  font-weight: 500;
-}
-
-.detail-card h3 {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.85rem;
-  color: $green-deep;
-  margin: 0.5rem 0 0.2rem;
-}
-
-.detail-card .when {
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: 1.15rem;
-  color: $green;
-  margin-bottom: 1rem;
-}
-
-.detail-card p {
-  font-family: $headings-font-family;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: $ink;
-  margin-bottom: 0;
-}
-
-.detail-card .where {
-  font-family: $headings-font-family;
-  font-style: italic;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: rgba(43, 58, 46, 0.8);
-}
-
-// -------------------------------------------------------------- weekend split
-
-// Friday + Saturday stacked on the left, the two of us on the scallop print
-// on the right.
-.weekend-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: stretch;
-  margin-top: 2.5rem;
-  text-align: left;
-}
-
-.weekend-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.weekend-cards .detail-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-.weekend-photo {
-  background-image: url('images/greenshells.jpg');
-  background-size: 340px auto;
-  background-position: center;
-  background-repeat: repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: clamp(1.2rem, 2.4vw, 1.8rem);
-  border: 1px solid rgba(47, 71, 57, 0.12);
-  margin-top: 2.2rem;
-}
-
-.weekend-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: $cream;
-  padding: 10px;
-  box-shadow: 0 10px 30px rgba(47, 71, 57, 0.18);
-}
-
-@media (max-width: 860px) {
-  .weekend-grid { grid-template-columns: 1fr; }
-  .weekend-photo { min-height: 320px; }
-}
-
-// ---------------------------------------------------------- the weekend
+// ---------------------------------------------------------------- weekend itinerary
 
 .day-list {
-  margin: 2rem 0 0;
+  margin: 1.8rem 0 0;
   text-align: left;
-  border-bottom: 1px solid rgba(47, 71, 57, 0.18);
+  border-bottom: 1px solid $rule;
 }
 
 .day-entry {
@@ -891,20 +341,20 @@ a:hover { color: $sage; text-decoration: underline; }
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 1.6rem;
   align-items: start;
-  border-top: 1px solid rgba(47, 71, 57, 0.18);
-  padding: 1.6rem 0;
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0;
 }
 
 .day-name {
-  font-family: $headings-font-family;
+  font-family: $font-display;
   font-style: italic;
-  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
-  color: $green-deep;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  color: $navy;
   line-height: 1.1;
 }
 
 .day-meta {
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.68rem;
@@ -913,321 +363,196 @@ a:hover { color: $sage; text-decoration: underline; }
 }
 
 .day-body p {
-  font-family: $headings-font-family;
-  font-size: 1rem;
-  line-height: 1.75;
+  font-family: $font-body;
+  font-size: 0.97rem;
+  line-height: 1.7;
   color: $ink;
   margin: 0;
 }
 
 .day-where {
-  font-family: $headings-font-family;
+  font-family: $font-display;
   font-style: italic;
-  font-size: 1rem;
-  color: rgba(43, 58, 46, 0.72);
-  margin-top: 0.6rem;
+  font-size: 0.98rem;
+  color: $navy-mid;
+  margin-top: 0.55rem;
 }
 
 @media (max-width: 620px) {
   .day-entry { grid-template-columns: 1fr; gap: 0.5rem; }
 }
 
-// ------------------------------------------------------------------ countdown
+// the photo sits in an ivory mat on the scallop
+.weekend-photo {
+  @extend .scallop;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  margin-top: 2rem;
+}
+
+.weekend-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: $ivory;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(34, 55, 79, 0.18);
+}
+
+// ---------------------------------------------------------------- countdown
 
 .countdown {
   display: flex;
   justify-content: center;
   gap: clamp(0.6rem, 3vw, 2.4rem);
   flex-wrap: wrap;
-  margin-top: 2.2rem;
+  margin-top: 1.8rem;
 }
 
-.count-unit {
-  min-width: clamp(68px, 18vw, 108px);
-}
+.count-unit { min-width: clamp(68px, 18vw, 108px); }
 
 .count-num {
-  font-family: $headings-font-family;
-  font-size: clamp(2.4rem, 7vw, 3.8rem);
-  font-weight: 300;
-  color: $cream;
+  font-family: $font-display;
+  font-size: clamp(2.2rem, 6.5vw, 3.4rem);
+  font-weight: 400;
+  color: $navy;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .count-label {
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.66rem;
-  color: $sage-light;
+  color: $sage;
   margin-top: 0.6rem;
 }
 
-// -------------------------------------------------------------- photo on print
+// ---------------------------------------------------------------- info cards (travel)
 
-.photo-frame {
-  max-width: 720px;
-  margin: 0 auto;
-  background: $cream;
-  padding: 14px;
-  box-shadow: 0 14px 40px rgba(47, 71, 57, 0.18);
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.9rem 3rem;
+  margin-top: 1.4rem;
 }
 
-.photo-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid rgba(47, 71, 57, 0.15);
-}
-
-.photo-caption {
-  text-align: center;
-  font-family: $headings-font-family;
-  font-style: italic;
-  font-size: 1.05rem;
-  color: $green-deep;
-  margin-top: 1.1rem;
-}
-
-// ---------------------------------------------------------------------- tables
-
-.tbl-wrap {
-  overflow-x: auto;
-  margin: 2rem 0 1rem;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-  font-size: 0.94rem;
-}
-
-thead th {
-  background: $green-deep;
-  color: $cream;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.13em;
-  font-size: 0.68rem;
-  font-weight: 500;
-  padding: 0.95rem 1rem;
+.detail-card {
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0 0;
   text-align: left;
-  border: none;
 }
 
-tbody td {
-  padding: 1rem;
-  border-bottom: 1px solid rgba(47, 71, 57, 0.1);
-  vertical-align: top;
-  line-height: 1.6;
-}
-
-tbody tr:nth-child(even) { background: rgba(201, 217, 184, 0.16); }
-
-tbody td strong { color: $green-deep; font-weight: 600; }
-
-// last column holds the booking link — keep it on one line and let it
-// shrink to fit rather than wrapping mid-word
-table th:last-child,
-table td:last-child {
-  white-space: nowrap;
-  width: 1%;
-  text-align: right;
-}
-
-table td:last-child a {
-  font-family: $font-family-sans-serif;
+.detail-card .day {
+  font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   font-size: 0.68rem;
-  font-weight: 500;
-  color: $green-deep;
-  border: 1px solid rgba(47, 71, 57, 0.3);
-  border-radius: 999px;
-  padding: 0.4rem 1.1rem;
-  display: inline-block;
+  color: $sage;
 }
 
-table td:last-child a:hover {
-  background: $green-deep;
-  border-color: $green-deep;
-  color: $cream;
-  text-decoration: none;
+.detail-card h3 {
+  font-family: $font-display;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $navy;
+  margin: 0.45rem 0 0.5rem;
 }
 
-// On a phone a four-column table is unreadable and a sideways scroll is easy to
-// miss, so collapse each row into its own card instead.
-@media (max-width: 640px) {
-  .tbl-wrap table,
-  .tbl-wrap tbody,
-  .tbl-wrap tr,
-  .tbl-wrap td {
-    display: block;
-    width: 100% !important;
-  }
-
-  .tbl-wrap thead { display: none; }
-
-  .tbl-wrap tbody tr {
-    background: #fff !important;
-    border: 1px solid rgba(47, 71, 57, 0.14);
-    border-left: 3px solid $sage;
-    margin-bottom: 1.1rem;
-    padding: 1.3rem 1.4rem;
-  }
-
-  .tbl-wrap tbody td {
-    border: none;
-    padding: 0.2rem 0;
-    text-align: left !important;
-    white-space: normal !important;
-  }
-
-  // first cell is the hotel name — promote it to a card heading
-  .tbl-wrap tbody td:first-child {
-    font-family: $headings-font-family;
-    font-size: 1.3rem;
-    color: $green-deep;
-    margin-bottom: 0.5rem;
-  }
-
-  .tbl-wrap tbody td:first-child strong { font-weight: 500; }
-
-  .tbl-wrap tbody td:nth-child(3) {
-    font-size: 0.85rem;
-    color: rgba(43, 58, 46, 0.7);
-    margin-top: 0.5rem;
-  }
-
-  .tbl-wrap tbody td:last-child { margin-top: 0.9rem; }
+.detail-card p {
+  font-family: $font-body;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: $ink;
+  margin: 0;
 }
 
-// ------------------------------------------------------------------- listings
+// ---------------------------------------------------------------- entries (lists of places)
 
 .listing {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 2.6rem 3.4rem;
-  margin: 3.2rem 0 0;
+  gap: 1.8rem 2.6rem;
+  margin: 1.6rem 0 0;
+  text-align: left;
 }
 
 .spot {
-  position: relative;
-  background: none;
-  border: none;
-  border-top: 1px solid rgba(47, 71, 57, 0.18);
-  padding: 1.5rem 0 0;
-  border-radius: 0;
+  border-top: 1px solid $rule;
+  padding: 1.3rem 0 0;
 }
 
 .spot h4 {
-  font-family: $font-family-sans-serif;
-  font-style: normal;
+  font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
-  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  font-size: 0.84rem;
   font-weight: 400;
-  color: $green-deep;
-  margin: 0 0 0.3rem;
+  color: $navy;
+  margin: 0 0 0.25rem;
 }
 
 .spot .place {
-  font-family: $font-family-sans-serif;
-  font-style: normal;
-  text-transform: none;
+  font-family: $font-body;
+  font-size: 0.8rem;
   letter-spacing: 0.03em;
-  font-size: 0.82rem;
   color: $sage;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.55rem;
 }
 
 .spot p {
-  font-family: $headings-font-family;
-  font-size: 0.94rem;
-  line-height: 1.75;
+  font-family: $font-body;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: $ink;
   margin: 0;
-  color: rgba(43, 58, 46, 0.9);
 }
 
-// ------------------------------------------------- cream panels over the print
-
-// used where a text block sits on top of the green shell pattern
-.panel-card,
-.registry-card {
-  background: rgba(250, 246, 236, 0.96);
-  border: 1px solid rgba(47, 71, 57, 0.14);
-  padding: clamp(2rem, 5vw, 3.2rem);
-}
-
-.registry-card {
-  text-align: center;
-  padding: clamp(2.4rem, 6vw, 4rem);
-}
-
-// Zola injects its widget in here. Give it a frame so it reads as part of the
-// page rather than a bare white rectangle.
-.zola-embed-frame {
-  margin: 0 auto;
-  max-width: 100%;
-  background: #fff;
-  border: 1px solid rgba(47, 71, 57, 0.14);
-  padding: 0.5rem;
-  overflow: hidden;
-}
-
-.zola-embed-frame iframe {
-  display: block;
-  width: 100% !important;
-  max-width: 100%;
-  border: 0;
-}
-
-.registry-wordmark {
-  font-family: $headings-font-family;
-  font-weight: 300;
-  font-size: clamp(2rem, 5vw, 3rem);
-  letter-spacing: 0.16em;
+// marks the entries the shuttle serves
+.spot-flag {
+  display: inline-block;
+  margin: 0.15rem 0 0.55rem;
+  padding: 0.22rem 0.7rem;
+  border: 1px solid rgba(79, 107, 138, 0.55);
+  border-radius: 999px;
+  font-family: $font-body;
   text-transform: uppercase;
-  color: $green-deep;
-  margin: 0 0 1.6rem;
+  letter-spacing: 0.14em;
+  font-size: 0.58rem;
+  color: $blue;
 }
 
-// ------------------------------------------------------------------- kid list
+// on navy, entries invert
+.band-navy .listing { text-align: left; }
+.band-navy .spot { border-top-color: $rule-on-navy; }
+.band-navy .spot h4 { color: $ivory; }
+.band-navy .spot .place { color: $leaf; }
+.band-navy .spot p { color: rgba(250, 250, 247, 0.86); }
+.band-navy .spot-flag { color: $blue-pale; border-color: rgba(219, 231, 242, 0.5); }
 
-.kid-list {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.kid-list p {
-  line-height: 1.8;
-  margin-bottom: 1rem;
-  color: rgba(250, 246, 236, 0.88);
-}
-
-.kid-list strong { color: $cream; font-weight: 500; }
-
-// ------------------------------------------------------- collapsible groups
+// ---------------------------------------------------------------- collapsible groups
 
 .group-list {
-  margin-top: 2.6rem;
+  margin-top: 1.4rem;
   text-align: left;
-  border-bottom: 1px solid rgba(47, 71, 57, 0.18);
+  border-bottom: 1px solid $rule;
 }
 
-.group { border-top: 1px solid rgba(47, 71, 57, 0.18); }
+.group { border-top: 1px solid $rule; }
 
 .group > summary {
   cursor: pointer;
   list-style: none;
   position: relative;
-  padding: 1.5rem 2.8rem 1.5rem 0;
-  font-family: $headings-font-family;
+  padding: 1.3rem 2.8rem 1.3rem 0;
+  font-family: $font-display;
   font-style: italic;
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-  color: $green-deep;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  color: $navy;
 }
 
 .group > summary::-webkit-details-marker { display: none; }
@@ -1240,72 +565,40 @@ table td:last-child a:hover {
   right: 0.3rem;
   top: 50%;
   transform: translateY(-50%);
-  font-family: $font-family-sans-serif;
-  font-weight: 300;
-  font-size: 1.9rem;
+  font-family: $font-body;
+  font-size: 1.7rem;
   line-height: 1;
   color: $sage;
 }
 
 .group[open] > summary::after { content: "\2013"; }
+.group .listing { margin: 0.2rem 0 1.8rem; }
 
-.group .listing { margin: 0.4rem 0 2.6rem; }
-
-.band-green .group-list,
-.band-green .group { border-color: rgba(247, 243, 234, 0.28); }
-
-.band-green .group > summary { color: $cream; }
-
-// marks the entries the shuttle actually serves
-.spot-flag {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.24rem 0.75rem;
-  border: 1px solid rgba(122, 147, 176, 0.65);
-  background: rgba(199, 214, 232, 0.35);
-  border-radius: 999px;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.6rem;
-  font-weight: 500;
-  color: #4d6d8f;
-}
-
-.band-green .spot-flag {
-  color: $blue-light;
-  border-color: rgba(199, 214, 232, 0.5);
-  background: rgba(199, 214, 232, 0.12);
-}
-
-// ---------------------------------------------------------------------- faq
+// ---------------------------------------------------------------- faq
 
 .faq-list {
   max-width: 780px;
-  margin: 0.75rem auto 0;
+  margin: 0.6rem auto 0;
   text-align: left;
-  border-bottom: 1px solid rgba(47, 71, 57, 0.16);
+  border-bottom: 1px solid $rule;
 }
 
-// native <details>, so the open/shut works with no JavaScript
-.faq-item {
-  border-top: 1px solid rgba(47, 71, 57, 0.16);
-}
+.faq-item { border-top: 1px solid $rule; }
 
 .faq-item summary {
   cursor: pointer;
   list-style: none;
   position: relative;
-  padding: 1.2rem 2.6rem 1.2rem 0;
-  font-family: $headings-font-family;
-  font-weight: 500;
-  font-size: 1.35rem;
-  color: $green-deep;
+  padding: 1.15rem 2.6rem 1.15rem 0;
+  font-family: $font-display;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: $navy;
 }
 
 .faq-item summary::-webkit-details-marker { display: none; }
-
 .faq-item summary:hover { color: $sage; }
+.faq-item summary:focus-visible { outline: 2px solid $sage; outline-offset: 2px; }
 
 .faq-item summary::after {
   content: "+";
@@ -1313,9 +606,8 @@ table td:last-child a:hover {
   right: 0.4rem;
   top: 50%;
   transform: translateY(-50%);
-  font-family: $font-family-sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
+  font-family: $font-body;
+  font-size: 1.5rem;
   line-height: 1;
   color: $sage;
 }
@@ -1323,100 +615,136 @@ table td:last-child a:hover {
 .faq-item[open] summary::after { content: "\2013"; }
 
 .faq-item p {
-  font-family: $headings-font-family;
-  font-size: 0.97rem;
-  line-height: 1.8;
+  font-family: $font-body;
+  font-size: 0.95rem;
+  line-height: 1.75;
   color: $ink;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.4rem;
   padding-right: 2.6rem;
   max-width: 68ch;
 }
 
-// ---------------------------------------------------------------------- buttons
+// ---------------------------------------------------------------- registry
 
-.btn, .btn-primary {
-  background-color: $green-deep;
-  border-color: $green-deep;
-  border-radius: 999px;
-  padding: 0.75rem 2.2rem;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
-  font-size: 0.76rem;
-  letter-spacing: 0.16em;
-  color: $cream;
-  font-weight: 500;
+.registry-card {
+  @extend .scallop;
+  border: 1px solid $rule;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(1.6rem, 4vw, 2.6rem);
 }
 
-.btn:hover, .btn-primary:hover {
-  background-color: $sage;
-  border-color: $sage;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-light-outline {
-  background: transparent;
-  border: 1px solid rgba(250, 246, 236, 0.6);
-  color: $cream;
-}
-
-.btn-light-outline:hover {
-  background: $cream;
-  border-color: $cream;
-  color: $green-deep;
-}
-
-// ------------------------------------------------------------------- callout
-
-.note-strip {
-  background: rgba(201, 217, 184, 0.3);
-  border-left: 3px solid $sage;
-  padding: 1.15rem 1.4rem;
-  margin: 1.8rem 0;
-  font-size: 0.93rem;
+.registry-card > p {
+  font-family: $font-body;
+  font-size: 0.97rem;
   line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 1.6rem;
+  color: $navy;
 }
 
-.note-strip strong { color: $green-deep; }
+// Zola's widget lands in here; the ivory panel gives it a home
+.zola-embed-frame {
+  margin: 0 auto;
+  max-width: 100%;
+  background: $ivory;
+  border: 1px solid $rule;
+  padding: 0.5rem;
+  overflow: hidden;
+}
 
-// -------------------------------------------------------------------- footer
+.zola-embed-frame iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+}
+
+// ---------------------------------------------------------------- the map
+
+.map-wrap {
+  margin: 1.4rem 0 0;
+  overflow-x: auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fl-map { display: block; width: 100%; height: auto; }
+
+@media (max-width: 980px) { .fl-map { min-width: 560px; } }
+
+.fl-map .ground { fill: #eef1ee; }
+.fl-map .wood   { fill: $leaf; }
+.fl-map .park   { fill: #c4d4a4; }
+
+.fl-map .water {
+  fill: $blue-pale;
+  stroke: #a9bdd2;
+  stroke-width: 1.2;
+}
+
+.fl-map .rd-case,
+.fl-map .rd-fill { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.fl-map .rd-case { stroke: #a9bc94; opacity: 0.85; }
+.fl-map .rd-fill { stroke: $ivory; }
+
+.fl-map .frame { fill: none; stroke: rgba(34, 55, 79, 0.28); stroke-width: 2; }
+
+.fl-map .mk-halo { fill: #eef1ee; opacity: 0.92; }
+.fl-map .mk-ring { fill: none; stroke: $navy; stroke-width: 2.2; }
+.fl-map .mk-dot,
+.fl-map .mk-fill { fill: $navy; }
+.fl-map .mk-door { fill: #eef1ee; }
+.fl-map .mk-line { fill: none; stroke: $navy; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+.fl-map .lbl,
+.fl-map .cap,
+.fl-map .water-lbl {
+  paint-order: stroke fill;
+  stroke: #eef1ee;
+  stroke-width: 4.5;
+  stroke-linejoin: round;
+}
+
+.fl-map .lbl { font-family: $font-display; font-style: italic; font-size: 26px; fill: $navy; }
+.fl-map .cap { font-family: $font-body; font-size: 14px; letter-spacing: 0.16em; fill: $navy-mid; }
+.fl-map .cap.sm { font-size: 12.5px; letter-spacing: 0.12em; }
+.fl-map .water-lbl { font-family: $font-display; font-style: italic; font-size: 21px; fill: $blue; stroke-width: 3; }
+.fl-map .attrib { font-family: $font-body; font-size: 10.5px; letter-spacing: 0.08em; fill: rgba(34, 55, 79, 0.4); }
+
+// ---------------------------------------------------------------- footer
 
 footer.footer {
-  background-color: $cream-deep;
+  background-color: $ivory-deep;
   border-top: none;
   position: relative;
   padding-top: 2.4rem;
-  font-family: $font-family-sans-serif;
+  font-family: $font-body;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.68rem;
-  color: $green-deep;
+  color: $navy;
 }
 
 footer.footer::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 15px;
-  @include cabana-stripe(6px);
-  opacity: 0.9;
+  height: 18px;
+  @include stripe(6px);
 }
 
-// ------------------------------------------------------- quarto layout resets
+// ---------------------------------------------------------------- quarto layout resets
 
-// page-layout: full still keeps padding on .content; our bands are full-bleed,
-// so strip it and let each band manage its own gutters.
 #title-block-header { display: none; }
 
 // Quarto lays the page out on a grid whose body track is `minmax(500px, ...)`.
-// Our bands are full-bleed and manage their own gutters, so that reserved track
-// only forces horizontal overflow on phones. Drop the grid entirely.
-// The id selector is needed to outrank Quarto's own `.page-columns` rules,
-// which are declared several times including inside media queries.
+// Our bands are full-bleed and manage their own gutters, so that reserved
+// track only forces horizontal overflow on phones. Drop the grid entirely.
+// The id selector is needed to outrank Quarto's own `.page-columns` rules.
 #quarto-content.page-columns,
-.page-columns {
-  display: block !important;
-}
+.page-columns { display: block !important; }
 
 #quarto-content > main.content,
 main.content,
@@ -1424,22 +752,12 @@ main.content.column-page {
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  margin-top: 0;
 }
 
-body { overflow-x: hidden; }
-
 @media (max-width: 767.98px) {
-  .content, .quarto-title-block {
-    max-width: 100% !important;
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
+  .content, .quarto-title-block { max-width: 100% !important; width: 100% !important; box-sizing: border-box; }
   .hero { min-height: 78vh; }
-  .band-shells { background-size: 300px auto; }
 }

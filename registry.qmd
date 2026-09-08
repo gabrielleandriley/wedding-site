@@ -4,7 +4,7 @@ pagetitle: "Registry — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-green">
+<section class="band band-slim band-navy">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Registry</p>

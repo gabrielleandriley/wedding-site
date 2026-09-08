@@ -4,7 +4,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
 ---
 
 ```{=html}
-<section class="band band-slim band-green">
+<section class="band band-slim band-navy">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Things to Do</p>
@@ -16,7 +16,7 @@ pagetitle: "Things to Do — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-cream">
+<section class="band band-ivory">
   <div class="band-inner">
 
     <div class="group-list">
