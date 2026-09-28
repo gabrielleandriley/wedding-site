@@ -502,11 +502,26 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
 .ww-item .where { font-size: 0.98rem; color: $green; margin-top: 0.6rem; }
 
 // add to calendar / open in maps: side-by-side buttons, each opens a small menu
-.ww-actions { display: flex; justify-content: center; gap: 0.6rem; margin-top: auto; }
-.cal-add { position: relative; }
+.ww-actions {
+  // two equal columns, each as wide as the longer label
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;
+  width: max-content; max-width: 100%; margin-top: auto;
+}
+.ww-actions .tpl-btn { display: block; width: 100%; text-align: center; white-space: nowrap; }
+.cal-add { position: relative; margin: 0; }
+.ww-item p { text-wrap: pretty; }
+// small one-line italic note under the buttons
+.ww-item p.ww-note {
+  margin: 0.45rem auto 0; max-width: none; white-space: nowrap;
+  font-style: italic; font-size: 0.8rem; line-height: 1.5; color: $green;
+}
 @media (max-width: 600px) {
-  .ww-actions { gap: 0.5rem; }
-  .ww-actions .tpl-btn { padding: 0.8rem 0.85rem; letter-spacing: 0.12em; white-space: nowrap; }
+  .ww-actions { gap: 0.5rem; width: 100%; }
+  .ww-actions .tpl-btn { padding: 0.8rem 0.5rem; font-size: 0.68rem; letter-spacing: 0.1em; }
+}
+@media (max-width: 700px) {
+  .ww-item p.ww-note { font-size: 0.78rem; white-space: normal; text-wrap: balance; }
+  .ww-item h3 { font-size: 1.85rem; }   // larger than before, still below the section title
   .ww-actions .cal-menu { min-width: 190px; transform: none; }
   .ww-actions .cal-add:first-child .cal-menu { left: 0; }
   .ww-actions .cal-add:last-child .cal-menu { left: auto; right: 0; }
