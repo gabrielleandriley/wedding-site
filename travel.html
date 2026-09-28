@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a2000fcc90a8772decda1b5ca386ede6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9fd134217210c1cf0578b9ed97cb0d50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -57,6 +57,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
 
 <meta property="og:title" content="Travel &amp; Stay">
@@ -121,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section class="page-hero page-hero-tall hero-trim" style="background-image:url('images/travel-bench.jpg'); background-position:center 66%">
+<section class="page-hero page-hero-tall hero-trim trim-travel" style="background-image:url('images/travel-bench.jpg'); background-position:center 66%">
   <div class="band-narrow">
 
     <p class="eyebrow-lg">Travel &amp; Stay</p>
@@ -143,109 +145,199 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </section>
 
-<section class="stays">
-<div class="zz">
-  <div class="zz-photo" role="img" aria-label="The Argos Inn courtyard at dusk in downtown Ithaca" style="background-image:url('images/stay-ithaca.jpg'); background-position:center 55%">
-  </div>
-  <div class="zz-body">
-    <h3 class="zz-title">Downtown Ithaca</h3>
-    <p class="zz-kicker">The center of town, where the shuttle will pick up</p>
-    <span class="diamond"></span>
+<section class="band band-white stay-tabs-band">
+  <div class="ttd-inner">
+    <div class="ttd-tabs" role="tablist">
+      <button class="ttd-tab stay-tab is-on" data-town="ithaca" role="tab" aria-selected="true">Downtown Ithaca</button>
+      <button class="ttd-tab stay-tab" data-town="trumansburg" role="tab" aria-selected="false">Trumansburg</button>
+      <button class="ttd-tab stay-tab" data-town="watkins" role="tab" aria-selected="false">Watkins Glen</button>
+    </div>
+    <div class="stay-panel is-on" id="town-ithaca" role="tabpanel">
+      <figure class="stay-figure figure">
+  <div class="stay-photo" role="img" aria-label="The Argos Inn courtyard at dusk in downtown Ithaca" style="background-image:url('images/stay-ithaca.jpg'); background-position:center 55%"></div>
+        <figcaption>The Argos Inn courtyard at dusk, downtown Ithaca</figcaption>
+      </figure>
+      <div class="stay-list">
+        <p class="stay-kicker">The center of Ithaca, where the day-of wedding shuttle will pick up</p>
         <div class="stay">
-          <h4>Canopy by Hilton</h4>
-          <p class="stay-place">Downtown Ithaca</p>
-          <span class="spot-flag">Walk to the shuttle</span>
+          <div class="stay-head"><h4>Canopy by Hilton</h4><a class="book-btn" href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Book now</a></div>
+          <span class="spot-flag">Near the shuttle pickup</span>
           <p>On the edge of the Commons, with bright, modern rooms.</p>
-          <a class="book-btn" href="https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" target="_blank" rel="noopener">Book now</a>
         </div>
         <div class="stay">
-          <h4>Ithaca Marriott</h4>
-          <p class="stay-place">Downtown Ithaca</p>
-          <span class="spot-flag">Walk to the shuttle</span>
+          <div class="stay-head"><h4>Ithaca Marriott</h4><a class="book-btn" href="https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" target="_blank" rel="noopener">Book now</a></div>
+          <span class="spot-flag">Near the shuttle pickup</span>
           <p>Right on the Commons, and home to the new Patsy’s Pizzeria, the famous New York-style pizza place.</p>
-          <a class="book-btn" href="https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" target="_blank" rel="noopener">Book now</a>
         </div>
         <div class="stay">
-          <h4>Argos Inn</h4>
-          <p class="stay-place">Downtown Ithaca</p>
-          <span class="spot-flag">Walk to the shuttle</span>
+          <div class="stay-head"><h4>Argos Inn</h4><a class="book-btn" href="https://argosinn.com/" target="_blank" rel="noopener">Book now</a></div>
+          <span class="spot-flag">Near the shuttle pickup</span>
           <p>A 13-room boutique hotel just off the Commons, with a great cocktail bar and guest parking.</p>
-          <a class="book-btn" href="https://argosinn.com/" target="_blank" rel="noopener">Book now</a>
         </div>
-  </div>
-</div>
-<div class="zz zz-flip">
-  <div class="zz-photo" role="img" aria-label="Gothic Eves Inn in Trumansburg" style="background-image:url('images/stay-trumansburg.jpg')">
-  </div>
-  <div class="zz-body zz-leaf">
-    <h3 class="zz-title">Trumansburg</h3>
-    <p class="zz-kicker">Riley’s hometown, a classic small Finger Lakes village</p>
-    <span class="diamond"></span>
+      </div>
+    </div>
+    <div class="stay-panel" id="town-trumansburg" role="tabpanel" hidden="">
+      <figure class="stay-figure figure">
+  <div class="stay-photo" role="img" aria-label="Gothic Eves Inn in Trumansburg" style="background-image:url('images/stay-trumansburg.jpg')"></div>
+        <figcaption>Gothic Eves Inn, Trumansburg</figcaption>
+      </figure>
+      <div class="stay-list">
+        <p class="stay-kicker">Riley’s hometown, a classic small Finger Lakes village</p>
         <div class="stay">
-          <h4>16 Elm Heritage Hotel</h4>
-          <p class="stay-place">Trumansburg</p>
+          <div class="stay-head"><h4>16 Elm Heritage Hotel</h4><a class="book-btn" href="https://www.sixteenelm.com/" target="_blank" rel="noopener">Book now</a></div>
           <p>A small hotel just off Main Street with five rooms, some with kitchens.</p>
-          <a class="book-btn" href="https://www.sixteenelm.com/" target="_blank" rel="noopener">Book now</a>
         </div>
         <div class="stay">
-          <h4>Gothic Eves Inn</h4>
-          <p class="stay-place">Trumansburg</p>
+          <div class="stay-head"><h4>Gothic Eves Inn</h4><a class="book-btn" href="https://gothiceves.com/" target="_blank" rel="noopener">Book now</a></div>
           <p>A bed and breakfast in the middle of the village, with a spa and a great breakfast.</p>
-          <a class="book-btn" href="https://gothiceves.com/" target="_blank" rel="noopener">Book now</a>
         </div>
-  </div>
-</div>
-<div class="zz">
-  <div class="zz-photo" role="img" aria-label="The Harbor Hotel and the pier on Seneca Lake in Watkins Glen" style="background-image:url('images/stay-watkins.jpg'); background-position:60% center">
-  </div>
-  <div class="zz-body">
-    <h3 class="zz-title">Watkins Glen</h3>
-    <p class="zz-kicker">A larger town on the south end of Seneca Lake</p>
-    <span class="diamond"></span>
+      </div>
+    </div>
+    <div class="stay-panel" id="town-watkins" role="tabpanel" hidden="">
+      <figure class="stay-figure figure">
+  <div class="stay-photo" role="img" aria-label="The Harbor Hotel and the pier on Seneca Lake in Watkins Glen" style="background-image:url('images/stay-watkins.jpg'); background-position:60% center"></div>
+        <figcaption>The Harbor Hotel and marina on Seneca Lake, Watkins Glen</figcaption>
+      </figure>
+      <div class="stay-list">
+        <p class="stay-kicker">A larger town on the south end of Seneca Lake, known for its waterfall gorge hike, wineries, and racetrack</p>
         <div class="stay">
-          <h4>Harbor Hotel</h4>
-          <p class="stay-place">Watkins Glen</p>
+          <div class="stay-head"><h4>Harbor Hotel</h4><a class="book-btn" href="https://www.watkinsglenharborhotel.com/" target="_blank" rel="noopener">Book now</a></div>
           <p>On the water at the south end of Seneca Lake, with a marina and a lakeside restaurant.</p>
-          <a class="book-btn" href="https://www.watkinsglenharborhotel.com/" target="_blank" rel="noopener">Book now</a>
         </div>
         <div class="stay">
-          <h4>The Blackberry Inn</h4>
-          <p class="stay-place">Watkins Glen</p>
+          <div class="stay-head"><h4>The Blackberry Inn</h4><a class="book-btn" href="https://www.theblackberryinnbb.com/" target="_blank" rel="noopener">Book now</a></div>
           <p>A quaint B&amp;B in the village, walking distance to Seneca Lake and the state park.</p>
-          <a class="book-btn" href="https://www.theblackberryinnbb.com/" target="_blank" rel="noopener">Book now</a>
         </div>
+      </div>
+    </div>
   </div>
-</div>
 </section>
 
-<section class="band band-leaf info-band">
-  <div class="band-inner">
+<script>
+document.querySelectorAll('.stay-tab').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.stay-tab').forEach(function (x) { x.classList.remove('is-on'); x.setAttribute('aria-selected', 'false'); });
+    document.querySelectorAll('.stay-panel').forEach(function (p) { p.classList.remove('is-on'); p.hidden = true; });
+    b.classList.add('is-on'); b.setAttribute('aria-selected', 'true');
+    var p = document.getElementById('town-' + b.getAttribute('data-town')); p.classList.add('is-on'); p.hidden = false;
+  });
+});
+</script>
 
-    <div class="detail-grid">
+<section class="band band-leaf info-band">
+  <div class="travel-split">
+
+    <div class="travel-cards">
 
       <div class="detail-card">
-        <div class="day">Flying in</div>
         <h3>Airports</h3>
         <p>Ithaca Tompkins (ITH) and Elmira Corning (ELM) are the closest airports to the venue. Syracuse (SYR) is farther out, about ninety minutes away, but it often has more flights and lower fares.</p>
       </div>
 
       <div class="detail-card">
-        <div class="day">Getting around</div>
-        <h3>Rent a Car</h3>
+        <h3>Getting Around</h3>
         <p>Downtown Ithaca, Trumansburg, and Watkins Glen are all walkable, but the surrounding area is rural, so you may want a car to explore or to travel to the venue and the welcome party. Ubers and rideshares can be hard to find out here. There is plenty of free parking at the Inn.</p>
       </div>
 
       <div class="detail-card">
-        <div class="day">On the day</div>
-        <h3>Shuttle</h3>
+        <h3>Day-Of Shuttle</h3>
         <p>We’re planning a shuttle from downtown Ithaca to the Inn before the ceremony, with two trips back at the end of the night: one around 9:30 pm and one after the reception ends at 10:30 pm. We’ll post pickup times and stops here closer to the wedding.</p>
       </div>
 
     </div>
 
+    <div class="travel-map-frame">
+      <div class="travel-map-card">
+        <h3>Map &amp; Drive Times</h3>
+        <div id="stay-map" class="stay-leaflet" aria-label="Map of the Fontainebleau Inn, the welcome party at North Point Pavilion, and the places to stay"></div>
+        <ul class="map-key">
+          <li><span class="pin pin-inn"></span>Wedding &amp; Welcome Party</li>
+          <li><span class="pin pin-place"></span>Places to stay</li>
+        </ul>
+        
+<table class="drive-table caption-top table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Driving from</th>
+<th data-quarto-table-cell-role="th" scope="col">To the venue</th>
+<th data-quarto-table-cell-role="th" scope="col">To the welcome party</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Downtown Ithaca</th>
+<td>35 min<span>17 mi</span></td>
+<td>20 min<span>10 mi</span></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Trumansburg</th>
+<td>25 min<span>12 mi</span></td>
+<td>10 min<span>4 mi</span></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Watkins Glen</th>
+<td>25 min<span>12 mi</span></td>
+<td>40 min<span>22 mi</span></td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function () {
+  if (!window.L) return;
+  // Drive times are rounded from OSRM and Valhalla routes (checked 2026-09-28).
+  var drive = {
+    "Downtown Ithaca": "35 min to the venue · 20 min to the welcome party",
+    "Trumansburg":     "25 min to the venue · 10 min to the welcome party",
+    "Watkins Glen":    "25 min to the venue · 40 min to the welcome party"
+  };
+  var stays = [
+    { n: "Canopy by Hilton",       p: "Downtown Ithaca", lat: 42.44011, lng: -76.49486, u: "https://www.hilton.com/en/hotels/ithcapy-canopy-ithaca-downtown/" },
+    { n: "Ithaca Marriott",        p: "Downtown Ithaca", lat: 42.43906, lng: -76.49566, u: "https://www.marriott.com/en-us/hotels/ithdt-ithaca-marriott-downtown-on-the-commons/overview/" },
+    { n: "Argos Inn",              p: "Downtown Ithaca", lat: 42.43970, lng: -76.49317, u: "https://argosinn.com/" },
+    { n: "16 Elm Heritage Hotel",  p: "Trumansburg",     lat: 42.54050, lng: -76.66243, u: "https://www.sixteenelm.com/" },
+    { n: "Gothic Eves Inn",        p: "Trumansburg",     lat: 42.53944, lng: -76.65453, u: "https://gothiceves.com/" },
+    { n: "Harbor Hotel",           p: "Watkins Glen",    lat: 42.38329, lng: -76.87374, u: "https://www.watkinsglenharborhotel.com/" },
+    { n: "The Blackberry Inn",     p: "Watkins Glen",    lat: 42.37981, lng: -76.87057, u: "https://www.theblackberryinnbb.com/" }
+  ];
+  var inn = [42.3941452, -76.7231805], party = [42.5481386, -76.5974597];
+  var map = L.map('stay-map', { scrollWheelZoom: false, zoomControl: true, zoomSnap: 0.25 });
+  var small = map.getSize().x < 420;   // phones: labels above the dots, tighter edges
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16, attribution: 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'
+  }).addTo(map);
+  function pin(cls, size) { return L.divIcon({ className: '', html: '<span class="pin ' + cls + '"></span>', iconSize: [size, size], iconAnchor: [size / 2, size / 2], popupAnchor: [0, -size / 2 - 2] }); }
+  var pts = [inn, party];
+  stays.forEach(function (s) {
+    L.marker([s.lat, s.lng], { icon: pin('pin-place', 14), title: s.n })
+      .bindPopup('<div class="pop"><div class="pop-cat">Place to stay</div><div class="pop-name">' + s.n + '</div><div class="pop-place">' + s.p + '</div><div class="pop-drive">' + drive[s.p] + '</div><a href="' + s.u + '" target="_blank" rel="noopener">Book now</a></div>')
+      .addTo(map);
+    pts.push([s.lat, s.lng]);
+  });
+  L.marker(party, { icon: pin('pin-inn', 30), title: 'Welcome Party', zIndexOffset: 900 })
+    .bindPopup('<div class="pop"><div class="pop-cat">Friday, June 18</div><div class="pop-name">Welcome Party</div><div class="pop-place">North Point Pavilion, Taughannock Falls State Park</div><a href="https://www.google.com/maps/search/?api=1&query=42.5481386,-76.5974597" target="_blank" rel="noopener">Directions</a></div>')
+    .bindTooltip('Welcome Party', { permanent: true, direction: 'top', offset: [0, -16], className: 'map-tag' })
+    .addTo(map);
+  L.marker(inn, { icon: pin('pin-inn', 30), title: 'Fontainebleau Inn', zIndexOffset: 1000 })
+    .bindPopup('<div class="pop"><div class="pop-cat">Saturday, June 19</div><div class="pop-name">The Wedding</div><div class="pop-place">Fontainebleau Inn, 2800 State Route 228, Alpine</div><a href="https://www.google.com/maps/search/?api=1&query=Fontainebleau+Inn+2800+State+Route+228+Alpine+NY" target="_blank" rel="noopener">Directions</a></div>')
+    .bindTooltip('Wedding', small ? { permanent: true, direction: 'top', offset: [0, -18], className: 'map-tag' } : { permanent: true, direction: 'right', offset: [16, 0], className: 'map-tag' })
+    .addTo(map);
+  // town names, centered under each cluster of places to stay
+  [["Ithaca", 42.4396, -76.4946], ["Trumansburg", 42.5400, -76.6585], ["Watkins Glen", 42.3815, -76.8722]].forEach(function (t) {
+    var w = t[0].length * 8 + 12;
+    L.marker([t[1], t[2]], { interactive: false, keyboard: false, icon: L.divIcon({ className: '', html: '<span class="town-tag">' + t[0] + '</span>', iconSize: [w, 18], iconAnchor: [w / 2, -9] }) }).addTo(map);
+  });
+  map.fitBounds(L.latLngBounds(pts), small ? { paddingTopLeft: [34, 44], paddingBottomRight: [34, 30] } : { paddingTopLeft: [60, 52], paddingBottomRight: [60, 52] });
+})();
+</script>
 
 
 
@@ -657,25 +749,10 @@ We can’t wait to celebrate
 <p class="foot-names">
 Gabrielle &amp; Riley
 </p>
-<div class="foot-cols">
-<div>
-<p class="foot-h">
-Welcome Party
-</p>
-<p>
-Friday, June 18, 2027<br>North Point Pavilion, Taughannock
-</p>
-</div>
-<div>
-<p class="foot-h">
-The Wedding
-</p>
-<p>
-Saturday, June 19, 2027<br>Fontainebleau Inn, Alpine, New York
-</p>
-</div>
-</div>
 <a href="#" class="to-top">Back to top</a>
+<p class="foot-credits">
+Stationery designed and printed by <a href="https://www.mangopaperie.com/" target="_blank" rel="noopener">Mango Paperie</a><span class="foot-dot"></span>Engagement photos by <a href="https://kelseytravisphotography.com/" target="_blank" rel="noopener">Kelsey Travis Photography</a>
+</p>
 </div>
 </div>
     <div class="nav-footer-right">
