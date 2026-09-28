@@ -5,16 +5,19 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:welcome-party-2027@gabrielleandriley.com
-DTSTAMP:20260928T120000Z
+DTSTAMP:20260928T170000Z
 DTSTART:20270618T210000Z
 DTEND:20270619T000000Z
 SUMMARY:Gabrielle & Riley’s Welcome Party
-LOCATION:North Point Pavilion\, Taughannock Falls State Park\, Trumansburg\
- , NY 14886
+LOCATION:North Point Pavilion\, Taughannock Falls State Park\, 1740 Taughan
+ nock Blvd\, Trumansburg\, NY 14886
 DESCRIPTION:A casual BBQ dinner the night before the wedding at North Point
-  Pavilion in Taughannock Falls State Park.\n\nThe park has a $10 entrance 
- fee per car\, so carpooling with friends is a great idea.\n\nDetails: http
- s://gabrielleandriley.com
+  Pavilion in Taughannock Falls State Park.\n\nThe park entry fee is $10 pe
+ r vehicle\, so if possible we encourage carpooling.\n\nDirections to North
+  Point Pavilion: https://www.google.com/maps/place/North+Point/@42.5489277
+ \,-76.6015244\,17.21z/data=!4m6!3m5!1s0x89d09ad6d145efb5:0x777400e9baaeb0f
+ e!8m2!3d42.5477524!4d-76.6004081!16s%2Fg%2F11d_9dnmfn\n\nDetails: https://
+ gabrielleandriley.com
 URL:https://gabrielleandriley.com
 END:VEVENT
 END:VCALENDAR
