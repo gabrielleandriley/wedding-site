@@ -18,7 +18,7 @@ twitter-card:
   </div>
 </section>
 
-<section class="band band-white">
+<section class="band band-soft">
   <div class="intro-grid">
     <div>
       <h2 class="tpl-title">We’re Getting Married</h2>
@@ -45,31 +45,51 @@ twitter-card:
         <h3>Welcome Party</h3>
         <p>Join us the night before for a casual BBQ dinner at North Point Pavilion in Taughannock Falls State Park.</p>
         <p class="where">North Point Pavilion · Trumansburg, New York</p>
-        <a class="tpl-btn small" href="https://www.google.com/maps/search/?api=1&amp;query=North+Point+Pavilion+Taughannock+Falls+State+Park+Trumansburg+NY" target="_blank" rel="noopener">View map</a>
+        <details class="cal-add">
+          <summary class="tpl-btn small">Add to calendar</summary>
+          <div class="cal-menu">
+            <a href="calendar/welcome-party.ics">Apple Calendar</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Gabrielle%20%26%20Riley%E2%80%99s%20Welcome%20Party&amp;dates=20270618T170000%2F20270618T200000&amp;ctz=America%2FNew_York&amp;location=North%20Point%20Pavilion%2C%20Taughannock%20Falls%20State%20Park%2C%20Trumansburg%2C%20NY%2014886&amp;details=A%20casual%20BBQ%20dinner%20the%20night%20before%20the%20wedding%20at%20North%20Point%20Pavilion%20in%20Taughannock%20Falls%20State%20Park.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Google Calendar</a>
+            <a href="https://outlook.live.com/calendar/0/action/compose?rru=addevent&amp;subject=Gabrielle%20%26%20Riley%E2%80%99s%20Welcome%20Party&amp;startdt=2027-06-18T17%3A00%3A00-04%3A00&amp;enddt=2027-06-18T20%3A00%3A00-04%3A00&amp;location=North%20Point%20Pavilion%2C%20Taughannock%20Falls%20State%20Park%2C%20Trumansburg%2C%20NY%2014886&amp;body=A%20casual%20BBQ%20dinner%20the%20night%20before%20the%20wedding%20at%20North%20Point%20Pavilion%20in%20Taughannock%20Falls%20State%20Park.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Outlook.com</a>
+            <a href="https://outlook.office.com/calendar/0/action/compose?rru=addevent&amp;subject=Gabrielle%20%26%20Riley%E2%80%99s%20Welcome%20Party&amp;startdt=2027-06-18T17%3A00%3A00-04%3A00&amp;enddt=2027-06-18T20%3A00%3A00-04%3A00&amp;location=North%20Point%20Pavilion%2C%20Taughannock%20Falls%20State%20Park%2C%20Trumansburg%2C%20NY%2014886&amp;body=A%20casual%20BBQ%20dinner%20the%20night%20before%20the%20wedding%20at%20North%20Point%20Pavilion%20in%20Taughannock%20Falls%20State%20Park.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Office 365</a>
+            <a href="https://calendar.yahoo.com/?v=60&amp;title=Gabrielle%20%26%20Riley%E2%80%99s%20Welcome%20Party&amp;st=20270618T210000Z&amp;et=20270619T000000Z&amp;in_loc=North%20Point%20Pavilion%2C%20Taughannock%20Falls%20State%20Park%2C%20Trumansburg%2C%20NY%2014886&amp;desc=A%20casual%20BBQ%20dinner%20the%20night%20before%20the%20wedding%20at%20North%20Point%20Pavilion%20in%20Taughannock%20Falls%20State%20Park.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Yahoo Calendar</a>
+            <a href="calendar/welcome-party.ics">Other (.ics file)</a>
+          </div>
+        </details>
       </div>
       <div class="ww-item">
         <p class="when">Saturday, June 19</p>
         <h3>The Wedding</h3>
         <p>The ceremony begins at 5:30 pm on the lawn, followed by cocktails, dinner, and dancing until 10:30 pm. Please plan to arrive by 5:00.</p>
         <p class="where">Fontainebleau Inn · Alpine, New York</p>
-        <a class="tpl-btn small" href="https://www.google.com/maps/search/?api=1&amp;query=Fontainebleau+Inn+2800+State+Route+228+Alpine+NY" target="_blank" rel="noopener">View map</a>
+        <details class="cal-add">
+          <summary class="tpl-btn small">Add to calendar</summary>
+          <div class="cal-menu">
+            <a href="calendar/wedding.ics">Apple Calendar</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Gabrielle%20%26%20Riley%E2%80%99s%20Wedding&amp;dates=20270619T170000%2F20270619T223000&amp;ctz=America%2FNew_York&amp;location=Fontainebleau%20Inn%2C%202800%20State%20Route%20228%2C%20Alpine%2C%20NY%2014805&amp;details=The%20ceremony%20begins%20at%205%3A30%20pm%20on%20the%20lawn%2C%20followed%20by%20cocktails%2C%20dinner%2C%20and%20dancing%20until%2010%3A30%20pm.%20Please%20plan%20to%20arrive%20by%205%3A00.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Google Calendar</a>
+            <a href="https://outlook.live.com/calendar/0/action/compose?rru=addevent&amp;subject=Gabrielle%20%26%20Riley%E2%80%99s%20Wedding&amp;startdt=2027-06-19T17%3A00%3A00-04%3A00&amp;enddt=2027-06-19T22%3A30%3A00-04%3A00&amp;location=Fontainebleau%20Inn%2C%202800%20State%20Route%20228%2C%20Alpine%2C%20NY%2014805&amp;body=The%20ceremony%20begins%20at%205%3A30%20pm%20on%20the%20lawn%2C%20followed%20by%20cocktails%2C%20dinner%2C%20and%20dancing%20until%2010%3A30%20pm.%20Please%20plan%20to%20arrive%20by%205%3A00.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Outlook.com</a>
+            <a href="https://outlook.office.com/calendar/0/action/compose?rru=addevent&amp;subject=Gabrielle%20%26%20Riley%E2%80%99s%20Wedding&amp;startdt=2027-06-19T17%3A00%3A00-04%3A00&amp;enddt=2027-06-19T22%3A30%3A00-04%3A00&amp;location=Fontainebleau%20Inn%2C%202800%20State%20Route%20228%2C%20Alpine%2C%20NY%2014805&amp;body=The%20ceremony%20begins%20at%205%3A30%20pm%20on%20the%20lawn%2C%20followed%20by%20cocktails%2C%20dinner%2C%20and%20dancing%20until%2010%3A30%20pm.%20Please%20plan%20to%20arrive%20by%205%3A00.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Office 365</a>
+            <a href="https://calendar.yahoo.com/?v=60&amp;title=Gabrielle%20%26%20Riley%E2%80%99s%20Wedding&amp;st=20270619T210000Z&amp;et=20270620T023000Z&amp;in_loc=Fontainebleau%20Inn%2C%202800%20State%20Route%20228%2C%20Alpine%2C%20NY%2014805&amp;desc=The%20ceremony%20begins%20at%205%3A30%20pm%20on%20the%20lawn%2C%20followed%20by%20cocktails%2C%20dinner%2C%20and%20dancing%20until%2010%3A30%20pm.%20Please%20plan%20to%20arrive%20by%205%3A00.%0A%0ADetails%3A%20https%3A%2F%2Fgabrielleandriley.com" target="_blank" rel="noopener">Yahoo Calendar</a>
+            <a href="calendar/wedding.ics">Other (.ics file)</a>
+          </div>
+        </details>
       </div>
     </div>
   </div>
 </section>
 
 <section class="trio">
-  <div class="trio-cell trio-text">
+  <div class="trio-cell trio-text trio-leaf">
     <h2 class="split-title">Questions</h2>
     <span class="diamond"></span>
     <p>We’ve compiled a list of preliminary answers here and will update them as the day gets closer. If you have more questions, always feel free to reach out.</p>
     <a class="tpl-btn" href="faq.html">Read our FAQs</a>
   </div>
   <div class="trio-cell trio-photo" role="img" aria-label="Gabrielle and Riley laughing on a stone bench." style="background-image:url('images/bench-laugh.jpg')"></div>
-  <div class="trio-cell trio-text">
+  <div class="trio-cell trio-text trio-leaf">
     <h2 class="split-title">Registry</h2>
     <span class="diamond"></span>
-    <p>No gift is needed. If you’d like to give one, our registry is on Zola.</p>
+    <p>If you’d like to give a gift to help us celebrate, we have registered using Zola.</p>
     <a class="tpl-btn" href="registry.html">View our registry</a>
   </div>
 </section>
@@ -86,6 +106,24 @@ twitter-card:
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  // Add to calendar menus: one open at a time; close on outside click or Escape.
+  var menus = document.querySelectorAll("details.cal-add");
+  menus.forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (d.open) menus.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener("click", function (e) {
+    menus.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") menus.forEach(function (d) { d.open = false; });
+  });
+})();
+</script>
 
 <script>
 (function () {

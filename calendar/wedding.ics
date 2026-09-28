@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//gabrielleandriley.com//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wedding-2027@gabrielleandriley.com
+DTSTAMP:20260928T120000Z
+DTSTART:20270619T210000Z
+DTEND:20270620T023000Z
+SUMMARY:Gabrielle & Riley’s Wedding
+LOCATION:Fontainebleau Inn\, 2800 State Route 228\, Alpine\, NY 14805
+DESCRIPTION:The ceremony begins at 5:30 pm on the lawn\, followed by cockta
+ ils\, dinner\, and dancing until 10:30 pm. Please plan to arrive by 5:00.\
+ n\nDetails: https://gabrielleandriley.com
+URL:https://gabrielleandriley.com
+END:VEVENT
+END:VCALENDAR

@@ -11,7 +11,7 @@ image: images/share.jpg
     <p class="eyebrow-lg">Registry</p>
 
     <p class="subtitle">
-      Your presence is your present. However, if you would like to purchase something to help us celebrate, below are some of the items we would love to receive.
+      We’re so grateful to celebrate with you. For those who’d like to give a gift, we’ve put together a registry of things we’d love for our home and our next chapter together.
     </p>
 
   </div>

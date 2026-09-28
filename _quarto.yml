@@ -3,7 +3,9 @@ project:
   output-dir: _site
   resources:
     - images/
+    - calendar/   # .ics files for the Add to calendar buttons
     - CNAME   # tells GitHub Pages to serve the site at gabrielleandriley.com
+    - favicon.ico
 
 website:
   title: "Gabrielle & Riley"
@@ -32,7 +34,7 @@ website:
   page-footer:
     background: light
     center: |
-      <div class="foot"><p class="foot-kicker">We can’t wait to celebrate</p><p class="foot-names">Gabrielle &amp; Riley</p><div class="foot-cols"><div><p class="foot-h">Welcome Party</p><p>Friday, June 18, 2027<br>North Point Pavilion, Taughannock</p></div><div><p class="foot-h">The Wedding</p><p>Saturday, June 19, 2027<br>Fontainebleau Inn, Alpine, New York</p></div></div><a href="#" class="to-top">Back to top</a></div>
+      <div class="foot"><p class="foot-kicker">We can’t wait to celebrate</p><p class="foot-names">Gabrielle &amp; Riley</p><a href="#" class="to-top">Back to top</a><p class="foot-credits">Stationery designed and printed by <a href="https://www.mangopaperie.com/" target="_blank" rel="noopener">Mango Paperie</a><span class="foot-dot"></span>Engagement photos by <a href="https://kelseytravisphotography.com/" target="_blank" rel="noopener">Kelsey Travis Photography</a></p></div>
 
 format:
   html:
@@ -43,3 +45,7 @@ format:
     smooth-scroll: true
     anchor-sections: false
     page-layout: full
+    include-in-header:
+      text: |
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
