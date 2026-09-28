@@ -1,65 +1,77 @@
 ---
 title: ""
-pagetitle: "FAQs — Gabrielle & Riley"
+pagetitle: "FAQs"
 ---
 
 ```{=html}
-<section class="band band-slim band-deep">
-  <div class="band-narrow">
-
-    <p class="eyebrow-lg">Questions</p>
-
-  </div>
-</section>
-
-<section class="band band-ivory" style="padding-top:1.6rem">
-  <div class="band-inner">
-
-    <div class="faq-list">
-
-      <details class="faq-item">
+<section class="faq-split">
+  <div class="faq-photo" role="img" aria-label="Gabrielle and Riley holding hands in front of the chapel at Colgate University."
+       style="background-image:url('images/chapel.jpg')"></div>
+  <div class="faq-main">
+    <div class="faq-inner">
+      <h2 class="tpl-title faq-title">Questions</h2>
+      <span class="diamond"></span>
+      <p class="faq-lede">We’ve compiled a list of preliminary answers here and will update them as the day gets closer. If you have more questions, always feel free to reach out.</p>
+      <h3 class="faq-group">The Day</h3>
+      <div class="faq-list">
+        <details class="faq-item">
+        <summary>What time should I arrive?</summary>
+        <p>The ceremony begins at 5:30 pm. Please plan to arrive by 5:00 so you have time to park
+        and find a seat. The reception ends at 10:30 pm.</p>
+      </details>
+        <details class="faq-item">
+        <summary>Is the wedding outside?</summary>
+        <p>Partly. The ceremony is outside on the lawn overlooking Cayuta Lake. If it rains, we’ll
+        move it under the clear-sided tent on the patio. Cocktail hour and dancing are on the
+        covered patio, and dinner is inside the Inn’s banquet hall, which has air conditioning.
+        You’re welcome to step inside at any point.</p>
+      </details>
+        <details class="faq-item">
         <summary>What is the dress code?</summary>
         <p>We ask that guests wear formal attire. We suggest suits for men, and floor-length or
         tea-length dresses for women. If you have any questions, feel free to ask us. One practical
         note: the ceremony is on the lawn, so you may be more comfortable in block heels or flats.</p>
       </details>
-
-      <details class="faq-item">
-        <summary>Is the wedding outside?</summary>
-        <p>Partly. We plan to hold the ceremony on the lawn overlooking the lake, and will move
-        indoors if the weather is bad. Cocktail hour follows under a covered tent on the patio,
-        weather permitting, and dinner will be inside the Inn. You are welcome to step inside at
-        any point during the day.</p>
-      </details>
-
-      <details class="faq-item">
+      </div>
+      <h3 class="faq-group">Guests &amp; RSVP</h3>
+      <div class="faq-list">
+        <details class="faq-item">
         <summary>Can I bring a guest?</summary>
         <p>Unfortunately, due to capacity limits at our venue, your invitation will name everyone
         we have saved a seat for.</p>
       </details>
-
-
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>When do we need to RSVP?</summary>
-        <p>Invitations go out in early spring 2027 and the RSVP deadline will be on them. You do
-        not need to do anything before that.</p>
+        <p>Invitations will go out in March 2027, and the RSVP deadline will be on them. You don’t
+        need to do anything before then.</p>
       </details>
-
-      <details class="faq-item">
+        <details class="faq-item">
         <summary>I have a dietary restriction, can you accommodate?</summary>
-        <p>Yes. Tell us when you RSVP &mdash; there is a place for it. Our caterer handles
-        vegetarian, vegan, gluten-free, and allergies routinely, and every dish at dinner is
-        labelled.</p>
+        <p>Yes. Please let us know when you RSVP. Our caterer, Word of Mouth, regularly handles
+        vegetarian, vegan, gluten-free, and allergy needs, and every dish at dinner will be
+        labeled.</p>
       </details>
-
-      <details class="faq-item">
+      </div>
+      <h3 class="faq-group">Getting There</h3>
+      <div class="faq-list">
+        <details class="faq-item">
         <summary>Is there parking at the venue?</summary>
-        <p>Yes, there is plenty of parking at the Inn if you choose to drive.</p>
+        <p>Yes, there is plenty of free parking at the Inn if you choose to drive.</p>
       </details>
-
+        <details class="faq-item">
+        <summary>Will there be a shuttle?</summary>
+        <p>Yes. We’re planning a shuttle from downtown Ithaca to the Inn before the ceremony and
+        two trips back at the end of the night. See <a href="travel.html">Travel &amp; Stay</a>
+        for details; we’ll post pickup times closer to the wedding.</p>
+      </details>
+        <details class="faq-item">
+        <summary>Where should I stay?</summary>
+        <p>We aren’t holding a room block, so book whatever suits you. Our favorite hotels and
+        inns are on the <a href="travel.html">Travel &amp; Stay</a> page. If you want to use the
+        shuttle, stay in downtown Ithaca.</p>
+      </details>
+      </div>
     </div>
-
   </div>
 </section>
-
 ```

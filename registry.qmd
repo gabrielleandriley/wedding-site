@@ -1,11 +1,11 @@
 ---
 title: ""
-pagetitle: "Registry — Gabrielle & Riley"
+pagetitle: "Registry"
 ---
 
 ```{=html}
-<section class="band band-slim band-deep">
-  <div class="band-narrow">
+<section class="page-hero page-hero-tall hero-trim trim-registry" style="background-image:url('images/tree.jpg'); background-position:center 72%">
+  <div class="band-narrow hero-box">
 
     <p class="eyebrow-lg">Registry</p>
 
@@ -18,10 +18,10 @@ pagetitle: "Registry — Gabrielle & Riley"
   </div>
 </section>
 
-<section class="band band-blue">
+<section class="band band-leaf">
   <div class="band-inner">
 
-    <div class="registry-card">
+    <div class="registry-frame"><div class="registry-card">
 
       <p style="line-height:1.8; max-width:520px; margin:0 auto 2.2rem">
         We have created our registry using Zola. All of our items are housed there, and anything
@@ -37,7 +37,9 @@ pagetitle: "Registry — Gabrielle & Riley"
            data-registry-key="gabrielleandrileyjune19">Our Zola Wedding Registry</a>
       </div>
 
-    </div>
+      <p class="registry-link"><a class="tpl-btn" href="https://www.zola.com/registry/gabrielleandrileyjune19" target="_blank" rel="noopener">See our full registry on Zola</a></p>
+
+    </div></div>
 
   </div>
 </section>

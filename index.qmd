@@ -1,88 +1,85 @@
 ---
 title: ""
-pagetitle: "Gabrielle & Riley — June 19, 2027"
+pagetitle: "June 19, 2027"
 ---
 
 ```{=html}
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-frame">
+    <p class="hero-kicker">Save the date</p>
+    <h1 class="hero-names">Gabrielle<span class="hero-amp">&amp;</span>Riley</h1>
+    <p class="hero-date">Saturday, June 19, 2027<span class="sep">|</span>Fontainebleau Inn, Alpine, New York</p>
+  </div>
+</section>
 
-      <div class="hero-names" role="heading" aria-level="1">Gabrielle<span class="hero-amp">and</span>Riley</div>
-
-      <p class="hero-sub">are getting married</p>
-
+<section class="band band-white">
+  <div class="intro-grid">
+    <div>
+      <h2 class="tpl-title">We’re Getting Married</h2>
+      <span class="diamond"></span>
+      <p class="lede">We’re so excited to celebrate with you at the Fontainebleau Inn on Cayuta Lake. Here you’ll find the plan for the weekend, where to stay, things to do nearby, and answers to common questions. We’ll add more details as the wedding gets closer.</p>
     </div>
-  </div>
-</section>
-
-<section class="band band-slim band-deep">
-  <div class="band-narrow">
-
-    <p class="eyebrow">Save the date</p>
-
-    <p class="date-line">Saturday, June 19, 2027</p>
-
-    <hr class="date-rule">
-
-    <p class="date-place">
-      Fontainebleau Inn<br>
-      2800 State Route 228 &nbsp;·&nbsp; Alpine, New York
-    </p>
-
-  </div>
-</section>
-
-<section class="band band-ivory">
-  <div class="band-narrow">
-
-    <h2 class="section-title" style="text-align:center">Weekend Itinerary</h2>
-
-    <div class="day-list">
-
-      <div class="day-entry">
-        <div class="day-name">Friday</div>
-        <div class="day-body">
-          <div class="day-meta">June 18 &nbsp;·&nbsp; Welcome Party</div>
-          <p>Join us the night before for a casual BBQ dinner at North Point Pavilion at Taughannock Falls State Park.</p>
-          <div class="day-where">North Point Pavilion &nbsp;·&nbsp; Trumansburg, New York</div>
-        </div>
+    <div>
+      <div class="scallop-photo">
+        <img class="photo" src="images/std-hug.jpg" alt="Gabrielle and Riley hugging and smiling.">
+        <img class="ring" src="images/scallop-ring.png" alt="">
       </div>
-
-      <div class="day-entry">
-        <div class="day-name">Saturday</div>
-        <div class="day-body">
-          <div class="day-meta">June 19 &nbsp;·&nbsp; The Wedding</div>
-          <p>We will have a ceremony at the venue, followed by cocktails, dinner, and dancing.</p>
-          <div class="day-where">Fontainebleau Inn &nbsp;·&nbsp; Alpine, New York</div>
-        </div>
-      </div>
-
     </div>
-
-    <div class="weekend-photo">
-      <img src="images/maine.jpg"
-           alt="Gabrielle and Riley on a hike in Maine, with the harbor and green hills behind them.">
-    </div>
-
   </div>
 </section>
 
-<section class="band band-blue">
-  <div class="band-narrow">
+<section class="inset">
+  <div class="inset-photo" role="img" aria-label="Gabrielle and Riley standing together in a green field."></div>
+  <div class="inset-card">
+    <h2 class="tpl-title">The Weekend</h2>
+    <span class="diamond"></span>
+    <div class="ww">
+      <div class="ww-item">
+        <p class="when">Friday, June 18</p>
+        <h3>Welcome Party</h3>
+        <p>Join us the night before for a casual BBQ dinner at North Point Pavilion in Taughannock Falls State Park.</p>
+        <p class="where">North Point Pavilion · Trumansburg, New York</p>
+        <a class="tpl-btn small" href="https://www.google.com/maps/search/?api=1&amp;query=North+Point+Pavilion+Taughannock+Falls+State+Park+Trumansburg+NY" target="_blank" rel="noopener">View map</a>
+      </div>
+      <div class="ww-item">
+        <p class="when">Saturday, June 19</p>
+        <h3>The Wedding</h3>
+        <p>The ceremony begins at 5:30 pm on the lawn, followed by cocktails, dinner, and dancing until 10:30 pm. Please plan to arrive by 5:00.</p>
+        <p class="where">Fontainebleau Inn · Alpine, New York</p>
+        <a class="tpl-btn small" href="https://www.google.com/maps/search/?api=1&amp;query=Fontainebleau+Inn+2800+State+Route+228+Alpine+NY" target="_blank" rel="noopener">View map</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <p class="eyebrow-lg">Counting Down</p>
+<section class="trio">
+  <div class="trio-cell trio-text trio-leaf">
+    <h2 class="split-title">Questions</h2>
+    <span class="diamond"></span>
+    <p>We’ve compiled a list of preliminary answers here and will update them as the day gets closer. If you have more questions, always feel free to reach out.</p>
+    <a class="tpl-btn" href="faq.html">Read our FAQs</a>
+  </div>
+  <div class="trio-cell trio-photo" role="img" aria-label="Gabrielle and Riley laughing on a stone bench." style="background-image:url('images/bench-laugh.jpg')"></div>
+  <div class="trio-cell trio-text trio-leaf">
+    <h2 class="split-title">Registry</h2>
+    <span class="diamond"></span>
+    <p>No gift is needed. If you’d like to give one, our registry is on Zola.</p>
+    <a class="tpl-btn" href="registry.html">View our registry</a>
+  </div>
+</section>
 
+<section class="band band-liner">
+  <div class="liner-card">
+    <h2 class="tpl-title">Counting Down</h2>
+    <span class="diamond"></span>
     <div class="countdown" id="countdown">
       <div class="count-unit"><div class="count-num" id="cd-days">&mdash;</div><div class="count-label">Days</div></div>
       <div class="count-unit"><div class="count-num" id="cd-hours">&mdash;</div><div class="count-label">Hours</div></div>
       <div class="count-unit"><div class="count-num" id="cd-mins">&mdash;</div><div class="count-label">Minutes</div></div>
       <div class="count-unit"><div class="count-num" id="cd-secs">&mdash;</div><div class="count-label">Seconds</div></div>
     </div>
-
   </div>
 </section>
-
 
 <script>
 (function () {

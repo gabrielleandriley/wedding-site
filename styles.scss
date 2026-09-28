@@ -3,155 +3,172 @@
 // ============================================================================
 // THE SYSTEM
 //
-// Five colours, three typefaces, one spacing scale, two patterns. Everything
-// on the site is built from what is declared here; nothing further down the
-// file introduces a colour or a face of its own.
+// Layout after Wix template 1881 (full-bleed photo hero, wide-spaced centred
+// headings with a small diamond, a large inset photo with a card over it, a
+// dark footer with "back to top"). Colours and type come from the Mango
+// Paperie save the date (signed proof, 2026-09-24):
 //
-//   green-deep dark anchor — title bands, headings, map marks
-//   ivory      the page ground
-//   blue-pale  the secondary light ground, and the stripe
-//   sage       the green accent — labels, links, small marks
-//   leaf       the light green — accents set on the deep green
+//   green      #55722f  the save-the-date ink
+//   deep       #3f5a22  the same green, darkened so white text reads on it
+//   leaf       #dfe7cc  light green ground (a pale tint of the envelope liner)
+//   sprig      #a9b98a  light green accent: dividers, rules, borders
+//   white      the page ground
+//
+// Type: Cormorant Garamond stands in for The Seasons (the save-the-date names,
+// a commercial face); Crimson Pro is the save-the-date italic, used as-is.
 // ============================================================================
 
-$green-deep:  #3c5c45;
-$green-mid:   #4d7059;
-$ivory:       #fcfcfa;
-$ivory-deep:  #f2f4f0;
-$blue-pale:   #dbe7f2;
-$blue:        #4f6b8a;
-$sage:        #617a55;
-$leaf:        #d6e2b6;
-$ink:         #2a3527;
+$green:  #55722f;
+$deep:   #3f5a22;
+$forest: #2b4527;   // forest green for the dark bands and footer
+$leaf:   #dfe7cc;
+$leaf-2: #eef2e4;
+$sprig:  #a9b98a;
+$white:  #ffffff;
+$ink:    #2e3a24;
 
-// Cormorant is reserved for the two names in the hero, where it acts as a
-// wordmark. Playfair carries every heading. Tenor Sans carries everything
-// else — body, labels, navigation — so the text stays clean and readable.
-$font-hero:    "Cormorant Garamond", Georgia, serif;
-$font-display: "Playfair Display", Georgia, serif;
-$font-body:    "Tenor Sans", "Optima", "Avenir Next", sans-serif;
+// kept so the map block below compiles unchanged
+$green-deep: $deep;
+$green-mid:  $green;
+$ivory:      $white;
+$ivory-deep: $leaf-2;
+$blue-pale:  #dde9f2;
+$blue:       #4f6b8a;
+$sage:       $green;
 
-// one hairline, wherever entries or rows are separated
-$rule:         rgba(60, 92, 69, 0.18);
-$rule-on-deep: rgba(250, 250, 247, 0.26);
+$font-display: "Cormorant Garamond", Georgia, serif;
+$font-body:    "Crimson Pro", Georgia, serif;
+$font-hero:    $font-display;
 
-$body-bg: $ivory;
+$rule:         rgba(85, 114, 47, 0.22);
+$rule-on-deep: rgba(255, 255, 255, 0.28);
+
+$body-bg: $white;
 $body-color: $ink;
-$link-color: $green-mid;
+$link-color: $green;
 $font-family-sans-serif: $font-body;
 $headings-font-family: $font-display;
-$headings-color: $green-deep;
-$headings-font-weight: 400;
-$navbar-fg: $ink;
-$footer-bg: $ivory-deep;
-$footer-fg: $green-deep;
+$headings-color: $deep;
+$headings-font-weight: 500;
+$navbar-fg: $deep;
+$footer-bg: #2b4527;
+$footer-fg: $white;
 
 /*-- scss:rules --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 // ---------------------------------------------------------------- base
 
-html { overflow-x: hidden; }
+html { overflow-x: hidden; scroll-behavior: smooth; }
 
 body {
-  background-color: $ivory;
+  background-color: $white;
   color: $ink;
   font-family: $font-body;
+  font-size: 1.12rem;
   overflow-x: hidden;
 }
 
-a { color: $green-mid; text-decoration: none; }
-a:hover { color: $sage; text-decoration: underline; }
+a { color: $green; text-decoration: none; }
+a:hover { color: $deep; text-decoration: underline; }
 
-// Quarto underlines h2 by default
 main.content h2 { border-bottom: none; padding-bottom: 0; }
 
 // ---------------------------------------------------------------- type
 
-// page title — the deep band at the top of every interior page, and the one
-// standalone feature band on the home page
-.eyebrow-lg {
-  font-family: $font-display;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
-  line-height: 1.2;
-  color: $green-deep;
-  margin: 0;
-}
-
-// section heading
+// the template's wide-spaced centred heading
+.tpl-title,
+.eyebrow-lg,
 .section-title {
   font-family: $font-display;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
-  line-height: 1.15;
-  color: $green-deep;
-  margin: 0 0 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: clamp(1.7rem, 3.6vw, 2.7rem);
+  line-height: 1.2;
+  color: $deep;
+  margin: 0;
+  text-align: center;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-// the line under a page title
+// the small diamond under every heading
+.diamond {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 1.3rem auto 1.6rem;
+  background: $sprig;
+  transform: rotate(45deg);
+}
+
+.section-title::after,
+.eyebrow-lg::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 1.3rem auto 0;
+  background: $sprig;
+  transform: rotate(45deg);
+}
+
+.lede {
+  font-family: $font-body;
+  font-size: clamp(1.1rem, 1.8vw, 1.28rem);
+  line-height: 1.8;
+  color: $ink;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .subtitle {
   font-family: $font-body;
-  font-size: clamp(0.95rem, 1.6vw, 1.08rem);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
   line-height: 1.7;
-  max-width: 600px;
-  margin: 1rem auto 0;
+  max-width: 620px;
+  margin: 1.4rem auto 0;
 }
 
-// small letterspaced label — dates, places, kickers inside components
 .eyebrow {
   font-family: $font-body;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: $green;
+  margin: 0 0 0.6rem;
+}
+
+// the template's solid button, in our green
+.tpl-btn {
+  display: inline-block;
+  font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.68rem;
-  color: $sage;
-  margin: 0 0 0.7rem;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  padding: 0.95rem 2.6rem;
+  background: $deep;
+  color: $white !important;
+  border: 1px solid $deep;
+  text-decoration: none !important;
+  transition: background 0.2s ease, color 0.2s ease;
 }
-
-// ---------------------------------------------------------------- patterns
-
-// the cabana stripe, drawn in CSS so it stays crisp at any size. It runs
-// under the navigation and over the footer, and nowhere else.
-@mixin stripe($w: 6px) {
-  background-image: repeating-linear-gradient(
-    90deg,
-    $blue-pale 0, $blue-pale $w,
-    $ivory $w, $ivory ($w * 2)
-  );
-}
-
-// a scallop drawn as SVG in our own green, so it needs no licence and scales
-// cleanly. It frames the photo on the home page and the registry card.
-$scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='14' viewBox='0 0 28 14'><path d='M0 14 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0 L28 14 L0 14Z' fill='%233c5c45' fill-opacity='0.07'/><path d='M0 14 a7 7 0 0 1 14 0 a7 7 0 0 1 14 0' fill='none' stroke='%233c5c45' stroke-opacity='0.18' stroke-width='0.7'/></svg>";
-
-.scallop {
-  background-color: $blue-pale;
-  background-image: url($scallop);
-  background-size: 28px 14px;
-}
+.tpl-btn:hover { background: $white; color: $deep !important; }
+.tpl-btn.small { padding: 0.6rem 1.4rem; font-size: 0.72rem; margin-top: 1rem; }
+.tpl-btn.light { background: $white; color: $deep !important; border-color: $white; }
+.tpl-btn.light:hover { background: transparent; color: $white !important; }
 
 // ---------------------------------------------------------------- navbar
 
 .navbar {
-  background-color: $ivory !important;
-  border-bottom: none;
+  background-color: $white !important;
+  border-bottom: 1px solid $leaf;
   box-shadow: none;
-  position: relative;
-  padding-bottom: 0.9rem;
-}
-
-.navbar::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 18px;
-  @include stripe(6px);
+  padding: 0.35rem 0;
 }
 
 .navbar-brand-container { display: none; }
@@ -163,56 +180,52 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   justify-content: center;
 }
 
-.navbar-nav {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.navbar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.navbar .navbar-nav.me-auto, .navbar .navbar-nav.ms-auto { margin-left: auto !important; margin-right: auto !important; }
+.navbar .navbar-collapse > .quarto-navbar-tools { display: none; }
 
 .navbar .nav-link {
   font-family: $font-body;
   text-transform: uppercase;
-  font-size: 0.76rem;
-  letter-spacing: 0.16em;
-  color: $green-deep;
-  padding: 0.5rem 1.15rem !important;
-  margin: 0.3rem 0.15rem;
+  font-size: 0.86rem;
+  letter-spacing: 0.2em;
+  color: $deep !important;
+  padding: 0.55rem 1.4rem !important;
+  margin: 0.2rem 0.1rem;
 }
 
 .navbar .nav-link:hover,
-.navbar .nav-link.active { color: $sage; }
+.navbar .nav-link.active { color: $green !important; text-decoration: underline; text-decoration-color: $sprig; text-underline-offset: 0.5em; }
 
 @media (max-width: 575.98px) {
-  .navbar .nav-link { padding: 0.35rem 0.45rem !important; font-size: 0.62rem; letter-spacing: 0.08em; }
+  .navbar .nav-link { padding: 0.35rem 0.45rem !important; font-size: 0.7rem; letter-spacing: 0.08em; }
 }
-
 @media (max-width: 430px) {
   .navbar-nav { flex-wrap: nowrap; }
-  .navbar .nav-link { padding: 0.3rem 0.3rem !important; font-size: 0.55rem; letter-spacing: 0.05em; white-space: nowrap; }
+  .navbar .nav-link { padding: 0.3rem 0.28rem !important; font-size: 0.62rem; letter-spacing: 0.04em; white-space: nowrap; }
 }
 
-// ---------------------------------------------------------------- hero
+// ---------------------------------------------------------------- home hero
 
 .hero {
   position: relative;
-  min-height: 86vh;
+  min-height: 92vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
   overflow: hidden;
   isolation: isolate;
+  color: $white;
 }
 
-// the venue photo, washed toward green so the type reads over it
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('images/hero-venue.jpg');
+  background-image: url('images/cover.jpg');
   background-size: cover;
-  background-position: center 58%;
-  filter: saturate(0.72) brightness(0.98) contrast(0.94);
+  background-position: center 90%;
   z-index: -2;
 }
 
@@ -221,185 +234,294 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(34, 58, 42, 0.45) 0%, rgba(34, 58, 42, 0) 100%),
-    linear-gradient(180deg, rgba(46, 74, 55, 0.62) 0%, rgba(46, 74, 55, 0.46) 45%, rgba(46, 74, 55, 0.72) 100%);
+  background: linear-gradient(180deg, rgba(20, 22, 18, 0.18) 0%, rgba(20, 22, 18, 0.26) 50%, rgba(20, 22, 18, 0.45) 100%);
 }
 
-.hero-inner { padding: 4.5rem 1.5rem; max-width: 900px; width: 100%; }
+.hero-inner { padding: clamp(2.2rem, 7vh, 4.5rem) 1.5rem 3rem; max-width: 1100px; width: 100%; }
 
-.hero-frame {
-  border: 1px solid rgba(250, 250, 247, 0.45);
-  padding: clamp(2rem, 6vw, 3.6rem) clamp(1.2rem, 5vw, 3rem);
+.hero-kicker {
+  font-family: $font-body;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.6vw, 1.7rem);
+  margin: 0 0 1rem;
+  text-shadow: 0 1px 16px rgba(20, 32, 10, 0.5);
 }
 
 .hero-names {
-  font-family: $font-hero;
-  font-weight: 300;
-  color: $ivory;
-  font-size: clamp(2.6rem, 9vw, 5.6rem);
-  line-height: 1.05;
-  letter-spacing: 0.06em;
+  font-family: $font-display;
+  font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: clamp(2.4rem, 7.6vw, 6.4rem);
+  line-height: 1.02;
   margin: 0;
-  text-shadow: 0 2px 24px rgba(24, 42, 30, 0.35);
+  color: $white;
+  text-shadow: 0 2px 30px rgba(20, 32, 10, 0.45);
 }
 
 .hero-amp {
-  display: block;
-  font-family: $font-hero;
+  font-family: $font-display;
   font-style: italic;
   font-weight: 400;
   text-transform: none;
-  font-size: 0.52em;
-  color: $leaf;
   letter-spacing: 0;
-  margin: 0.1em 0;
-  text-shadow: 0 2px 20px rgba(24, 42, 30, 0.4);
+  color: $leaf;
+  padding: 0 0.12em;
 }
 
-.hero-sub {
+.hero-date {
   font-family: $font-body;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: $ivory;
-  margin: 1.8rem 0 0;
-  text-shadow: 0 1px 14px rgba(24, 42, 30, 0.55);
-}
-
-// ---------------------------------------------------------------- bands
-
-// every section is a full-bleed band, on one of three grounds: deep green for
-// the title band and at most one deep section per page, ivory as the default,
-// and pale blue for one lighter feature section
-.band { padding: clamp(2.6rem, 5vw, 4rem) 1.5rem; }
-.band-slim { padding-top: clamp(1.8rem, 3vw, 2.6rem); padding-bottom: clamp(1.8rem, 3vw, 2.6rem); }
-
-.band-inner  { max-width: 1040px; margin: 0 auto; }
-.band-narrow { max-width: 760px;  margin: 0 auto; }
-
-.band-ivory { background-color: $ivory; }
-
-.band-deep {
-  background-color: $green-deep;
-  color: $ivory;
-  text-align: center;
-}
-
-.band-deep .eyebrow-lg,
-.band-deep .section-title { color: $ivory; }
-.band-deep .subtitle { color: rgba(250, 250, 247, 0.88); }
-.band-deep .eyebrow { color: $leaf; }
-.band-deep a { color: $ivory; }
-.band-deep a:hover { color: $leaf; }
-
-.band-blue {
-  background-color: $blue-pale;
-  color: $green-deep;
-  text-align: center;
-}
-
-// ---------------------------------------------------------------- save the date
-
-.date-line {
-  font-family: $font-display;
-  font-size: clamp(1.7rem, 4.6vw, 2.8rem);
-  font-weight: 400;
+  font-size: clamp(1.15rem, 2.4vw, 1.7rem);
   letter-spacing: 0.04em;
-  color: $ivory;
-  margin: 0;
+  margin: 1.2rem 0 1.8rem;
+  text-shadow: 0 1px 14px rgba(20, 32, 10, 0.55);
 }
+.hero-date .sep { color: $leaf; padding: 0 0.6em; }
 
-.date-rule {
-  width: 56px;
-  height: 1px;
-  background: rgba(250, 250, 247, 0.5);
-  margin: 1.4rem auto;
-  border: none;
-}
+// ---------------------------------------------------------------- interior page heroes
 
-.date-place {
-  font-family: $font-body;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-size: 0.78rem;
-  color: rgba(250, 250, 247, 0.85);
-  line-height: 2;
-}
-
-// ---------------------------------------------------------------- weekend itinerary
-
-.day-list {
-  margin: 1.8rem 0 0;
-  text-align: left;
-  border-bottom: 1px solid $rule;
-}
-
-.day-entry {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 1.6rem;
-  align-items: start;
-  border-top: 1px solid $rule;
-  padding: 1.5rem 0;
-}
-
-.day-name {
-  font-family: $font-display;
-  font-style: italic;
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
-  color: $green-deep;
-  line-height: 1.1;
-}
-
-.day-meta {
-  font-family: $font-body;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.68rem;
-  color: $sage;
-  margin-bottom: 0.5rem;
-}
-
-.day-body p {
-  font-family: $font-body;
-  font-size: 0.97rem;
-  line-height: 1.7;
-  color: $ink;
-  margin: 0;
-}
-
-.day-where {
-  font-family: $font-display;
-  font-style: italic;
-  font-size: 0.98rem;
-  color: $green-mid;
-  margin-top: 0.55rem;
-}
-
-@media (max-width: 620px) {
-  .day-entry { grid-template-columns: 1fr; gap: 0.5rem; }
-}
-
-// the photo sits in an ivory mat on the scallop
-.weekend-photo {
-  @extend .scallop;
+.page-hero {
+  position: relative;
+  min-height: 46vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(1.2rem, 2.4vw, 1.8rem);
-  margin-top: 2rem;
+  text-align: center;
+  padding: 5rem 1.5rem;
+  isolation: isolate;
+  overflow: hidden;
+  color: $white;
 }
 
-.weekend-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: $ivory;
-  padding: 10px;
-  box-shadow: 0 10px 30px rgba(60, 92, 69, 0.18);
+.page-hero { background-size: cover; background-repeat: no-repeat; background-color: $deep; }
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(20, 22, 18, 0.30) 0%, rgba(20, 22, 18, 0.46) 100%);
 }
+
+.page-hero .band-narrow { max-width: 780px; }
+.page-hero .hero-box { background: rgba(238, 242, 228, 0.86); padding: clamp(1.4rem, 2.6vw, 2rem) clamp(1.4rem, 3.4vw, 2.8rem); margin-top: -1.5rem; }
+.trim-registry { padding-top: 2.2rem !important; }
+.trim-registry .hero-box { margin-top: 0; max-width: 700px; }
+.trim-registry .hero-box .eyebrow-lg { font-size: clamp(1.8rem, 4vw, 3rem); }
+.trim-registry .hero-box .subtitle { margin-top: 0.8rem; font-size: 1.05rem; }
+.page-hero .hero-box .eyebrow-lg { color: $deep; text-shadow: none; }
+.page-hero .hero-box .eyebrow-lg::after { background: $sprig; }
+.page-hero .hero-box .subtitle { color: $deep; text-shadow: none; }
+.page-hero-tall { min-height: 82vh; align-items: flex-start; padding-top: clamp(3rem, 9vh, 6rem); }
+// "trim": same framing as the full 82vh banner, with the bottom cut off.
+// The photos are 3:4, so at full width the image is 133.33vw tall; pin its top
+// where the 82vh banner had it, then shorten the banner.
+@media (min-width: 821px) {
+  .page-hero-tall.hero-trim { min-height: 72vh; }
+  .trim-things   { background-position: center calc(-0.64 * (133.33vw - 82vh)) !important; min-height: 62vh !important; }
+  .trim-registry { background-position: center calc(-0.72 * (133.33vw - 82vh)) !important; }
+}
+.page-hero-tall::after { background: linear-gradient(180deg, rgba(20, 22, 18, 0.62) 0%, rgba(20, 22, 18, 0.40) 32%, rgba(20, 22, 18, 0.08) 60%, rgba(20, 22, 18, 0.02) 100%); }
+.page-hero-tall .subtitle { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 2px 18px rgba(0, 0, 0, 0.55); }
+.photo-credit a { color: rgba(255, 255, 255, 0.9); text-decoration: underline; }
+.photo-credit {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.6rem;
+  margin: 0;
+  font-family: $font-body;
+  font-style: italic;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.page-hero .eyebrow-lg { color: $white; font-size: clamp(2rem, 5vw, 3.6rem); text-shadow: 0 2px 24px rgba(20, 32, 10, 0.4); }
+.page-hero .eyebrow-lg::after { background: $leaf; }
+.page-hero .subtitle { color: rgba(255, 255, 255, 0.95); text-shadow: 0 1px 12px rgba(20, 32, 10, 0.55); }
+
+// ---------------------------------------------------------------- bands
+
+.band { padding: clamp(3.4rem, 7vw, 6rem) 1.5rem; }
+.band-slim { padding-top: clamp(2.2rem, 4vw, 3.2rem); padding-bottom: clamp(2.2rem, 4vw, 3.2rem); }
+
+.band-inner  { max-width: 1080px; margin: 0 auto; }
+.band-narrow { max-width: 780px;  margin: 0 auto; }
+
+.band-ivory, .band-white { background-color: $white; }
+
+.band-leaf, .band-blue {
+  background-color: $leaf-2;
+  color: $deep;
+  text-align: center;
+}
+
+.band-deep {
+  background-color: $forest;
+  color: $white;
+  text-align: center;
+}
+.band-deep .eyebrow-lg,
+.band-deep .section-title,
+.band-deep .tpl-title { color: $white; }
+.band-deep .section-title::after,
+.band-deep .eyebrow-lg::after,
+.band-deep .diamond { background: $leaf; }
+.band-deep .subtitle, .band-deep .lede, .band-deep p { color: rgba(255, 255, 255, 0.92); }
+.band-deep .eyebrow { color: $leaf; }
+.band-deep a { color: $white; text-decoration: underline; text-decoration-color: rgba(223, 231, 204, 0.6); }
+.band-deep a:hover { color: $leaf; }
+
+// the envelope-liner florals, as a ground
+.band-liner {
+  background-color: #909c6c;
+  background-image: url('images/liner.jpg');
+  background-size: 760px auto;
+  background-repeat: repeat;
+  background-position: center center;
+  padding-top: clamp(2.6rem, 5vw, 4rem);
+  padding-bottom: clamp(2.6rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.liner-card {
+  background: $white;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(2.2rem, 5vw, 3.4rem) clamp(1.2rem, 4vw, 3rem);
+  box-shadow: 0 18px 50px rgba(38, 56, 20, 0.25);
+}
+
+// ---------------------------------------------------------------- home: intro with the scalloped photo
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.intro-grid .tpl-title, .intro-grid .lede { text-align: left; }
+.intro-grid .diamond { margin-left: 0; }
+@media (max-width: 760px) {
+  .intro-grid { grid-template-columns: 1fr; }
+  .intro-grid .tpl-title, .intro-grid .lede { text-align: center; }
+  .intro-grid .diamond { margin-left: auto; }
+}
+
+// a round photo inside the save-the-date scallop
+.scallop-photo {
+  position: relative;
+  width: min(430px, 82vw);
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+.scallop-photo img.photo {
+  position: absolute;
+  inset: 13%;
+  width: 74%;
+  height: 74%;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+}
+.scallop-photo img.ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.scallop-caption {
+  font-family: $font-body;
+  font-style: italic;
+  color: $green;
+  text-align: center;
+  font-size: 1.15rem;
+  margin-top: 0.4rem;
+}
+
+// ---------------------------------------------------------------- home: inset photo with a card over it
+
+.inset {
+  background: $leaf-2;
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem clamp(3.4rem, 7vw, 6rem);
+}
+.inset-photo {
+  max-width: 1320px;
+  margin: 0 auto;
+  height: clamp(320px, 56vw, 640px);
+  background-image: url('images/field.jpg');
+  background-size: cover;
+  background-position: center 62%;
+}
+.inset-card {
+  position: relative;
+  max-width: 1180px;
+  margin: clamp(-120px, -9vw, -60px) auto 0;
+  background: $leaf-2;
+  padding: clamp(2.4rem, 5vw, 4rem) 1.5rem 0;
+  text-align: center;
+}
+
+.ww {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.4rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 700px) { .ww { grid-template-columns: 1fr; } }
+
+.ww-item h3 {
+  font-family: $font-display;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 2.8vw, 2rem);
+  color: $deep;
+  margin: 0;
+}
+.ww-item h3::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: $sprig;
+  margin: 0.7rem auto 0.9rem;
+}
+.ww-item .when {
+  font-family: $font-body;
+  font-style: italic;
+  color: $green;
+  font-size: 1.15rem;
+  margin: 0 0 0.4rem;
+}
+.ww-item { display: flex; flex-direction: column; align-items: center; }
+.ww-item p { margin: 0 auto; max-width: 380px; line-height: 1.7; }
+.ww-item .tpl-btn { margin-top: auto; }
+.ww-item .where { margin-bottom: 1.1rem; }
+.ww-item .where { font-size: 0.98rem; color: $green; margin-top: 0.6rem; }
+
+// ---------------------------------------------------------------- home: FAQ teaser (split) and registry teaser
+
+.kicker { font-family: $font-body; text-transform: uppercase; letter-spacing: 0.26em; font-size: 0.78rem; color: $green; margin: 0 0 0.9rem; }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 560px; background: $white; }
+.split-text { padding: clamp(3rem, 7vw, 6rem) clamp(1.6rem, 6vw, 6rem); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.split-title { font-family: $font-display; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: $deep; margin: 0; border: none; }
+.split-text .diamond { margin: 1.1rem 0 1.3rem; }
+.split-text p { font-size: 1.15rem; line-height: 1.8; max-width: 460px; margin: 0 0 2rem; }
+.split-photo { background-size: cover; background-position: center 40%; min-height: 380px; }
+.registry-teaser { text-align: center; }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); min-height: 560px; }
+.trio-cell { min-height: 420px; }
+.trio-text { padding: clamp(2.6rem, 5vw, 4.5rem) clamp(1.6rem, 4vw, 3.6rem); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: $white; }
+.trio-text .diamond { margin: 1.1rem auto 1.3rem; }
+.trio-text p { font-size: 1.1rem; line-height: 1.75; max-width: 360px; margin: 0 0 1.8rem; }
+.trio-text .kicker { margin: 0 0 0.9rem; font-size: 0.72rem; }
+.trio-leaf { background: $leaf-2; }
+.trio-photo { background-size: cover; background-position: center 40%; }
+@media (max-width: 900px) { .trio { grid-template-columns: 1fr; } .trio-photo { min-height: 360px; } }
+.registry-teaser .kicker { margin-bottom: 1rem; }
+@media (max-width: 820px) { .split { grid-template-columns: 1fr; } .split-photo { order: -1; } }
 
 // ---------------------------------------------------------------- countdown
 
@@ -408,26 +530,23 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
   justify-content: center;
   gap: clamp(0.6rem, 3vw, 2.4rem);
   flex-wrap: wrap;
-  margin-top: 1.8rem;
+  margin-top: 0.4rem;
 }
-
-.count-unit { min-width: clamp(68px, 18vw, 108px); }
-
+.count-unit { min-width: clamp(68px, 16vw, 110px); }
 .count-num {
   font-family: $font-display;
-  font-size: clamp(2.2rem, 6.5vw, 3.4rem);
-  font-weight: 400;
-  color: $green-deep;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 7vw, 3.8rem);
+  color: $deep;
   line-height: 1;
-  font-variant-numeric: tabular-nums;
+  font-variant-numeric: lining-nums tabular-nums;
 }
-
 .count-label {
   font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.66rem;
-  color: $sage;
+  letter-spacing: 0.24em;
+  font-size: 0.74rem;
+  color: $green;
   margin-top: 0.6rem;
 }
 
@@ -435,314 +554,446 @@ $scallop: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width
 
 .detail-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.9rem 3rem;
-  margin-top: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 0;
+  margin-top: 0.4rem;
 }
 
 .detail-card {
-  border-top: 1px solid $rule;
-  padding: 1.5rem 0 0;
-  text-align: left;
+  padding: 0.4rem 1.6rem;
+  text-align: center;
+  border-left: 1px solid $rule;
 }
-
+.detail-card:first-child { border-left: none; }
+.info-band .detail-card { border-color: rgba(85, 114, 47, 0.3); }
+@media (max-width: 860px) {
+  .detail-card { border-left: none; border-top: 1px solid $rule; padding: 1.6rem 0.4rem 0; }
+  .detail-card:first-child { border-top: none; }
+}
 .detail-card .day {
   font-family: $font-body;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.68rem;
-  color: $sage;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: $green;
 }
-
 .detail-card h3 {
   font-family: $font-display;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: $green-deep;
-  margin: 0.45rem 0 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1.35rem;
+  color: $deep;
+  margin: 0.4rem 0 0.8rem;
 }
-
-.detail-card p {
-  font-family: $font-body;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: $ink;
-  margin: 0;
-}
+.detail-card p { font-size: 1.04rem; line-height: 1.7; color: $ink; margin: 0; }
 
 // ---------------------------------------------------------------- entries (lists of places)
 
 .listing {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1.8rem 2.6rem;
-  margin: 1.6rem 0 0;
+  gap: 2rem 2.6rem;
+  margin: 2rem 0 0;
   text-align: left;
 }
 
-.spot {
-  border-top: 1px solid $rule;
-  padding: 1.3rem 0 0;
-}
+.spot { border-top: 1px solid $rule; padding: 1.3rem 0 0; display: flex; flex-direction: column; }
 
 .spot h4 {
-  font-family: $font-body;
+  font-family: $font-display;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 0.84rem;
-  font-weight: 400;
-  color: $green-deep;
-  margin: 0 0 0.25rem;
+  font-size: 1.08rem;
+  color: $deep;
+  margin: 0 0 0.2rem;
 }
-
 .spot .place {
   font-family: $font-body;
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
-  color: $sage;
-  margin-bottom: 0.55rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: $green;
+  margin-bottom: 0.5rem;
+  text-transform: none !important;
 }
-
-.spot p {
+.spot p { font-size: 1.04rem; line-height: 1.7; color: $ink; margin: 0 0 1rem; }
+.book-btn {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
   font-family: $font-body;
-  font-size: 0.93rem;
-  line-height: 1.7;
-  color: $ink;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.74rem;
+  padding: 0.6rem 1.3rem;
+  border: 1px solid $deep;
+  color: $deep !important;
+  text-decoration: none !important;
+  transition: background 0.2s ease, color 0.2s ease;
 }
+.book-btn:hover { background: $deep; color: $white !important; }
+.band-deep .book-btn { border-color: $white; color: $white !important; }
+.band-deep .book-btn:hover { background: $white; color: $forest !important; }
 
-// marks the entries the shuttle serves
 .spot-flag {
   display: inline-block;
-  margin: 0.15rem 0 0.55rem;
-  padding: 0.22rem 0.7rem;
-  border: 1px solid rgba(79, 107, 138, 0.55);
+  margin: 0.15rem 0 0.6rem;
+  padding: 0.25rem 0.8rem;
+  background: $leaf;
   border-radius: 999px;
   font-family: $font-body;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.58rem;
-  color: $blue;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: $deep;
 }
 
-// on the deep green, entries invert
-.band-deep .listing { text-align: left; }
 .band-deep .spot { border-top-color: $rule-on-deep; }
-.band-deep .spot h4 { color: $ivory; }
+.band-deep .spot h4, .band-deep .spot h4 a { color: $white; text-decoration: none; }
 .band-deep .spot .place { color: $leaf; }
-.band-deep .spot p { color: rgba(250, 250, 247, 0.86); }
-.band-deep .spot-flag { color: $blue-pale; border-color: rgba(219, 231, 242, 0.5); }
+.band-deep .spot p { color: rgba(255, 255, 255, 0.9); }
+.band-deep .spot-flag { background: $leaf; color: $deep; }
+
+// ---------------------------------------------------------------- where to stay: alternating photo rows (after Wix's travel pages)
+
+.stay-intro { padding-bottom: clamp(2rem, 4vw, 3rem); }
+.stay-intro .band-narrow { max-width: 1040px; }
+.stay-intro .lede { max-width: 960px; }
+
+.zz {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 560px;
+}
+.zz-photo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+.zz-flip .zz-photo { order: 2; }
+.zz-body {
+  background: $forest;
+  color: $white;
+  padding: clamp(2.6rem, 5vw, 4.4rem) clamp(1.6rem, 5vw, 4.6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.zz-body.zz-leaf { background: $leaf-2; color: $ink; }
+.zz-kicker { font-style: italic; font-size: 1.1rem; margin: 0 0 0.3rem; color: $leaf; }
+.zz-leaf .zz-kicker { color: $green; }
+.zz-title {
+  font-family: $font-display;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  margin: 0;
+  color: $white;
+}
+.zz-leaf .zz-title { color: $deep; }
+.zz-body .diamond { margin: 1rem 0 1.2rem; background: $leaf; }
+.zz-leaf .diamond { background: $sprig; }
+
+.stay { padding: 1.3rem 0 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.22); }
+.zz-leaf .stay { border-top-color: $rule; }
+.stay:last-child { padding-bottom: 0; }
+.stay h4 {
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: $white;
+}
+.zz-leaf .stay h4 { color: $deep; }
+.stay .stay-place { font-style: italic; margin: 0.1rem 0 0.5rem; color: $leaf; font-size: 1rem; }
+.zz-leaf .stay .stay-place { color: $green; }
+.stay p { margin: 0 0 0.9rem; line-height: 1.7; font-size: 1.05rem; }
+.zz-body:not(.zz-leaf) .stay p { color: rgba(255, 255, 255, 0.9); }
+.zz-body:not(.zz-leaf) .book-btn { border-color: $white; color: $white !important; }
+.zz-body:not(.zz-leaf) .book-btn:hover { background: $white; color: $forest !important; }
+.stay .book-btn { margin-top: 0.2rem; }
+.stay .spot-flag { margin: 0 0 0.7rem; }
+
+@media (max-width: 820px) {
+  .zz { grid-template-columns: 1fr; min-height: 0; }
+  .zz-flip .zz-photo { order: 0; }
+  .zz-photo { min-height: 300px; }
+}
+
+// ---------------------------------------------------------------- things to do: one band per category
+
+.cat-band { padding: clamp(3rem, 6vw, 5rem) 1.5rem; background: $white; }
+.cat-band.cat-leaf { background: $leaf-2; }
+.cat-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: start;
+}
+.cat-side { position: sticky; top: 90px; }
+.cat-title {
+  font-family: $font-display;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  line-height: 1.2;
+  color: $deep;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.cat-side .diamond { margin: 1rem 0 1rem; }
+.cat-tag { font-style: italic; color: $green; font-size: 1.12rem; margin: 0; }
+.cat-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2.6rem; }
+.pick { padding: 1.1rem 0 1.3rem; border-top: 1px solid $rule; }
+.pick-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.7rem; margin-bottom: 0.35rem; }
+.pick h4 {
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: $deep;
+  margin: 0;
+}
+.pick h4 a { color: $deep; text-decoration: underline; text-decoration-color: $sprig; text-underline-offset: 0.2em; }
+.pick-place { font-style: italic; color: $green; font-size: 0.98rem; }
+.pick p { margin: 0; line-height: 1.7; font-size: 1.04rem; }
+
+@media (max-width: 820px) {
+  .cat-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .cat-side { position: static; }
+  .cat-list { grid-template-columns: 1fr; }
+}
 
 // ---------------------------------------------------------------- collapsible groups
 
-.group-list {
-  margin-top: 1.4rem;
-  text-align: left;
-  border-bottom: 1px solid $rule;
-}
-
+.group-list { margin-top: 0.6rem; text-align: left; border-bottom: 1px solid $rule; }
 .group { border-top: 1px solid $rule; }
 
 .group > summary {
   cursor: pointer;
   list-style: none;
   position: relative;
-  padding: 1.3rem 2.8rem 1.3rem 0;
+  padding: 1.4rem 2.8rem 1.4rem 0;
   font-family: $font-display;
-  font-style: italic;
-  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
-  color: $green-deep;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  color: $deep;
 }
-
 .group > summary::-webkit-details-marker { display: none; }
-.group > summary:hover { color: $sage; }
-.group > summary:focus-visible { outline: 2px solid $sage; outline-offset: 3px; }
-
+.group > summary:hover { color: $green; }
+.group > summary:focus-visible { outline: 2px solid $sprig; outline-offset: 3px; }
 .group > summary::after {
   content: "+";
   position: absolute;
   right: 0.3rem;
   top: 50%;
   transform: translateY(-50%);
-  font-family: $font-body;
-  font-size: 1.7rem;
+  font-family: $font-display;
+  font-size: 1.9rem;
   line-height: 1;
-  color: $sage;
+  color: $green;
 }
-
 .group[open] > summary::after { content: "\2013"; }
-.group .listing { margin: 0.2rem 0 1.8rem; }
+.group .listing { margin: 0.2rem 0 2rem; }
 
 // ---------------------------------------------------------------- faq
 
-.faq-list {
-  max-width: 780px;
-  margin: 0.6rem auto 0;
-  text-align: left;
-  border-bottom: 1px solid $rule;
-}
-
+.faq-list { max-width: 820px; margin: 0 auto; text-align: left; border-bottom: 1px solid $rule; }
 .faq-item { border-top: 1px solid $rule; }
 
 .faq-item summary {
   cursor: pointer;
   list-style: none;
   position: relative;
-  padding: 1.15rem 2.6rem 1.15rem 0;
+  padding: 1.3rem 2.6rem 1.3rem 0;
   font-family: $font-display;
-  font-style: italic;
-  font-size: 1.25rem;
-  color: $green-deep;
+  font-weight: 500;
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  color: $deep;
 }
-
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary:hover { color: $sage; }
-.faq-item summary:focus-visible { outline: 2px solid $sage; outline-offset: 2px; }
-
+.faq-item summary:hover { color: $green; }
+.faq-item summary:focus-visible { outline: 2px solid $sprig; outline-offset: 2px; }
 .faq-item summary::after {
   content: "+";
   position: absolute;
   right: 0.4rem;
   top: 50%;
   transform: translateY(-50%);
-  font-family: $font-body;
-  font-size: 1.5rem;
+  font-family: $font-display;
+  font-size: 1.7rem;
   line-height: 1;
-  color: $sage;
+  color: $green;
 }
-
 .faq-item[open] summary::after { content: "\2013"; }
+.faq-item p { font-size: 1.08rem; line-height: 1.8; color: $ink; margin: 0 0 1.5rem; padding-right: 2.6rem; max-width: 68ch; }
 
-.faq-item p {
-  font-family: $font-body;
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: $ink;
-  margin: 0 0 1.4rem;
-  padding-right: 2.6rem;
-  max-width: 68ch;
+// FAQ page: photo down the side (split screen)
+.faq-split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); min-height: calc(100vh - 62px); align-items: stretch; }
+.faq-photo {
+  position: relative;
+  margin: 0 !important;
+  min-height: calc(100vh - 62px);
+  background-size: cover;
+  background-position: center 40%;
 }
+.faq-main { background: $white; padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 5vw, 5rem); }
+.faq-inner { max-width: 640px; }
+.faq-title { text-align: left; }
+.faq-main .diamond { margin: 1.1rem 0 1.2rem; }
+.faq-lede { font-style: italic; color: $green; font-size: 1.12rem; margin: 0 0 2.4rem; }
+.faq-group {
+  font-family: $font-body;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $green;
+  margin: 2.4rem 0 0.4rem;
+}
+.faq-split .faq-list { max-width: none; margin: 0; }
+@media (max-width: 820px) {
+  .faq-split { grid-template-columns: 1fr; }
+  .faq-photo { min-height: 52vh; }
+}
+
+// ---------------------------------------------------------------- things to do: tabs
+
+.ttd-inner { max-width: 1120px; margin: 0 auto; }
+.ttd-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 0.6rem; margin-bottom: 2.4rem; }
+.ttd-tab {
+  font-family: $font-body; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.8rem;
+  padding: 0.7rem 1.3rem; border: 1px solid $sprig; background: $white; color: $deep; cursor: pointer;
+}
+.ttd-tab:hover { border-color: $deep; }
+.ttd-tab.is-on { background: $deep; border-color: $deep; color: $white; }
+.ttd-panel { display: none; }
+.ttd-panel.is-on { display: block; max-width: 1000px; margin: 0 auto; }
+.ttd-photo { position: relative; min-height: 460px; height: 100%; background-size: cover; background-position: center; }
+.ttd-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2.6rem; align-content: start; }
+@media (max-width: 980px) { .ttd-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .ttd-list { grid-template-columns: 1fr; }
+}
+.map-card { background: $white; max-width: 1080px; margin: 0 auto; padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 3vw, 2.4rem); box-shadow: 0 18px 50px rgba(38, 56, 20, 0.25); }
+
+// ---------------------------------------------------------------- things to do: map
+
+.map-band .lede { text-align: center; }
+.map-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin: 2rem 0 1.4rem; }
+.map-chip {
+  font-family: $font-body; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.74rem;
+  padding: 0.5rem 1rem; border: 1px solid $sprig; background: $white; color: $deep; cursor: pointer; border-radius: 999px;
+}
+.map-chip:hover { border-color: $deep; }
+.map-chip.is-on { background: $deep; border-color: $deep; color: $white; }
+.fl-leaflet { height: clamp(420px, 62vh, 640px); width: 100%; border: 1px solid $leaf; }
+.fl-leaflet .leaflet-tile-pane { filter: grayscale(1) brightness(1.06) contrast(0.95); }
+.pin { display: block; width: 18px; height: 18px; border-radius: 50%; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); }
+.pin-place { background: $deep; border: 3px solid $white; }
+.pin-inn { width: 24px; height: 24px; margin: -3px 0 0 -3px; background: $leaf; border: 4px solid $forest; }
+.leaflet-popup-content-wrapper { border-radius: 2px; }
+.leaflet-container { font-family: $font-body; }
+.pop-cat { text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.64rem; color: $green; }
+.pop-name { font-family: $font-display; font-weight: 600; font-size: 1.15rem; color: $deep; margin: 0.15rem 0; }
+.pop-place { font-style: italic; color: $green; margin-bottom: 0.3rem; }
+.pop a { color: $deep; text-decoration: underline; }
+
+// travel info on the forest band: white boxes, after the template's "arriving by" cards
+.info-band .detail-grid { gap: 1.4rem; }
+.info-band .detail-card { background: $white; border: none !important; padding: 2.2rem 1.8rem; box-shadow: 0 10px 30px rgba(38, 56, 20, 0.08); }
+.info-band .detail-card p { color: $ink !important; }
+.info-band .detail-card .day { color: $green; }
+.info-band .detail-card h3 { color: $deep; font-size: 1.55rem; }
 
 // ---------------------------------------------------------------- registry
 
 .registry-card {
-  @extend .scallop;
-  border: 1px solid $rule;
+  background: $white;
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  padding: clamp(1.6rem, 4vw, 2.6rem);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 3vw, 2.4rem);
+  box-shadow: 0 18px 50px rgba(38, 56, 20, 0.14);
 }
-
-.registry-card > p {
-  font-family: $font-body;
-  font-size: 0.97rem;
-  line-height: 1.7;
-  max-width: 520px;
-  margin: 0 auto 1.6rem;
-  color: $green-deep;
-}
-
-// Zola's widget lands in here; the ivory panel gives it a home
-.zola-embed-frame {
+.registry-frame {
+  max-width: 1060px;
   margin: 0 auto;
-  max-width: 100%;
-  background: $ivory;
-  border: 1px solid $rule;
-  padding: 0.5rem;
-  overflow: hidden;
+  padding: 36px;
+  background-color: #909c6c;
+  background-image: url('images/liner.jpg');
+  background-size: 380px auto;
+  box-shadow: 0 18px 50px rgba(38, 56, 20, 0.18);
 }
+.registry-frame .registry-card { box-shadow: none; }
+@media (max-width: 640px) { .registry-frame { padding: 18px; } }
+.registry-card > p { font-size: 1.12rem; line-height: 1.75; max-width: 560px; margin: 0 auto 2rem; color: $ink; }
 
-.zola-embed-frame iframe {
-  display: block;
-  width: 100% !important;
-  max-width: 100%;
-  border: 0;
-}
+.zola-embed-frame { margin: 0 auto; max-width: 100%; overflow: hidden; }
+.zola-embed-frame iframe { display: block; width: 100% !important; max-width: 100%; border: 0; }
+.registry-link { margin-top: 2.2rem; }
 
-// ---------------------------------------------------------------- the map
-
-.map-wrap {
-  margin: 1.4rem 0 0;
-  overflow-x: auto;
-  min-width: 0;
-  max-width: 100%;
-}
-
-.fl-map { display: block; width: 100%; height: auto; }
-
-@media (max-width: 980px) { .fl-map { min-width: 560px; } }
-
-.fl-map .ground { fill: #eef1ee; }
-.fl-map .wood   { fill: $leaf; }
-.fl-map .park   { fill: #c4d4a4; }
-
-.fl-map .water {
-  fill: $blue-pale;
-  stroke: #a9bdd2;
-  stroke-width: 1.2;
-}
-
-.fl-map .rd-case,
-.fl-map .rd-fill { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.fl-map .rd-case { stroke: #a9bc94; opacity: 0.85; }
-.fl-map .rd-fill { stroke: $ivory; }
-
-.fl-map .frame { fill: none; stroke: rgba(60, 92, 69, 0.28); stroke-width: 2; }
-
-.fl-map .mk-halo { fill: #eef1ee; opacity: 0.92; }
-.fl-map .mk-ring { fill: none; stroke: $green-deep; stroke-width: 2.2; }
-.fl-map .mk-dot,
-.fl-map .mk-fill { fill: $green-deep; }
-.fl-map .mk-door { fill: #eef1ee; }
-.fl-map .mk-line { fill: none; stroke: $green-deep; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-
-.fl-map .lbl,
-.fl-map .cap,
-.fl-map .water-lbl {
-  paint-order: stroke fill;
-  stroke: #eef1ee;
-  stroke-width: 4.5;
-  stroke-linejoin: round;
-}
-
-.fl-map .lbl { font-family: $font-display; font-style: italic; font-size: 26px; fill: $green-deep; }
-.fl-map .cap { font-family: $font-body; font-size: 14px; letter-spacing: 0.16em; fill: $green-mid; }
-.fl-map .cap.sm { font-size: 12.5px; letter-spacing: 0.12em; }
-.fl-map .water-lbl { font-family: $font-display; font-style: italic; font-size: 21px; fill: $blue; stroke-width: 3; }
-.fl-map .attrib { font-family: $font-body; font-size: 10.5px; letter-spacing: 0.08em; fill: rgba(60, 92, 69, 0.4); }
-
-// ---------------------------------------------------------------- footer
+// ---------------------------------------------------------------- footer (the template's dark footer, in our green)
 
 footer.footer {
-  background-color: $ivory-deep;
+  background-color: $forest !important;
   border-top: none;
-  position: relative;
-  padding-top: 2.4rem;
+  padding: 2.8rem 1rem 2.4rem;
   font-family: $font-body;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.68rem;
-  color: $green-deep;
+  letter-spacing: 0.22em;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.88);
 }
+footer.footer .nav-footer { min-height: 0; background: transparent !important; }
+footer.footer .nav-footer > * { background: transparent !important; }
+footer.footer .nav-footer-center { max-width: none !important; flex-basis: 100%; }
+footer.footer .nav-footer-left, footer.footer .nav-footer-right { display: none; }
+footer.footer { border-top: 1px solid rgba(223, 231, 204, 0.25) !important; }
+footer.footer a { color: $white; text-decoration: none; }
 
-footer.footer::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 18px;
-  @include stripe(6px);
+.to-top {
+  display: inline-block;
+  font-size: 0.95rem;
+  letter-spacing: 0.3em;
+  color: $white !important;
+  margin-bottom: 1.2rem;
 }
+.to-top::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0 auto 0.9rem;
+  border-left: 1.5px solid $white;
+  border-top: 1.5px solid $white;
+  transform: rotate(45deg);
+}
+.to-top:hover { color: $leaf !important; }
+.foot-line { color: $leaf; }
+footer.footer { text-transform: none !important; letter-spacing: normal !important; font-size: 1rem !important; }
+.foot { text-align: center; padding: 1rem 0 0.4rem; }
+.foot p { margin: 0; }
+.foot-kicker { font-style: italic; color: $leaf; font-size: 1.2rem; }
+.foot-names { font-family: $font-display; font-weight: 500; text-transform: uppercase; letter-spacing: 0.16em; font-size: clamp(1.8rem, 4vw, 2.8rem); color: $white; margin: 0.3rem 0 1.8rem !important; }
+.foot-cols { display: flex; justify-content: center; gap: clamp(2rem, 10vw, 9rem); flex-wrap: wrap; margin-bottom: 2.2rem; }
+.foot-cols p { color: rgba(255, 255, 255, 0.88); line-height: 1.7; font-size: 1.02rem; }
+.foot .foot-h { text-transform: uppercase; letter-spacing: 0.24em; font-size: 0.76rem; color: $leaf; margin-bottom: 0.4rem; }
+.foot .to-top { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.3em; }
 
 // ---------------------------------------------------------------- quarto layout resets
 
 #title-block-header { display: none; }
 
-// Quarto lays the page out on a grid whose body track is `minmax(500px, ...)`.
-// Our bands are full-bleed and manage their own gutters, so that reserved
-// track only forces horizontal overflow on phones. Drop the grid entirely.
-// The id selector is needed to outrank Quarto's own `.page-columns` rules.
 #quarto-content.page-columns,
 .page-columns { display: block !important; }
 
@@ -757,7 +1008,20 @@ main.content.column-page {
   padding-right: 0 !important;
 }
 
+@media (max-width: 600px) {
+  .hero-names { font-size: clamp(2.3rem, 12vw, 3.4rem); letter-spacing: 0.06em; }
+  .hero-amp { display: block; font-size: 0.7em; padding: 0.1em 0; }
+  .hero-date .sep { display: block; height: 0; overflow: hidden; }
+  .tpl-btn { padding: 0.9rem 1.6rem; letter-spacing: 0.22em; }
+  .count-unit { min-width: 62px; }
+  .countdown { gap: 0.5rem; flex-wrap: nowrap; }
+  .count-num { font-size: 2.1rem; }
+  .count-label { letter-spacing: 0.12em; font-size: 0.62rem; }
+}
+.btn-row { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; margin-top: 2.2rem; }
+
 @media (max-width: 767.98px) {
   .content, .quarto-title-block { max-width: 100% !important; width: 100% !important; box-sizing: border-box; }
-  .hero { min-height: 78vh; }
+  .hero { min-height: 82vh; }
+  .page-hero { min-height: 36vh; }
 }
