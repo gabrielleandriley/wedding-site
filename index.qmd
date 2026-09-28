@@ -1,6 +1,12 @@
 ---
 title: ""
 pagetitle: "June 19, 2027"
+image: images/share.jpg
+open-graph:
+  title: "Gabrielle & Riley"
+  description: "We’re getting married! Saturday, June 19, 2027 at the Fontainebleau Inn in Alpine, New York."
+twitter-card:
+  title: "Gabrielle & Riley"
 ---
 
 ```{=html}

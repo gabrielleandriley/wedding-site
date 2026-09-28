@@ -1,6 +1,7 @@
 ---
 title: ""
 pagetitle: "FAQs"
+image: images/share.jpg
 ---
 
 ```{=html}

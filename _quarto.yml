@@ -8,6 +8,10 @@ project:
 website:
   title: "Gabrielle & Riley"
   site-url: "https://gabrielleandriley.com"
+  image: images/share.jpg
+  description: "Gabrielle and Riley are getting married on June 19, 2027 at the Fontainebleau Inn in Alpine, New York."
+  open-graph: true
+  twitter-card: true
   favicon: images/favicon.svg
   search: false
   navbar:

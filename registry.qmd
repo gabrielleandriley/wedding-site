@@ -1,6 +1,7 @@
 ---
 title: ""
 pagetitle: "Registry"
+image: images/share.jpg
 ---
 
 ```{=html}
