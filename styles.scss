@@ -682,7 +682,7 @@ main.content h2 { border-bottom: none; padding-bottom: 0; }
   justify-content: center;
 }
 .zz-body.zz-leaf { background: $leaf-2; color: $ink; }
-.zz-kicker { font-style: italic; font-size: 1.1rem; margin: 0 0 0.3rem; color: $leaf; }
+.zz-kicker { font-style: italic; font-size: 1.1rem; margin: 0.4rem 0 0; color: $leaf; }
 .zz-leaf .zz-kicker { color: $green; }
 .zz-title {
   font-family: $font-display;
@@ -1024,4 +1024,13 @@ main.content.column-page {
   .content, .quarto-title-block { max-width: 100% !important; width: 100% !important; box-sizing: border-box; }
   .hero { min-height: 82vh; }
   .page-hero { min-height: 36vh; }
+}
+
+// phones: taller photo banners with the words kept at the top, so faces show below
+@media (max-width: 820px) {
+  .page-hero-tall { min-height: 86vh !important; align-items: flex-start; padding-top: 1.6rem !important; }
+  .page-hero-tall .eyebrow-lg { font-size: 1.9rem; }
+  .page-hero-tall .subtitle { font-size: 0.98rem; line-height: 1.55; margin-top: 0.8rem; }
+  .page-hero-tall .eyebrow-lg::after { margin-top: 0.8rem; }
+  .trim-registry .hero-box .subtitle { font-size: 0.95rem; }
 }
