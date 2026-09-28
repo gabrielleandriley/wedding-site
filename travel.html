@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a003bf38a113772afde6b934fd42d91f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-745983dff8965962bc12ce65d41794ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -308,7 +308,7 @@ document.querySelectorAll('.stay-tab').forEach(function (b) {
     { n: "Harbor Hotel",           p: "Watkins Glen",    lat: 42.38329, lng: -76.87374, u: "https://www.watkinsglenharborhotel.com/" },
     { n: "The Blackberry Inn",     p: "Watkins Glen",    lat: 42.37981, lng: -76.87057, u: "https://www.theblackberryinnbb.com/" }
   ];
-  var inn = [42.3941452, -76.7231805], party = [42.5481386, -76.5974597];
+  var inn = [42.368426, -76.740411], party = [42.5481386, -76.5974597];
   var map = L.map('stay-map', { scrollWheelZoom: false, zoomControl: true, zoomSnap: 0.25 });
   var small = map.getSize().x < 420;   // phones: labels above the dots, tighter edges
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -323,7 +323,7 @@ document.querySelectorAll('.stay-tab').forEach(function (b) {
     pts.push([s.lat, s.lng]);
   });
   L.marker(party, { icon: pin('pin-inn', 30), title: 'Welcome Party', zIndexOffset: 900 })
-    .bindPopup('<div class="pop"><div class="pop-cat">Friday, June 18</div><div class="pop-name">Welcome Party</div><div class="pop-place">North Point Pavilion, Taughannock Falls State Park</div><a href="https://www.google.com/maps/search/?api=1&query=42.5481386,-76.5974597" target="_blank" rel="noopener">Directions</a></div>')
+    .bindPopup('<div class="pop"><div class="pop-cat">Friday, June 18</div><div class="pop-name">Welcome Party</div><div class="pop-place">North Point Pavilion, Taughannock Falls State Park</div><a href="https://www.google.com/maps/place/North+Point/@42.5489277,-76.6015244,17.21z/data=!4m6!3m5!1s0x89d09ad6d145efb5:0x777400e9baaeb0fe!8m2!3d42.5477524!4d-76.6004081!16s%2Fg%2F11d_9dnmfn?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Directions</a></div>')
     .bindTooltip('Welcome Party', { permanent: true, direction: 'top', offset: [0, -16], className: 'map-tag' })
     .addTo(map);
   L.marker(inn, { icon: pin('pin-inn', 30), title: 'Fontainebleau Inn', zIndexOffset: 1000 })
