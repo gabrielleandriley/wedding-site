@@ -6,7 +6,7 @@ image: images/share.jpg
 
 ```{=html}
 <section class="page-hero page-hero-tall hero-trim trim-travel" style="background-image:url('images/travel-bench.jpg'); background-position:center 66%">
-  <div class="band-narrow">
+  <div class="band-narrow mobile-box">
 
     <p class="eyebrow-lg">Travel &amp; Stay</p>
 
@@ -78,7 +78,7 @@ image: images/share.jpg
     <div class="stay-panel" id="town-watkins" role="tabpanel" hidden>
       <figure class="stay-figure">
   <div class="stay-photo" role="img" aria-label="The Harbor Hotel and the pier on Seneca Lake in Watkins Glen" style="background-image:url('images/stay-watkins.jpg'); background-position:60% center"></div>
-        <figcaption>The Harbor Hotel and marina on Seneca Lake, Watkins Glen</figcaption>
+        <figcaption>The Harbor Hotel and marina, Watkins Glen</figcaption>
       </figure>
       <div class="stay-list">
         <p class="stay-kicker">A larger town on the south end of Seneca Lake, known for its waterfall gorge hike, wineries, and racetrack</p>
@@ -118,7 +118,7 @@ document.querySelectorAll('.stay-tab').forEach(function (b) {
 
       <div class="detail-card">
         <h3>Getting Around</h3>
-        <p>Downtown Ithaca, Trumansburg, and Watkins Glen are all walkable, but the surrounding area is rural, so you may want a car to explore or to travel to the venue and the welcome party. Ubers and rideshares can be hard to find out here. There is plenty of free parking at the Inn.</p>
+        <p>Downtown Ithaca, Trumansburg, and Watkins Glen are all walkable, but the surrounding area is rural, so you may want a car to explore or to travel to the venue and the welcome party. Ubers and rideshares can be hard to find.</p>
       </div>
 
       <div class="detail-card">

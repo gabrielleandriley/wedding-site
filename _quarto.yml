@@ -34,7 +34,7 @@ website:
   page-footer:
     background: light
     center: |
-      <div class="foot"><p class="foot-kicker">We can’t wait to celebrate</p><p class="foot-names">Gabrielle &amp; Riley</p><a href="#" class="to-top">Back to top</a><p class="foot-credits">Stationery designed and printed by <a href="https://www.mangopaperie.com/" target="_blank" rel="noopener">Mango Paperie</a><span class="foot-dot"></span>Engagement photos by <a href="https://kelseytravisphotography.com/" target="_blank" rel="noopener">Kelsey Travis Photography</a></p></div>
+      <div class="foot"><p class="foot-kicker">We can’t wait to celebrate</p><p class="foot-names">Gabrielle &amp; Riley</p><a href="#" class="to-top">Back to top</a><p class="foot-credits">Engagement photos by <a href="https://kelseytravisphotography.com/" target="_blank" rel="noopener">Kelsey Travis Photography</a><span class="foot-dot"></span>Stationery designed and printed by <a href="https://www.mangopaperie.com/" target="_blank" rel="noopener">Mango Paperie</a></p></div>
 
 format:
   html:
